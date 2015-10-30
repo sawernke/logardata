@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Martin del Nuevo Cusco</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/215/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-215" type="town">
+               <placeName xml:id="name215-1" xml:lang="es" full="yes">San Martin del Nuevo Cusco</placeName>
+               <placeName xml:id="name215-2" xml:lang="es">San Martin del Nuevo</placeName>
+               <placeName xml:id="name215-3" xml:lang="es">Cusco</placeName>
+               <placeName xml:id="name215-4" xml:lang="es">san martin del nueuo cusco</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Chilques</region>
+                  <settlement type="municipality">San Martin del Nuevo Cusco</settlement>
+               </location>
+               <placeName type="municipality">Various</placeName>
+               <note>
+        San Martin del Nuevo
+        Cusco
+        San Martin del Nuevo Cusco
+        
+        san martin del nueuo cusco
+        Levillier 1921-26 v9
+        162
+        Levillier 1921-26 v9
+        162
+        AGI-L
+        
+        Lima
+        Cuzco
+        Chilques
+        0
+        
+        Various
+        de diferentes encomenderos
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        Only Nuevo Cusco I can find is in Ucayali region...
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">162</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/215</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

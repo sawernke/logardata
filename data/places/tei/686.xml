@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Juan Baptista de Guarcaca</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/686/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-686" type="town">
+               <placeName xml:id="name686-1" xml:lang="es" full="yes">San Juan Baptista de Guarcaca</placeName>
+               <placeName xml:id="name686-2" xml:lang="es">San Juan Baptista</placeName>
+               <placeName xml:id="name686-3" xml:lang="es">Guarcaca</placeName>
+               <placeName xml:id="name686-4" xml:lang="es">san joan baptista de Guarcaca</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Jarama y Chinchacocha</region>
+                  <settlement type="municipality">San Juan Baptista de Guarcaca</settlement>
+               </location>
+               <placeName type="municipality">Yaros, Chaupe, Guarangas</placeName>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Pasco</region>
+                  <region type="department">Pasco</region>
+                  <settlement type="municipality">Huaraucaca</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-10.79083333 -76.29333333</geo>
+               </location>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">203</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/686</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

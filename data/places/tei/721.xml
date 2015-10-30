@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Cazma la Alta y Moche</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/721/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-721" type="town">
+               <placeName xml:id="name721-1" xml:lang="es" full="yes">Cazma la Alta y Moche</placeName>
+               <placeName xml:id="name721-2" xml:lang="es">Cazma la Alta</placeName>
+               <placeName xml:id="name721-3" xml:lang="es">Moche</placeName>
+               <placeName xml:id="name721-4" xml:lang="es">vn pueblo del mesmo nombre</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">V. de Santa</region>
+                  <settlement type="municipality">Cazma la Alta y Moche</settlement>
+               </location>
+               <placeName type="municipality">Cazma la Alta y Moche</placeName>
+               <location type="gps">
+                  <geo>-9.083333333 -78.20555556</geo>
+               </location>
+               <note>
+        Cazma la Alta
+        Moche
+        Cazma la Alta y Moche
+        
+        vn pueblo del mesmo nombre
+        Levillier 1921-26 v9
+        206
+        Levillier 1921-26 v9
+        206
+        AGI-L
+        
+        Lima
+        Trujillo
+        V. de Santa
+        0
+        
+        Cazma la Alta y Moche
+        cazma la alta e moche
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        -9.083333333
+        -78.20555556
+        Casma is the capital of Prov. Casma... Should I pin that?  And if so, what should I do for Casma la Baja...?
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">206</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/721</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

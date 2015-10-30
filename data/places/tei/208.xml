@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Mascas de Pacaritambo</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/208/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-208" type="town">
+               <placeName xml:id="name208-1" xml:lang="es" full="yes">Mascas de Pacaritambo</placeName>
+               <placeName xml:id="name208-2" xml:lang="es"/>
+               <placeName xml:id="name208-3" xml:lang="es">Mascas de Pacaritambo</placeName>
+               <placeName xml:id="name208-4" xml:lang="es">los mascas de pacaritambo</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Chilques</region>
+                  <settlement type="municipality">Mascas de Pacaritambo</settlement>
+               </location>
+               <placeName type="municipality">Mascas</placeName>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Paruro</region>
+                  <region type="department">Cusco</region>
+                  <settlement type="municipality">Paccaritambo</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-13.08416667 -71.955</geo>
+               </location>
+               <note>
+        
+        Mascas de Pacaritambo
+        Mascas de Pacaritambo
+        
+        los mascas de pacaritambo
+        Levillier 1921-26 v9
+        161
+        Levillier 1921-26 v9
+        161
+        AGI-L
+        
+        Lima
+        Cuzco
+        Chilques
+        1
+        
+        Mascas
+        mascas
+        Pacaritambo
+        Pacaritambo
+        
+        
+        
+        
+        
+        Paccaritambo
+        Peru
+        Cusco
+        Paruro
+        
+        -13.08416667
+        -71.955
+        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-535728&amp;fid=4534&amp;c=peru
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">161</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/208</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

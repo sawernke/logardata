@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Agustin de Viacha</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/96/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-96" type="town">
+               <placeName xml:id="name96-1" xml:lang="es" full="yes">San Agustin de Viacha</placeName>
+               <placeName xml:id="name96-2" xml:lang="es">San Agustin de</placeName>
+               <placeName xml:id="name96-3" xml:lang="es">Viacha</placeName>
+               <placeName xml:id="name96-4" xml:lang="es">sant agustin de viacha</placeName>
+               <location type="ancient">
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Pacajes</region>
+                  <settlement type="municipality">San Agustin de Viacha</settlement>
+               </location>
+               <population source="">
+                  <desc>3574</desc>
+               </population>
+               <population source="" type="tributaries">
+                  <desc>855</desc>
+               </population>
+               <placeName type="municipality">Viacha</placeName>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Ingavi</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="municipality">Viacha</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-16.65319444 -68.30166667</geo>
+               </location>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">146</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/96</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

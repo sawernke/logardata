@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Pedro de Pillao de Querca</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/687/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-687" type="town">
+               <placeName xml:id="name687-1" xml:lang="es" full="yes">San Pedro de Pillao de Querca</placeName>
+               <placeName xml:id="name687-2" xml:lang="es">San Pedro de Pillao</placeName>
+               <placeName xml:id="name687-3" xml:lang="es">Querca</placeName>
+               <placeName xml:id="name687-4" xml:lang="es">san pedro de pillao de querca</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Jarama y Chinchacocha</region>
+                  <settlement type="municipality">San Pedro de Pillao de Querca</settlement>
+               </location>
+               <placeName type="municipality">Yaros, Chaupe, Guarangas, y Tambo</placeName>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Daniel Alcides Carrion</region>
+                  <region type="department">Pasco</region>
+                  <settlement type="municipality">San Pedro de Pillao</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-10.43861111 -76.49472222</geo>
+               </location>
+               <note>
+        San Pedro de Pillao
+        Querca
+        San Pedro de Pillao de Querca
+        
+        san pedro de pillao de querca
+        Levillier 1921-26 v9
+        203
+        Levillier 1921-26 v9
+        203
+        AGI-L
+        
+        Lima
+        Huanuco
+        Jarama y Chinchacocha
+        1
+        
+        Yaros, Chaupe, Guarangas, y Tambo
+        yaros chaupe guarangas
+        
+        
+        
+        
+        
+        
+        
+        San Pedro de Pillao
+        Peru
+        Pasco
+        Daniel Alcides Carrion
+        
+        -10.43861111
+        -76.49472222
+        This reducción also has some families from repartimiento Tambo (below). G 203: "El rrepart. de tambo... tiene 512 indios y 2508 personas rreduzidos en dos pueblos llamados san pedro de pellao y san bartolome."
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">203</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/687</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

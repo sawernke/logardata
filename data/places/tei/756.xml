@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Martin de Sechura</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/756/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-756" type="town">
+               <placeName xml:id="name756-1" xml:lang="es" full="yes">San Martin de Sechura</placeName>
+               <placeName xml:id="name756-2" xml:lang="es">San Martin</placeName>
+               <placeName xml:id="name756-3" xml:lang="es">Sechura</placeName>
+               <placeName xml:id="name756-4" xml:lang="es">san martin de sechura</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Piura</region>
+                  <region type="corregimiento"/>
+                  <settlement type="municipality">San Martin de Sechura</settlement>
+               </location>
+               <placeName type="municipality">encomienda de Rui Lopez y gaspar troche de buytrago</placeName>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Sechura</region>
+                  <region type="department">Piura</region>
+                  <settlement type="municipality">Sechura</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-5.051944444 -80.82277778</geo>
+               </location>
+               <note>
+        San Martin
+        Sechura
+        San Martin de Sechura
+        
+        san martin de sechura
+        Levillier 1921-26 v9
+        212
+        Levillier 1921-26 v9
+        212
+        AGI-L
+        
+        Lima
+        Piura
+        
+        1
+        
+        encomienda de Rui Lopez y gaspar troche de buytrago
+        encomienda de rruilopez y gaspar troche de buytrago
+        
+        
+        
+        
+        
+        
+        
+        Sechura
+        Peru
+        Piura
+        Sechura
+        
+        -5.051944444
+        -80.82277778
+        Alejandro Diez: has changed location
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">212</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/756</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Colquemarca</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/49/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-49" type="town">
+               <placeName xml:id="name49-1" xml:lang="es" full="yes">Colquemarca</placeName>
+               <placeName xml:id="name49-2" xml:lang="es"/>
+               <placeName xml:id="name49-3" xml:lang="es">Colquemarca</placeName>
+               <placeName xml:id="name49-4" xml:lang="es">Colquemarca</placeName>
+               <location type="ancient">
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Carangas</region>
+                  <settlement type="municipality">Colquemarca</settlement>
+               </location>
+               <placeName type="municipality">Colquemarca y Andamarca</placeName>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Unknown</region>
+                  <region type="department">Oruro</region>
+                  <settlement type="municipality">Colquemarca</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-18.28388889 -67.61416667</geo>
+               </location>
+               <note>
+        
+        Colquemarca
+        Colquemarca
+        
+        Colquemarca
+        Levillier 1921-26 v9
+        140
+        Levillier 1921-26 v57
+        140
+        AGI-L
+        
+        La Plata
+        La Plata
+        Carangas
+        1
+        
+        Colquemarca y Andamarca
+        Colquemarca y Andamarca
+        
+        
+        
+        
+        
+        
+        
+        Colquemarca
+        Bolivia
+        Oruro
+        Unknown
+        
+        -18.28388889
+        -67.61416667
+        Look at map on page 38 of Mangan, Trading Places (http://books.google.com/books?id=hTKR3WY7dXoC&amp;pg=PA38&amp;lpg=PA38&amp;dq=colquemarca+carangas&amp;source=bl&amp;ots=_iMLJ3Onjr&amp;sig=9khBK6KDNzgITleJinosu38xoZk&amp;hl=en&amp;sa=X&amp;ei=xCueUazuOenk4AOPm4DwAw&amp;ved=0CFAQ6AEwBA#v=onepage&amp;q=colquemarca%20carangas&amp;f=false), and pin location as close as possible to where it is on that map.  [Note to self, 5/2013: there are plenty of references to the colonial reduccion of Colquemarca in Carangas, but I can't find it  on any index of Bolivian places today.]
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">140</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/49</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Pedro de Mocomoco</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/87/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-87" type="town">
+               <placeName xml:id="name87-1" xml:lang="es" full="yes">San Pedro de Mocomoco</placeName>
+               <placeName xml:id="name87-2" xml:lang="es">San Pedro de</placeName>
+               <placeName xml:id="name87-3" xml:lang="es">Mocomoco</placeName>
+               <placeName xml:id="name87-4" xml:lang="es">sant pedro de mocomoco</placeName>
+               <location type="ancient">
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Larecaja</region>
+                  <settlement type="municipality">San Pedro de Mocomoco</settlement>
+               </location>
+               <placeName type="municipality">Charazane</placeName>
+               <note type="repartimiento">
+        San Pedro de
+        Mocomoco
+        San Pedro de Mocomoco
+        
+        sant pedro de mocomoco
+        Levillier 1921-26 v9
+        145
+        Levillier 1921-26 v9
+        145
+        AGI-L
+        
+        La Plata
+        La Paz
+        Larecaja
+        1
+        
+        Charazane
+        Charaçana
+        Various
+        indios tributarios de diuersos repartimientos
+        
+        
+        
+        
+        Charazane, Mocomoco, Usadca, Carijana: "asimesmo estan rreducidos en estos pueblos otros 300 yndios tributarios de diuersos repartimientos."
+        Mocomoco Municipality
+        Bolivia
+        La Paz
+        Eliodoro Camacho
+        
+        -15.45727778
+        -68.99916667
+        
+        
+        
+    </note>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Eliodoro Camacho</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="municipality">Mocomoco Municipality</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-15.45727778 -68.99916667</geo>
+               </location>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">145</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/87</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

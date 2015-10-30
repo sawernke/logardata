@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Alfonso de Chilcapampa</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/507/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-507" type="town">
+               <placeName xml:id="name507-1" xml:lang="es" full="yes">San Alfonso de Chilcapampa</placeName>
+               <placeName xml:id="name507-2" xml:lang="es">San Alfonso</placeName>
+               <placeName xml:id="name507-3" xml:lang="es">Chilcapampa</placeName>
+               <placeName xml:id="name507-4" xml:lang="es">sant alfonso de chilcapampa</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Asangaro</region>
+                  <settlement type="municipality">San Alfonso de Chilcapampa</settlement>
+               </location>
+               <placeName type="municipality">Angaraes (Baltasar de Hontiveros]</placeName>
+               <note type="repartimiento">
+        San Alfonso
+        Chilcapampa
+        San Alfonso de Chilcapampa
+        
+        sant alfonso de chilcapampa
+        Levillier 1921-26 v9
+        182
+        Levillier 1921-26 v9
+        182
+        AGI-L
+        
+        Lima
+        Guamanga
+        Asangaro
+        1
+        -1
+        Angaraes (Baltasar de Hontiveros]
+        angaraes encomendado en baltasar de Hontiueros
+        
+        
+        
+        
+        
+        
+        Or Veracuz de Chilcapampa (above?)
+        Chilcapampa
+        Peru
+        Huancavelica
+        Churcampa
+        
+        -12.72861111
+        -74.39388889
+        Coordinates from: http://www.postalcodedb.com/09340_Chilcapampa_Peru.html
+        
+        
+    </note>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Churcampa</region>
+                  <region type="department">Huancavelica</region>
+                  <settlement type="municipality">Chilcapampa</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-12.72861111 -74.39388889</geo>
+               </location>
+               <note>
+        San Alfonso
+        Chilcapampa
+        San Alfonso de Chilcapampa
+        
+        sant alfonso de chilcapampa
+        Levillier 1921-26 v9
+        182
+        Levillier 1921-26 v9
+        182
+        AGI-L
+        
+        Lima
+        Guamanga
+        Asangaro
+        1
+        -1
+        Angaraes (Baltasar de Hontiveros]
+        angaraes encomendado en baltasar de Hontiueros
+        
+        
+        
+        
+        
+        
+        Or Veracuz de Chilcapampa (above?)
+        Chilcapampa
+        Peru
+        Huancavelica
+        Churcampa
+        
+        -12.72861111
+        -74.39388889
+        Coordinates from: http://www.postalcodedb.com/09340_Chilcapampa_Peru.html
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">182</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/507</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

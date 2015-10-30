@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Francisco de Mangas</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/609/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-609" type="town">
+               <placeName xml:id="name609-1" xml:lang="es" full="yes">San Francisco de Mangas</placeName>
+               <placeName xml:id="name609-2" xml:lang="es">San Francisco</placeName>
+               <placeName xml:id="name609-3" xml:lang="es">Mangas</placeName>
+               <placeName xml:id="name609-4" xml:lang="es">san Francisco de mangas</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Ambar y Cajatambo</region>
+                  <settlement type="municipality">San Francisco de Mangas</settlement>
+               </location>
+               <placeName type="municipality">Ambar y Cajatambo</placeName>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Bolognesi</region>
+                  <region type="department">Lima</region>
+                  <settlement type="municipality">Mangas</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-10.36666667 -77.16666667</geo>
+               </location>
+               <note>
+        San Francisco
+        Mangas
+        San Francisco de Mangas
+        
+        san Francisco de mangas
+        Levillier 1921-26 v9
+        197
+        Levillier 1921-26 v9
+        197
+        AGI-L
+        
+        Lima
+        Lima
+        Ambar y Cajatambo
+        1
+        
+        Ambar y Cajatambo
+        ambar y Caxatambo
+        
+        
+        
+        
+        
+        
+        
+        Mangas
+        Peru
+        Lima
+        Bolognesi
+        
+        -10.36666667
+        -77.16666667
+        [WHERE DID I GET THESE Coordinates? I can't find Mangas on Google Maps. Also, this location is far from the others. And there is a Manás, in Prov. Cajatambo. But S. Francisco de Mangas appears in the historical record (while "san francisco de manas" does not): see Gose, Invaders as Ancestors, 146ff and Jorge Luis Rojas Runciman, &#x93;Una Autoridad Cuestionada: El Curaca Callan Poma y su Consolidación Política (y cultural) en San Francisco de Mangas (1662)&#x94;, tesis de maestría, PUCP, 2010: http://tesis.pucp.edu.pe/repositorio/bitstream/handle/123456789/1158/ROJAS_RUNCIMAN_JORGE_LUIS_AUTORIDAD_CUESTIONADA.pdf?sequence=1] .
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">197</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/609</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

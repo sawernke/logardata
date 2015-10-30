@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Jarandilla de Chaqui</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/13/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-13" type="town">
+               <placeName xml:id="name13-1" xml:lang="es" full="yes">Jarandilla de Chaqui</placeName>
+               <placeName xml:id="name13-2" xml:lang="es">Jarandilla de</placeName>
+               <placeName xml:id="name13-3" xml:lang="es">Chaqui</placeName>
+               <placeName xml:id="name13-4" xml:lang="es">Xarandilla</placeName>
+               <location type="ancient">
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Porco</region>
+                  <settlement type="municipality">Jarandilla de Chaqui</settlement>
+               </location>
+               <placeName type="municipality">Chaqui</placeName>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Cornelio Saavedra</region>
+                  <region type="department">Potosí</region>
+                  <settlement type="municipality">Chaqui</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-19.58666667 -65.56</geo>
+               </location>
+               <note>
+        Jarandilla de
+        Chaqui
+        Jarandilla de Chaqui
+        
+        Xarandilla
+        Levillier 1921-26 v9
+        137
+        Levillier 1921-26 v21
+        137
+        AGI-L
+        
+        La Plata
+        La Plata
+        Porco
+        1
+        
+        Chaqui
+        Chaqui
+        
+        
+        
+        
+        
+        
+        
+        Chaqui
+        Bolivia
+        Potosí
+        Cornelio Saavedra
+        
+        -19.58666667
+        -65.56
+        Coordinates from: http://www.indexmundi.com/zp/bl/1900.htm Pablo Cruz, "Huacas olvidadas y cerros santos. Apuntes metodológicos sobre la cartografía sagrada en los Andes del sur de Bolivia," Estudios atacameños (2009): "...el actual pueblo de Santiago de Chaquí, antes la reducción de Xarandilla, haya sido creado al pie del cerro San Gerónimo. El nombre dado a la cabecera no es inocente, Jarandilla (Xarandilla) es el pueblo de Extremadura en donde se encuentra la Casa de los Marqueses de Oropeza, el hogar de quien creó la reducción de Chaquí, el mismo virrey Francisco de Toledo."]
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">137</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/13</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

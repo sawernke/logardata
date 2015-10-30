@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">Nuestra Señora de Belén de Tiquipaya</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/16/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-16" type="town">
+               <placeName xml:id="name16-1" xml:lang="es" full="yes">Nuestra Señora de Belén de Tiquipaya</placeName>
+               <placeName xml:id="name16-2" xml:lang="es">Nuestra Señora de Belén de</placeName>
+               <placeName xml:id="name16-3" xml:lang="es">Tiquipaya</placeName>
+               <placeName xml:id="name16-4" xml:lang="es">nuestra señora de beplem de tuquipaya</placeName>
+               <location type="ancient">
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Porco</region>
+                  <settlement type="municipality">Nuestra Señora de Belén de Tiquipaya</settlement>
+               </location>
+               <population source="" type="tributaries">
+                  <desc>340</desc>
+               </population>
+               <placeName type="municipality">Colo,Caquina,Pilachuri</placeName>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">José María Linares</region>
+                  <region type="department">Potosí</region>
+                  <settlement type="municipality">Belén</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-19.86905556 -65.556325</geo>
+               </location>
+               <note>
+        Nuestra Señora de Belén de
+        Tiquipaya
+        Nuestra Señora de Belén de Tiquipaya
+        
+        nuestra señora de beplem de tuquipaya
+        Levillier 1921-26 v9
+        137
+        Levillier 1921-26 v24
+        137
+        AGI-L
+        
+        La Plata
+        La Plata
+        Porco
+        1
+        -1
+        Colo,Caquina,Pilachuri
+        Colo y caquina y pilachuri
+        
+        
+        
+        
+        
+        
+        
+        Belén
+        Bolivia
+        Potosí
+        José María Linares
+        
+        -19.86905556
+        -65.556325
+        [Where did the other 108 families go?]
+        
+        340
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">137</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/16</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Pedro de Challacollo</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/36/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-36" type="town">
+               <placeName xml:id="name36-1" xml:lang="es" full="yes">San Pedro de Challacollo</placeName>
+               <placeName xml:id="name36-2" xml:lang="es">San Pedro de</placeName>
+               <placeName xml:id="name36-3" xml:lang="es">Challacollo</placeName>
+               <placeName xml:id="name36-4" xml:lang="es">San Pedro de Challacollo</placeName>
+               <location type="ancient">
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Paria</region>
+                  <settlement type="municipality">San Pedro de Challacollo</settlement>
+               </location>
+               <placeName type="municipality">Paria</placeName>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Cercado</region>
+                  <region type="department">Oruro</region>
+                  <settlement type="municipality">Challacollo</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-18.06666667 -67.25</geo>
+               </location>
+               <note>
+        San Pedro de
+        Challacollo
+        San Pedro de Challacollo
+        
+        San Pedro de Challacollo
+        Levillier 1921-26 v9
+        139
+        Levillier 1921-26 v44
+        139
+        AGI-L
+        
+        La Plata
+        La Plata
+        Paria
+        1
+        
+        Paria
+        Paria
+        
+        
+        
+        
+        
+        
+        
+        Challacollo
+        Bolivia
+        Oruro
+        Cercado
+        
+        -18.06666667
+        -67.25
+        Coordinates from: http://www.indexmundi.com/zp/bl/1800.htm  - there are 2 locations for Challacollo in Oruro on IM, I chose this one based on the fact that the Coordinates listed for Cercado on Wikipedia didn't match with the other one quite as well, but if this isn't the right one I'll change it
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">139</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/36</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

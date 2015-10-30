@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">La Concepcion [de Mizque?]</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/6/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-6" type="town">
+               <placeName xml:id="name6-1" xml:lang="es" full="yes">La Concepcion [de Mizque?]</placeName>
+               <placeName xml:id="name6-2" xml:lang="es">La Concepcion de</placeName>
+               <placeName xml:id="name6-3" xml:lang="es">[Mizque?]</placeName>
+               <placeName xml:id="name6-4" xml:lang="es">La Concepcion</placeName>
+               <location type="ancient">
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Mizque</region>
+                  <settlement type="municipality">La Concepcion [de Mizque?]</settlement>
+               </location>
+               <population source="">
+                  <desc>1343</desc>
+               </population>
+               <population source="" type="tributaries">
+                  <desc>305</desc>
+               </population>
+               <placeName type="municipality">Mizque</placeName>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Mizque</region>
+                  <region type="department">Cochabamba</region>
+                  <settlement type="municipality">Mizque</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-17.93199167 -65.33727778</geo>
+               </location>
+               <note>
+        La Concepcion de
+        [Mizque?]
+        La Concepcion [de Mizque?]
+        
+        La Concepcion
+        Levillier 1921-26 v9
+        135
+        Levillier 1921-26 v14
+        135
+        AGI-L
+        
+        La Plata
+        La Plata
+        Mizque
+        1
+        -1
+        Mizque
+        Mizque
+        
+        
+        
+        
+        
+        
+        
+        Mizque
+        Bolivia
+        Cochabamba
+        Mizque
+        
+        -17.93199167
+        -65.33727778
+        But the town of Mizque was a Spanish villa, "Salinas del Rio Pisuerga," according to Gade, Nature and Culture, 76. "La Concepcion" may have been different.
+        1343
+        305
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">135</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/6</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

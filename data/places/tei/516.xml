@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">[Nuestra Señora de la Concepcion de] Lapa</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/516/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-516" type="town">
+               <placeName xml:id="name516-1" xml:lang="es" full="yes">[Nuestra Señora de la Concepcion de] Lapa</placeName>
+               <placeName xml:id="name516-2" xml:lang="es">[Nuestra Señora de la Concepcion]</placeName>
+               <placeName xml:id="name516-3" xml:lang="es">Lapa</placeName>
+               <placeName xml:id="name516-4" xml:lang="es">la concepcion de lapa</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Jauja</region>
+                  <settlement type="municipality">[Nuestra Señora de la Concepcion de] Lapa</settlement>
+               </location>
+               <placeName type="municipality">Huringuanca</placeName>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Concepción</region>
+                  <region type="department">Junín</region>
+                  <settlement type="municipality">Concepcion</settlement>
+               </location>
+               <note type="modern-location">Capital</note>
+               <location type="gps">
+                  <geo>-11.92277778 -75.29944444</geo>
+               </location>
+               <note>
+        [Nuestra Señora de la Concepcion]
+        Lapa
+        [Nuestra Señora de la Concepcion de] Lapa
+        
+        la concepcion de lapa
+        Levillier 1921-26 v9
+        190
+        Levillier 1921-26 v9
+        190
+        AGI-L
+        
+        Lima
+        Lima
+        Jauja
+        1
+        -1
+        Huringuanca
+        Huringuanca
+        
+        
+        
+        
+        
+        
+        
+        Concepcion
+        Peru
+        Junín
+        Concepción
+        Capital
+        -11.92277778
+        -75.29944444
+        Wikipedia: "Fue fundada por los conquistadores españoles el 8 de diciembre de 1537.1 con el nombre de Concepción de Lapa. "
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">190</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/516</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

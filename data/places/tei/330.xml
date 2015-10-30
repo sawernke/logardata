@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:syriaca="http://syriaca.org"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+     xmlns:functx="http://www.functx.com"
+     xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" xml:lang="en">San Martin de Uchabamba</title>
+            <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+            <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <principal>Steven A. Wernke</principal>
+            <principal>Jeremy Mumford</principal>
+            <editor role="general">Jeremy Mumford</editor>
+            <editor role="general">Steven A. Wernke</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+            <idno type="URI">http://logarandes.org/place/330/tei</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                  <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+               </licence>
+            </availability>
+            <date>2015-10-09-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
+                 n="1.0"
+                 when="2015-10-09-04:00">CREATED: place record</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-330" type="town">
+               <placeName xml:id="name330-1" xml:lang="es" full="yes">San Martin de Uchabamba</placeName>
+               <placeName xml:id="name330-2" xml:lang="es">San Martin</placeName>
+               <placeName xml:id="name330-3" xml:lang="es">Uchubamba</placeName>
+               <placeName xml:id="name330-4" xml:lang="es">san martin de Vchabamba</placeName>
+               <location type="ancient">
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Andaguaylas</region>
+                  <settlement type="municipality">San Martin de Uchabamba</settlement>
+               </location>
+               <placeName type="municipality">Cayara</placeName>
+               <location type="gps">
+                  <geo>-15.0175 -73.28861111</geo>
+               </location>
+               <note>
+        San Martin
+        Uchubamba
+        San Martin de Uchabamba
+        
+        san martin de Vchabamba
+        Levillier 1921-26 v9
+        169
+        Levillier 1921-26 v9
+        169
+        AGI-L
+        
+        Lima
+        Cuzco
+        Andaguaylas
+        1
+        
+        Cayara
+        cayara
+        
+        
+        
+        
+        
+        
+        
+        Uchubamba
+        Peru
+        Ayacucho
+        
+        
+        -15.0175
+        -73.28861111
+        this is weird, I can't find anything for this location outside of GE, and when I zoom in on where GE claims Uchubamba is there's no sign of a town/populated location...
+        
+        
+    </note>
+               <bibl>
+                  <title>Gobernantes del Perú, Volume IX</title>
+                  <author>Levilier 1925</author>
+                  <citedRange unit="pp">169</citedRange>
+                  <publisher>Imprenta de Juan Pueyo</publisher>
+                  <pubPlace>Madrid</pubPlace>
+               </bibl>
+               <msDesc>
+                  <msIdentifier>AGI-L</msIdentifier>
+                  <msPart/>
+               </msDesc>
+               <idno type="URI">http://logarandes.org/place/330</idno>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>
