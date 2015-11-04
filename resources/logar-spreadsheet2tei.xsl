@@ -104,7 +104,7 @@
                                         <region type="audiencia"><xsl:value-of select="Audiencia"/></region>
                                         <region type="ciudad"><xsl:value-of select="Ciudad"/></region>
                                         <region type="corregimiento"><xsl:value-of select="Corregimiento"/></region>                                        
-                                        <settlement type="municipality"><xsl:value-of select="Name_reduccion_standardized_both_parts"/></settlement>
+                                        <settlement type="pueblo"><xsl:value-of select="Name_reduccion_standardized_both_parts"/></settlement>
                                     </location>
                                     
                                     <!-- or http://quod.lib.umich.edu/cgi/t/tei/tei-idx?type=HTML&rgn=DIV2&byte=1813646
@@ -138,7 +138,7 @@
                                     <Repart4_name_as_given></Repart4_name_as_given>
                                     -->
                                     <xsl:for-each select="Repart1_name_standardized">
-                                        <placeName type="municipality"><xsl:value-of select="."/></placeName>
+                                        <placeName type="pueblo"><xsl:value-of select="."/></placeName>
                                     </xsl:for-each>
                                     <!-- Should this include @source, or should the whole record place include the @source? -->
                                     <xsl:if test="Repart_notes != ''">
@@ -158,7 +158,7 @@
                                                 <region type="department"><xsl:value-of select="Mod_dept"/></region>
                                             </xsl:if>
                                             <xsl:if test="Mod_settlmt != ''">
-                                                <settlement type="municipality"><xsl:value-of select="Mod_settlmt"/></settlement>
+                                                <settlement type="pueblo"><xsl:value-of select="Mod_settlmt"/></settlement>
                                             </xsl:if>
                                         </location>
                                     </xsl:if>
