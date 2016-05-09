@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Andres de Acopia</title>
+            <title level="a" xml:lang="es">Oropesa de Quillacas</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-439" type="town">
-               <placeName xml:id="name439-1" xml:lang="es" full="yes">San Andres de Acopia</placeName>
-               <placeName xml:id="name439-2" xml:lang="es">San Andres</placeName>
-               <placeName xml:id="name439-3" xml:lang="es">Acopia</placeName>
-               <placeName xml:id="name439-4" xml:lang="es">sant andres de acopia</placeName>
+            <place xml:id="place-439" source="bib439-1">
+               <placeName xml:id="name439-1" full="yes" type="standardized">Oropesa de Quillacas</placeName>
+               <placeName xml:id="name439-2" type="standardized-Spanish">Oropesa de</placeName>
+               <placeName xml:id="name439-3" type="standardized-Andean">Quillacas</placeName>
+               <placeName xml:id="name439-4" type="verbatim">Oropesa de Quillacas</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">San Andres de Acopia</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Paria</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Quillacas y Asanaques</placeName>
+                     <placeName type="verbatim">quillacas y asanaques</placeName>
+                  </region>
+                  <settlement type="pueblo">Oropesa de Quillacas</settlement>
                </location>
-               <placeName type="municipality">Soras</placeName>
-               <note>
-        San Andres
-        Acopia
-        San Andres de Acopia
-        
-        sant andres de acopia
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        0
-        
-        Soras
-        soras
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find a location for whole name - only "Acopia, Peru" I can find is in Cusco Dept., Prov. Acomayo
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Cochabamba</region>
+                  <region type="department">Cochabamba</region>
+                  <settlement type="pueblo">Quillacas</settlement>
+                  <note type="modern-location">Not a capital</note>
+               </location>
+               <location type="gps">
+                  <geo>-19.23238561 -66.94198136</geo>
+               </location>
+               <location>
+                  <geo>-19 13 56.58960 -066 56 31.13160</geo>
+               </location>
+               <bibl xml:id="bib439-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">139</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib439-2">
+                  <title>Levillier 1921-26 v52</title>
+                  <citedRange unit="pp">139</citedRange>
+               </bibl>
+               <bibl xml:id="bib439-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/439</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">I don't know for certain that AGI-L's "Oropesa de Quillacas" is modern "Santuario de Quillacas," but it seems likely.</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/12/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Miguel de Guamanmarca</title>
+            <title level="a" xml:lang="es">Almagro de Tomata</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,46 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-488" type="town">
-               <placeName xml:id="name488-1" xml:lang="es" full="yes">San Miguel de Guamanmarca</placeName>
-               <placeName xml:id="name488-2" xml:lang="es">San Miguel</placeName>
-               <placeName xml:id="name488-3" xml:lang="es">Guamanmarca</placeName>
-               <placeName xml:id="name488-4" xml:lang="es">san Miguel de Guamanmarca</placeName>
+            <place xml:id="place-488" source="bib488-1">
+               <placeName xml:id="name488-1" full="yes" type="standardized">Almagro de Tomata</placeName>
+               <placeName xml:id="name488-2" type="standardized-Spanish">Almagro de</placeName>
+               <placeName xml:id="name488-3" type="standardized-Andean">Tomata</placeName>
+               <placeName xml:id="name488-4" type="verbatim">almagro de tomata</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Hananchilques</region>
-                  <settlement type="municipality">San Miguel de Guamanmarca</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Chayanta</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Chayanta</placeName>
+                     <placeName type="verbatim">chayanta</placeName>
+                  </region>
+                  <settlement type="pueblo">Almagro de Tomata</settlement>
                </location>
-               <placeName type="municipality">Tanquiguas</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Unknown</region>
-                  <region type="department">Ayacucho</region>
-                  <settlement type="municipality">Huaman Marca</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">not sure</region>
+                  <region type="department">Potosí</region>
+                  <settlement type="pueblo">Tomatas</settlement>
                </location>
-               <location type="gps">
-                  <geo>-13.78472222 -73.94777778</geo>
-               </location>
-               <note>
-        San Miguel
-        Guamanmarca
-        San Miguel de Guamanmarca
-        
-        san Miguel de Guamanmarca
-        Levillier 1921-26 v9
-        181
-        Levillier 1921-26 v9
-        181
-        AGI-L
-        
-        Lima
-        Guamanga
-        Hananchilques
-        1
-        
-        Tanquiguas
-        tanquiguas
-        
-        
-        
-        
-        
-        
-        
-        Huaman Marca
-        Peru
-        Ayacucho
-        Unknown
-        
-        -13.78472222
-        -73.94777778
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-525706&amp;fid=4548&amp;c=peru   (also found location with same name in Huancavelica but I'm assuming the Ayacucho one is correct as Huambalpa is in Ayacucho)
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">181</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <bibl xml:id="bib488-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">138</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib488-2">
+                  <title>Levillier 1921-26 v35</title>
+                  <citedRange unit="pp">138</citedRange>
+               </bibl>
+               <bibl xml:id="bib488-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/488</idno>
+               <note type="administrative" subtype="Moved">0</note>
             </place>
          </listPlace>
       </body>

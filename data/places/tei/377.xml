@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">la Puente del Arzobispo</title>
+            <title level="a" xml:lang="es">Villacastín de Coporaque</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,76 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-377" type="town">
-               <placeName xml:id="name377-1" xml:lang="es" full="yes">la Puente del Arzobispo</placeName>
-               <placeName xml:id="name377-2" xml:lang="es">la Puente del Arzobispo</placeName>
-               <placeName xml:id="name377-3" xml:lang="es"/>
-               <placeName xml:id="name377-4" xml:lang="es">la Puente del arzobispo</placeName>
+            <place xml:id="place-377" source="bib377-1">
+               <placeName xml:id="name377-1" full="yes" type="standardized">Villacastín de Coporaque</placeName>
+               <placeName xml:id="name377-2" type="standardized-Spanish">Villacastín de</placeName>
+               <placeName xml:id="name377-3" type="standardized-Andean">Coporaque</placeName>
+               <placeName xml:id="name377-4" type="verbatim">Villacastin de coporaque</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Arequipa</region>
                   <region type="corregimiento">Collaguas</region>
-                  <settlement type="municipality">la Puente del Arzobispo</settlement>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yanquecollagua</placeName>
+                     <placeName type="verbatim">yanquecollagua</placeName>
+                  </region>
+                  <settlement type="pueblo">Villacastín de Coporaque</settlement>
                </location>
-               <placeName type="municipality">[Cabana]</placeName>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Caylloma</region>
+                  <region type="department">Arequipa</region>
+                  <settlement type="pueblo">Coporaque</settlement>
+               </location>
                <location type="gps">
-                  <geo>-16.62277778 -72.70944444</geo>
+                  <geo>-15.62704858 -71.64561598</geo>
                </location>
-               <note>
-        la Puente del Arzobispo
-        
-        la Puente del Arzobispo
-        
-        la Puente del arzobispo
-        Levillier 1921-26 v9
-        174
-        Levillier 1921-26 v9
-        174
-        AGI-L
-        
-        Lima
-        Arequipa
-        Collaguas
-        0
-        
-        [Cabana]
-        camana
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        -16.62277778
-        -72.70944444
-        http://es.wikipedia.org/wiki/Valle_del_Colca: "desaparecen Las Brocas, Oviedo y la Puente del Arzobispo que quizás sean los casos de Pinchollo y Huambo"
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
+               <location>
+                  <geo>-15 37 37.37640 -071 38 44.21760</geo>
+               </location>
+               <bibl xml:id="bib377-1">
+                  <title>Levillier 1921-26 v9</title>
                   <citedRange unit="pp">174</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib377-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">174</citedRange>
+               </bibl>
+               <bibl xml:id="bib377-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/377</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/23/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

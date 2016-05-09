@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santiago del Valle de Moxcari [Mascare,Moscari]</title>
+            <title level="a" xml:lang="es">San Cristoval de Colcamal</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-26" type="town">
-               <placeName xml:id="name26-1" xml:lang="es" full="yes">Santiago del Valle de Moxcari [Mascare,Moscari]</placeName>
-               <placeName xml:id="name26-2" xml:lang="es">Santiago del Valle de</placeName>
-               <placeName xml:id="name26-3" xml:lang="es">Moxcari [Mascare,Moscari]</placeName>
-               <placeName xml:id="name26-4" xml:lang="es">sanctiago del valle de moxcari</placeName>
+            <place xml:id="place-26" source="bib26-1">
+               <placeName xml:id="name26-1" full="yes" type="standardized">San Cristoval de Colcamal</placeName>
+               <placeName xml:id="name26-2" type="standardized-Spanish">San Cristoval de</placeName>
+               <placeName xml:id="name26-3" type="standardized-Andean">Colcamal</placeName>
+               <placeName xml:id="name26-4" type="verbatim">san cristoual de colcamal</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Chayanta</region>
-                  <settlement type="municipality">Santiago del Valle de Moxcari [Mascare,Moscari]</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Luya y Chillao</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Timal y Allaucan</placeName>
+                     <placeName type="verbatim">timal y allaucan</placeName>
+                  </region>
+                  <settlement type="pueblo">San Cristoval de Colcamal</settlement>
                </location>
-               <placeName type="municipality">Chayanta</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Chacras</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Moscari</settlement>
+                  <country>Peru</country>
+                  <region type="province">Luya</region>
+                  <region type="department">Amazonas</region>
+                  <settlement type="pueblo">Colcamar</settlement>
+                  <note type="modern-location">Not a capital</note>
                </location>
                <location type="gps">
-                  <geo>-18.31666667 -66.03333333</geo>
+                  <geo>-6.299291026 -77.97286859</geo>
                </location>
-               <note>
-        Santiago del Valle de
-        Moxcari [Mascare,Moscari]
-        Santiago del Valle de Moxcari [Mascare,Moscari]
-        
-        sanctiago del valle de moxcari
-        Levillier 1921-26 v9
-        138
-        Levillier 1921-26 v34
-        138
-        AGI-L
-        
-        La Plata
-        La Plata
-        Chayanta
-        1
-        -1
-        Chayanta
-        chayanta
-        
-        
-        
-        
-        
-        
-        
-        Moscari
-        Bolivia
-        Potosí
-        Chacras
-        
-        -18.31666667
-        -66.03333333
-        Moscari, Dept. Potosí, Prov. Charcas, municipio San Pedro de Buenavista, canton Moscari [http://en.wikipedia.org/wiki/Provinces_of_Bolivia] [Is this, like San Marcos de Miraflores for Macha, a warm-valley colony of Chayanta?]
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">138</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-06 17 57.44760 -077 58 22.32840</geo>
+               </location>
+               <bibl xml:id="bib26-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">218</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib26-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">218</citedRange>
+               </bibl>
+               <bibl xml:id="bib26-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/26</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

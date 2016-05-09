@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santiago de Visibamba</title>
+            <title level="a" xml:lang="es">Santa Ana de Guaycaguacho</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-334" type="town">
-               <placeName xml:id="name334-1" xml:lang="es" full="yes">Santiago de Visibamba</placeName>
-               <placeName xml:id="name334-2" xml:lang="es">Santiago</placeName>
-               <placeName xml:id="name334-3" xml:lang="es">Visibamba</placeName>
-               <placeName xml:id="name334-4" xml:lang="es">santiago de Visibamba</placeName>
+            <place xml:id="place-334" source="bib334-1">
+               <placeName xml:id="name334-1" full="yes" type="standardized">Santa Ana de Guaycaguacho</placeName>
+               <placeName xml:id="name334-2" type="standardized-Spanish">Santa Ana de</placeName>
+               <placeName xml:id="name334-3" type="standardized-Andean">Guaycaguacho</placeName>
+               <placeName xml:id="name334-4" type="verbatim">santa ana de Guaycaguacho</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Andaguaylas</region>
-                  <settlement type="municipality">Santiago de Visibamba</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Lucanas/Andamarcas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Lucanas Andamarcas</placeName>
+                     <placeName type="verbatim">Lucanas andamarcas</placeName>
+                  </region>
+                  <settlement type="pueblo">Santa Ana de Guaycaguacho</settlement>
                </location>
-               <placeName type="municipality">Ongoy</placeName>
-               <note>
-        Santiago
-        Visibamba
-        Santiago de Visibamba
-        
-        santiago de Visibamba
-        Levillier 1921-26 v9
-        169
-        Levillier 1921-26 v9
-        169
-        AGI-L
-        
-        Lima
-        Cuzco
-        Andaguaylas
-        0
-        
-        Ongoy
-        ongoi
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Only 1 result for "Visibamba Peru" Google search and it's the same historical book that a lot of the other results have been...
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">169</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Lucanas</region>
+                  <region type="department">Ayacucho</region>
+                  <settlement type="pueblo">Santa Ana de Huaycahuacho</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-14.74705436 -74.12115088</geo>
+               </location>
+               <location>
+                  <geo>-14 44 49.39440 -074 07 16.14360</geo>
+               </location>
+               <note>Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-543503&amp;fid=4584&amp;c=peru</note>
+               <bibl xml:id="bib334-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib334-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
+               </bibl>
+               <bibl xml:id="bib334-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/334</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">And Digital Peru</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/24/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

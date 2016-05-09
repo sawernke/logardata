@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Conbaya</title>
+            <title level="a" xml:lang="es">San Luis de Chuquibamba</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,59 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-83" type="town">
-               <placeName xml:id="name83-1" xml:lang="es" full="yes">Conbaya</placeName>
-               <placeName xml:id="name83-2" xml:lang="es"/>
-               <placeName xml:id="name83-3" xml:lang="es">Conbaya</placeName>
-               <placeName xml:id="name83-4" xml:lang="es">conbaya</placeName>
+            <place xml:id="place-83" source="bib83-1">
+               <placeName xml:id="name83-1" full="yes" type="standardized">San Luis de Chuquibamba</placeName>
+               <placeName xml:id="name83-2" type="standardized-Spanish">San Luis de</placeName>
+               <placeName xml:id="name83-3" type="standardized-Andean">Chuquibamba</placeName>
+               <placeName xml:id="name83-4" type="verbatim">sant Luis de chuquibamba</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Larecaja</region>
-                  <settlement type="municipality">Conbaya</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Conchucos</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Ychoguari</placeName>
+                     <placeName type="verbatim">ychoguari</placeName>
+                  </region>
+                  <settlement type="pueblo">San Luis de Chuquibamba</settlement>
                </location>
-               <placeName type="municipality">Various</placeName>
-               <note type="repartimiento">
-        
-        Conbaya
-        Conbaya
-        
-        conbaya
-        Levillier 1921-26 v9
-        144
-        Levillier 1921-26 v9
-        144
-        AGI-L
-        
-        La Plata
-        La Paz
-        Larecaja
-        0
-        
-        Various
-        yndios tributarios de diferentes repartimientos que acuden con sus tributos a sus cabeceras
-        
-        
-        
-        
-        
-        
-        En este valle de larecaxa ay otros tres pueblos de se llaman trauaya y hilauaya y conbaya en todos ay 1200 yndios tributarios de diferentes repartimientos que acuden con sus tributos a sus cabeceras.
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">144</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Marañón</region>
+                  <region type="department">Huánuco</region>
+                  <settlement type="pueblo">Chuquibamba</settlement>
+                  <note type="modern-location">Not capital of a district</note>
+               </location>
+               <location type="gps">
+                  <geo>-9.459054176 -76.78867182</geo>
+               </location>
+               <location>
+                  <geo>-09 27 32.59440 -076 47 19.21920</geo>
+               </location>
+               <note>MAYBE - BUT FAR FROM OTHER CONCHUCOS</note>
+               <bibl xml:id="bib83-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">200</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib83-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">200</citedRange>
+               </bibl>
+               <bibl xml:id="bib83-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/83</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">And digital peru.</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/17/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

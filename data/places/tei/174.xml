@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de Languisupa</title>
+            <title level="a" xml:lang="es">not identified [Santísimo Salvador de Pachacámac?]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,65 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-174" type="town">
-               <placeName xml:id="name174-1" xml:lang="es" full="yes">Nuestra Señora de Languisupa</placeName>
-               <placeName xml:id="name174-2" xml:lang="es">Nuestra Señora de</placeName>
-               <placeName xml:id="name174-3" xml:lang="es">Languisupa</placeName>
-               <placeName xml:id="name174-4" xml:lang="es">villa de nuestra señora de languisupa</placeName>
+            <place xml:id="place-174" source="bib174-1">
+               <placeName xml:id="name174-1" full="yes" type="standardized">not identified [Santísimo Salvador de Pachacámac?]</placeName>
+               <placeName xml:id="name174-3" type="standardized-Andean">[Pachacámac]</placeName>
+               <placeName xml:id="name174-4" type="verbatim">vn pueblo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canas</region>
-                  <settlement type="municipality">Nuestra Señora de Languisupa</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Cañete</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Pachacama</placeName>
+                     <placeName type="verbatim">Pachacama</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Caringas</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Manchay</placeName>
+                     <placeName type="verbatim">manchai</placeName>
+                  </region>
+                  <settlement type="pueblo">not identified [Santísimo Salvador de Pachacámac?]</settlement>
                </location>
-               <placeName type="municipality">Languisupa</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Canas</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Langui</settlement>
+                  <region type="province">Lima</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">Pachacamac</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.11888889 -71.22805556</geo>
+                  <geo>-12.22990751 -76.85938235</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">156</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-12 13 47.66880 -076 51 33.77520</geo>
+               </location>
+               <note>http://es.wikipedia.org/wiki/Distrito_de_Pachac%C3%A1mac: "...en 1573 se congregó a los indios Caringas, Manchais y Pachacámac para reducirlos en el pueblo “Santísimo Salvador de Pachacámac” hoy actual pueblo."</note>
+               <bibl xml:id="bib174-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">195</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib174-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">195</citedRange>
+               </bibl>
+               <bibl xml:id="bib174-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/174</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">And goolge maps</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/24/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

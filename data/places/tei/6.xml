@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">La Concepcion [de Mizque?]</title>
+            <title level="a" xml:lang="es">San Lucas de Colan</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,88 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-6" type="town">
-               <placeName xml:id="name6-1" xml:lang="es" full="yes">La Concepcion [de Mizque?]</placeName>
-               <placeName xml:id="name6-2" xml:lang="es">La Concepcion de</placeName>
-               <placeName xml:id="name6-3" xml:lang="es">[Mizque?]</placeName>
-               <placeName xml:id="name6-4" xml:lang="es">La Concepcion</placeName>
+            <place xml:id="place-6" source="bib6-1">
+               <placeName xml:id="name6-1" full="yes" type="standardized">San Lucas de Colan</placeName>
+               <placeName xml:id="name6-2" type="standardized-Spanish">San Lucas de</placeName>
+               <placeName xml:id="name6-3" type="standardized-Andean">Colan</placeName>
+               <placeName xml:id="name6-4" type="verbatim">san Lucas de colan</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Mizque</region>
-                  <settlement type="municipality">La Concepcion [de Mizque?]</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Piura</region>
+                  <region type="corregimiento">Piura</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various</placeName>
+                     <placeName type="verbatim">encomendados en diferentes personas</placeName>
+                  </region>
+                  <settlement type="pueblo">San Lucas de Colan</settlement>
                </location>
-               <population source="">
-                  <desc>1343</desc>
-               </population>
-               <population source="" type="tributaries">
-                  <desc>305</desc>
-               </population>
-               <placeName type="municipality">Mizque</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Mizque</region>
-                  <region type="department">Cochabamba</region>
-                  <settlement type="municipality">Mizque</settlement>
+                  <country>Peru</country>
+                  <region type="province">Paita</region>
+                  <region type="department">Piura</region>
+                  <settlement type="pueblo">Colan</settlement>
                </location>
                <location type="gps">
-                  <geo>-17.93199167 -65.33727778</geo>
+                  <geo>-5.007360004 -81.05822892</geo>
                </location>
-               <note>
-        La Concepcion de
-        [Mizque?]
-        La Concepcion [de Mizque?]
-        
-        La Concepcion
-        Levillier 1921-26 v9
-        135
-        Levillier 1921-26 v14
-        135
-        AGI-L
-        
-        La Plata
-        La Plata
-        Mizque
-        1
-        -1
-        Mizque
-        Mizque
-        
-        
-        
-        
-        
-        
-        
-        Mizque
-        Bolivia
-        Cochabamba
-        Mizque
-        
-        -17.93199167
-        -65.33727778
-        But the town of Mizque was a Spanish villa, "Salinas del Rio Pisuerga," according to Gade, Nature and Culture, 76. "La Concepcion" may have been different.
-        1343
-        305
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">135</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-05 00 26.49600 -081 03 29.62440</geo>
+               </location>
+               <bibl xml:id="bib6-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">211</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib6-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">211</citedRange>
+               </bibl>
+               <bibl xml:id="bib6-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/6</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">and Google Maps--placed in front of Iglesia San Lucas</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/3/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

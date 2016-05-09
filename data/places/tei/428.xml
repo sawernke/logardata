@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Colcabamba</title>
+            <title level="a" xml:lang="es">Inquisivi</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,51 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-428" type="town">
-               <placeName xml:id="name428-1" xml:lang="es" full="yes">San Juan de Colcabamba</placeName>
-               <placeName xml:id="name428-2" xml:lang="es">San Juan</placeName>
-               <placeName xml:id="name428-3" xml:lang="es">Colcabamba</placeName>
-               <placeName xml:id="name428-4" xml:lang="es">san joan de colcapampa</placeName>
+            <place xml:id="place-428" source="bib428-1">
+               <placeName xml:id="name428-1" full="yes" type="standardized">Inquisivi</placeName>
+               <placeName xml:id="name428-3" type="standardized-Andean">Inquisivi</placeName>
+               <placeName xml:id="name428-4" type="verbatim">ynquisuie</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">San Juan de Colcabamba</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Sicasica / Caracollo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various mitimaes</placeName>
+                     <placeName type="verbatim">yndios mitimaes de diuersos repartimientos</placeName>
+                  </region>
+                  <settlement type="pueblo">Inquisivi</settlement>
+                  <note type="repartimiento">"Tiene asimismo el pueblo de san joan de cauari de otros yndios mitimaes y el pueblo de capinata y el pueblo de ynquisiue y el pueblo de collana y cocone todos los yndios mitimaes de diuersos repartimientos e todos son poblezuelos pequeños."</note>
                </location>
-               <placeName type="municipality">Lucanas Andamarcas</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Tayacaja</region>
-                  <region type="department">Huancavelica</region>
-                  <settlement type="municipality">Colcabamba District</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Inquisivi</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Inquisivi</settlement>
                </location>
-               <location type="gps">
-                  <geo>-12.43111111 -74.24638889</geo>
-               </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <bibl xml:id="bib428-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib428-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
+               </bibl>
+               <bibl xml:id="bib428-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/428</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Google Earth doesn't have good resolution here.</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

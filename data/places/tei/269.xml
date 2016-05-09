@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Anocalla</title>
+            <title level="a" xml:lang="es">Totorguaila</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-269" type="town">
-               <placeName xml:id="name269-1" xml:lang="es" full="yes">Anocalla</placeName>
-               <placeName xml:id="name269-2" xml:lang="es"/>
-               <placeName xml:id="name269-3" xml:lang="es">Anocalla</placeName>
-               <placeName xml:id="name269-4" xml:lang="es">anocalla</placeName>
+            <place xml:id="place-269" source="bib269-1">
+               <placeName xml:id="name269-1" full="yes" type="standardized">Totorguaila</placeName>
+               <placeName xml:id="name269-3" type="standardized-Andean">Totorguaila</placeName>
+               <placeName xml:id="name269-4" type="verbatim">dos pueblos llamados totorguaila</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
                   <region type="corregimiento">Cotabambas</region>
-                  <settlement type="municipality">Anocalla</settlement>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yanaguaras Malmanyas</placeName>
+                     <placeName type="verbatim">yanaguaras malmanyas</placeName>
+                  </region>
+                  <settlement type="pueblo">Totorguaila</settlement>
                </location>
-               <placeName type="municipality">Guancallo y Chararo</placeName>
                <location type="modern">
                   <country>Peru</country>
                   <region type="province">Cotabambas</region>
                   <region type="department">Apurímac</region>
-                  <settlement type="municipality">Anocalla</settlement>
+                  <settlement type="pueblo">Totorhuaylas</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.11666667 -72.26388889</geo>
+                  <geo>-13.94737826 -72.12807897</geo>
                </location>
-               <note>
-        
-        Anocalla
-        Anocalla
-        
-        anocalla
-        Levillier 1921-26 v9
-        165
-        Levillier 1921-26 v9
-        165
-        AGI-L
-        
-        Lima
-        Cuzco
-        Cotabambas
-        1
-        
-        Guancallo y Chararo
-        guancallo y chararo
-        
-        
-        
-        
-        
-        
-        
-        Anocalla
-        Peru
-        Apurímac
-        Cotabambas
-        
-        -13.11666667
-        -72.26388889
-        Coordinates from: http://mapcarta.com/20240974
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">165</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-13 56 50.56080 -072 07 41.08440</geo>
+               </location>
+               <bibl xml:id="bib269-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">164</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib269-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">164</citedRange>
+               </bibl>
+               <bibl xml:id="bib269-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/269</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">And digital peru. Minor name variation (Totorhuaylas)</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/2/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

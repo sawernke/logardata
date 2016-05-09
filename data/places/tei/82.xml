@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Hilabaya</title>
+            <title level="a" xml:lang="es">Cazma la Alta y Moche</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,114 +51,51 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-82" type="town">
-               <placeName xml:id="name82-1" xml:lang="es" full="yes">Hilabaya</placeName>
-               <placeName xml:id="name82-2" xml:lang="es"/>
-               <placeName xml:id="name82-3" xml:lang="es">Hilabaya</placeName>
-               <placeName xml:id="name82-4" xml:lang="es">hilauaya</placeName>
+            <place xml:id="place-82" source="bib82-1">
+               <placeName xml:id="name82-1" full="yes" type="standardized">Cazma la Alta y Moche</placeName>
+               <placeName xml:id="name82-3" type="standardized-Andean">Moche</placeName>
+               <placeName xml:id="name82-4" type="verbatim">vn pueblo del mesmo nombre</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Larecaja</region>
-                  <settlement type="municipality">Hilabaya</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">V. de Santa</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Cazma la Alta y Moche</placeName>
+                     <placeName type="verbatim">cazma la alta e moche</placeName>
+                  </region>
+                  <settlement type="pueblo">Cazma la Alta y Moche</settlement>
                </location>
-               <placeName type="municipality">Various</placeName>
-               <note type="repartimiento">
-        
-        Hilabaya
-        Hilabaya
-        
-        hilauaya
-        Levillier 1921-26 v9
-        144
-        Levillier 1921-26 v9
-        144
-        AGI-L
-        
-        La Plata
-        La Paz
-        Larecaja
-        1
-        
-        Various
-        yndios tributarios de diferentes repartimientos que acuden con sus tributos a sus cabeceras
-        
-        
-        
-        
-        
-        
-        En este valle de larecaxa ay otros tres pueblos de se llaman trauaya y hilauaya y conbaya en todos ay 1200 yndios tributarios de diferentes repartimientos que acuden con sus tributos a sus cabeceras.
-        Ilabaya
-        Bolivia
-        La Paz
-        
-        Province unknown
-        -15.81666667
-        -68.66666667
-        Coordinates from: http://www.gomapper.com/travel/where-is/ilabaya-la-paz-bolivia-0-located.html: "Hilabaya o Ilavaya es un pueblo próximo a Sorata". http://www.familysearch.org/learn/wiki/en/La_Paz:Larecaja: "Villa Guachalla Canton (previously Ilabaya)". Pop of this reduccion is more than these 34 families. See AGNA 266r.
-        
-        
-    </note>
-               <note type="modern-location">Province unknown</note>
                <location type="gps">
-                  <geo>-15.81666667 -68.66666667</geo>
+                  <geo>-9.50260685 -78.25864067</geo>
                </location>
-               <note>
-        
-        Hilabaya
-        Hilabaya
-        
-        hilauaya
-        Levillier 1921-26 v9
-        144
-        Levillier 1921-26 v9
-        144
-        AGI-L
-        
-        La Plata
-        La Paz
-        Larecaja
-        1
-        
-        Various
-        yndios tributarios de diferentes repartimientos que acuden con sus tributos a sus cabeceras
-        
-        
-        
-        
-        
-        
-        En este valle de larecaxa ay otros tres pueblos de se llaman trauaya y hilauaya y conbaya en todos ay 1200 yndios tributarios de diferentes repartimientos que acuden con sus tributos a sus cabeceras.
-        Ilabaya
-        Bolivia
-        La Paz
-        
-        Province unknown
-        -15.81666667
-        -68.66666667
-        Coordinates from: http://www.gomapper.com/travel/where-is/ilabaya-la-paz-bolivia-0-located.html: "Hilabaya o Ilavaya es un pueblo próximo a Sorata". http://www.familysearch.org/learn/wiki/en/La_Paz:Larecaja: "Villa Guachalla Canton (previously Ilabaya)". Pop of this reduccion is more than these 34 families. See AGNA 266r.
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">144</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-09 30 09.38520 -078 15 31.10760</geo>
+               </location>
+               <note>Casma is the capital of Prov. Casma... Should I pin that? And if so, what should I do for Casma la Baja...?</note>
+               <bibl xml:id="bib82-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">206</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib82-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">206</citedRange>
+               </bibl>
+               <bibl xml:id="bib82-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/82</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">https://sites.google.com/site/casmaalmundo/historia</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/29/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

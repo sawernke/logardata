@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Quinuati</title>
+            <title level="a" xml:lang="es">San Alfonso de Chilcapampa</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,59 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-193" type="town">
-               <placeName xml:id="name193-1" xml:lang="es" full="yes">Quinuati</placeName>
-               <placeName xml:id="name193-2" xml:lang="es"/>
-               <placeName xml:id="name193-3" xml:lang="es">Quinuati</placeName>
-               <placeName xml:id="name193-4" xml:lang="es">quinuati</placeName>
+            <place xml:id="place-193" source="bib193-1">
+               <placeName xml:id="name193-1" full="yes" type="standardized">San Alfonso de Chilcapampa</placeName>
+               <placeName xml:id="name193-2" type="standardized-Spanish">San Alfonso de</placeName>
+               <placeName xml:id="name193-3" type="standardized-Andean">Chilcapampa</placeName>
+               <placeName xml:id="name193-4" type="verbatim">sant alfonso de chilcapampa</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Condesuyu</region>
-                  <settlement type="municipality">Quinuati</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Asangaro</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Angaraes (Baltasar de Hontiveros]</placeName>
+                     <placeName type="verbatim">angaraes encomendado en baltasar de Hontiueros</placeName>
+                  </region>
+                  <settlement type="pueblo">San Alfonso de Chilcapampa</settlement>
+                  <note type="repartimiento">Or Veracuz de Chilcapampa (above?)</note>
                </location>
-               <placeName type="municipality">Llusco, Aymaraes, Huarina y Maraes</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Chumbivilcas</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Quiñota</settlement>
+                  <region type="province">Churcampa</region>
+                  <region type="department">Huancavelica</region>
+                  <settlement type="pueblo">Chilcapampa</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.1525 -72.15472222</geo>
+                  <geo>-12.66145676 -74.36899733</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">159</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-12 39 41.24520 -074 22 08.38920</geo>
+               </location>
+               <note>Coordinates from: http://www.postalcodedb.com/09340_Chilcapampa_Peru.html</note>
+               <bibl xml:id="bib193-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">182</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib193-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">182</citedRange>
+               </bibl>
+               <bibl xml:id="bib193-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/193</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">No town visible in this spot</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/28/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

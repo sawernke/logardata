@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Cristobal Saco</title>
+            <title level="a" xml:lang="es">Cadalso</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-383" type="town">
-               <placeName xml:id="name383-1" xml:lang="es" full="yes">San Cristobal Saco</placeName>
-               <placeName xml:id="name383-2" xml:lang="es">San Cristobal</placeName>
-               <placeName xml:id="name383-3" xml:lang="es">Saco</placeName>
-               <placeName xml:id="name383-4" xml:lang="es">san cristoval saco</placeName>
+            <place xml:id="place-383" source="bib383-1">
+               <placeName xml:id="name383-1" full="yes" type="standardized">Cadalso</placeName>
+               <placeName xml:id="name383-4" type="verbatim">cadalso</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Carumas y Ubinas de Colesuyo</region>
-                  <settlement type="municipality">San Cristobal Saco</settlement>
+                  <region type="corregimiento">Condesuyu</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Viraco</placeName>
+                     <placeName type="verbatim">viraco</placeName>
+                  </region>
+                  <settlement type="pueblo">Cadalso</settlement>
                </location>
-               <placeName type="municipality">Carumas</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Carabaya</region>
-                  <region type="department">Puno</region>
-                  <settlement type="municipality">Saco</settlement>
+                  <region type="province">Castilla</region>
+                  <region type="department">Arequipa</region>
+                  <settlement type="pueblo">Viraco</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.21138889 -69.91722222</geo>
+                  <geo>-15.65811362 -72.52457156</geo>
                </location>
-               <note>
-        San Cristobal
-        Saco
-        San Cristobal Saco
-        
-        san cristoval saco
-        Levillier 1921-26 v9
-        175
-        Levillier 1921-26 v9
-        175
-        AGI-L
-        
-        Lima
-        Arequipa
-        Carumas y Ubinas de Colesuyo
-        1
-        
-        Carumas
-        carumas
-        
-        
-        
-        
-        
-        
-        
-        Saco
-        Peru
-        Puno
-        Carabaya
-        
-        -14.21138889
-        -69.91722222
-        not sure if this is correct -   Coordinates from: http://www.indexmundi.com/zp/pe/15520.htm
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">175</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-15 39 29.21040 -072 31 28.45920</geo>
+               </location>
+               <note>can't find anything for Cadalso or variations</note>
+               <bibl xml:id="bib383-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">173</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib383-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">173</citedRange>
+               </bibl>
+               <bibl xml:id="bib383-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/383</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Corresponds to Viraco. Was Viraco originally called "Cadalso"?</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/2/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

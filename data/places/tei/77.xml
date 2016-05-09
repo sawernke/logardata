@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Antonio de Songo</title>
+            <title level="a" xml:lang="es">Santo Domingo de Yungai</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,64 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-77" type="town">
-               <placeName xml:id="name77-1" xml:lang="es" full="yes">San Antonio de Songo</placeName>
-               <placeName xml:id="name77-2" xml:lang="es">San Antonio de</placeName>
-               <placeName xml:id="name77-3" xml:lang="es">Songo</placeName>
-               <placeName xml:id="name77-4" xml:lang="es">san antonio de songo</placeName>
+            <place xml:id="place-77" source="bib77-1">
+               <placeName xml:id="name77-1" full="yes" type="standardized">Santo Domingo de Yungai</placeName>
+               <placeName xml:id="name77-2" type="standardized-Spanish">Santo Domingo de</placeName>
+               <placeName xml:id="name77-3" type="standardized-Andean">Yungai</placeName>
+               <placeName xml:id="name77-4" type="verbatim">santo domingo de yungai</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Larecaja</region>
-                  <settlement type="municipality">San Antonio de Songo</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huaylas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Huaylas</placeName>
+                     <placeName type="verbatim">Huailas</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Recuay mitimaes</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Gonzalo de Caceres mitimaes</placeName>
+                     <placeName type="verbatim">mitimaes de la encomienda de Gonzalo de caceres</placeName>
+                  </region>
+                  <settlement type="pueblo">Santo Domingo de Yungai</settlement>
                </location>
-               <placeName type="municipality">Songo, Challana y Chacapa</placeName>
-               <note>
-        San Antonio de
-        Songo
-        San Antonio de Songo
-        
-        san antonio de songo
-        Levillier 1921-26 v9
-        144
-        Levillier 1921-26 v9
-        144
-        AGI-L
-        
-        La Plata
-        La Paz
-        Larecaja
-        0
-        
-        Songo, Challana y Chacapa
-        songochallana y chacapa
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Only "Songo" I found is near Lima, found nothing for "Sonqo" - also tried these with u instead of o to no avail
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">144</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Yungay</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Yungay</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-9.139811605 -77.74488552</geo>
+               </location>
+               <location>
+                  <geo>-09 08 23.32320 -077 44 41.58960</geo>
+               </location>
+               <bibl xml:id="bib77-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib77-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
+               </bibl>
+               <bibl xml:id="bib77-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/77</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

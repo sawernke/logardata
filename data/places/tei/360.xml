@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Escalona de Veuchachas [Uchuchachas]</title>
+            <title level="a" xml:lang="es">Ambana</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,76 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-360" type="town">
-               <placeName xml:id="name360-1" xml:lang="es" full="yes">Escalona de Veuchachas [Uchuchachas]</placeName>
-               <placeName xml:id="name360-2" xml:lang="es">Escalona</placeName>
-               <placeName xml:id="name360-3" xml:lang="es">Veuchachas [Uchuchachas]</placeName>
-               <placeName xml:id="name360-4" xml:lang="es">escalona de veuchachas</placeName>
+            <place xml:id="place-360" source="bib360-1">
+               <placeName xml:id="name360-1" full="yes" type="standardized">Ambana</placeName>
+               <placeName xml:id="name360-3" type="standardized-Andean">Ambana</placeName>
+               <placeName xml:id="name360-4" type="verbatim">Ambana</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Condesuyu</region>
-                  <settlement type="municipality">Escalona de Veuchachas [Uchuchachas]</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Larecaja</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Ambana</placeName>
+                     <placeName type="verbatim">Ambana</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various mitimaes</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Ambana</settlement>
+                  <note type="repartimiento">"en este pueblo de chuma estan asemesmo rreducidos los yndios de ayata encomendados en don joan rramirez de vargas que son 41 yndios tibutarios y 214 personas y asimesmo estan rreuzidos en esos dos pueblos otros 400 yndios mitimaes de diferentes repartim</note>
                </location>
-               <placeName type="municipality">Chachas y Veuchachas [Uchuchachas?]</placeName>
-               <location type="gps">
-                  <geo>-15.53805556 -72.08666667</geo>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Eliodoro Camacho</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Ambaná</settlement>
                </location>
-               <note>
-        Escalona
-        Veuchachas [Uchuchachas]
-        Escalona de Veuchachas [Uchuchachas]
-        
-        escalona de veuchachas
-        Levillier 1921-26 v9
-        174
-        Levillier 1921-26 v9
-        174
-        AGI-L
-        
-        Lima
-        Arequipa
-        Condesuyu
-        0
-        
-        Chachas y Veuchachas [Uchuchachas?]
-        chachas y veuchachas
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        -15.53805556
-        -72.08666667
-        Uchuchachas appears as a zona near Yanque and Tuti: http://www.seal.com.pe/clientes/Lists/Cortes%20Programados/DispForm.aspx?ID=450 - but can't find any information about where the zona from the link actually is...  There are zero search results for "Uchuchachas Peru Coordinates" and Uchuchachas is not in Steve's list, IM, or GE...
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">174</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <note>Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-955377&amp;fid=660&amp;c=bolivia</note>
+               <bibl xml:id="bib360-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib360-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
+               </bibl>
+               <bibl xml:id="bib360-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/360</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Other</note>
+               <note type="administrative" subtype="MR_other_notes">http://www.geographic.org/geographic_names/name.php?uni=-955377&amp;fid=660&amp;c=bolivia</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

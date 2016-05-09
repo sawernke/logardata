@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Charazane</title>
+            <title level="a" xml:lang="es">Santiago de Pira</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-86" type="town">
-               <placeName xml:id="name86-1" xml:lang="es" full="yes">San Juan de Charazane</placeName>
-               <placeName xml:id="name86-2" xml:lang="es">San Juan de</placeName>
-               <placeName xml:id="name86-3" xml:lang="es">Charazane</placeName>
-               <placeName xml:id="name86-4" xml:lang="es">san Joan de charazana</placeName>
+            <place xml:id="place-86" source="bib86-1">
+               <placeName xml:id="name86-1" full="yes" type="standardized">Santiago de Pira</placeName>
+               <placeName xml:id="name86-2" type="standardized-Spanish">Santiago de</placeName>
+               <placeName xml:id="name86-3" type="standardized-Andean">Pira</placeName>
+               <placeName xml:id="name86-4" type="verbatim">santiago de Pira</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Larecaja</region>
-                  <settlement type="municipality">San Juan de Charazane</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huaylas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Recuay</placeName>
+                     <placeName type="verbatim">recuay</placeName>
+                  </region>
+                  <settlement type="pueblo">Santiago de Pira</settlement>
                </location>
-               <placeName type="municipality">Charazane</placeName>
-               <note type="repartimiento">
-        San Juan de
-        Charazane
-        San Juan de Charazane
-        
-        san Joan de charazana
-        Levillier 1921-26 v9
-        145
-        Levillier 1921-26 v9
-        145
-        AGI-L
-        
-        La Plata
-        La Paz
-        Larecaja
-        1
-        
-        Charazane
-        Charaçana
-        Various
-        indios tributarios de diuersos repartimientos
-        
-        
-        
-        
-        Charazane, Mocomoco, Usadca, Carijana: "asimesmo estan rreducidos en estos pueblos otros 300 yndios tributarios de diuersos repartimientos."
-        Charazani
-        Bolivia
-        La Paz
-        Bautista Saavedra
-        
-        -15.193675
-        -69.01104167
-        
-        
-        
-    </note>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Bautista Saavedra</region>
-                  <region type="department">La Paz</region>
-                  <settlement type="municipality">Charazani</settlement>
+                  <country>Peru</country>
+                  <region type="province">Huaraz</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Pira</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.193675 -69.01104167</geo>
+                  <geo>-9.580936714 -77.70739894</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">145</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-09 34 51.37320 -077 42 26.63640</geo>
+               </location>
+               <bibl xml:id="bib86-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib86-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
+               </bibl>
+               <bibl xml:id="bib86-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/86</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

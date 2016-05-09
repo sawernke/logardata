@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santiago de Yanaoca</title>
+            <title level="a" xml:lang="es">San Josephe de Siquipa</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,51 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-171" type="town">
-               <placeName xml:id="name171-1" xml:lang="es" full="yes">Santiago de Yanaoca</placeName>
-               <placeName xml:id="name171-2" xml:lang="es">Santiago de</placeName>
-               <placeName xml:id="name171-3" xml:lang="es">Yanaoca</placeName>
-               <placeName xml:id="name171-4" xml:lang="es">santiago de yanaoca</placeName>
+            <place xml:id="place-171" source="bib171-1">
+               <placeName xml:id="name171-1" full="yes" type="standardized">San Josephe de Siquipa</placeName>
+               <placeName xml:id="name171-2" type="standardized-Spanish">San Josephe de</placeName>
+               <placeName xml:id="name171-3" type="standardized-Andean">Siquipa</placeName>
+               <placeName xml:id="name171-4" type="verbatim">san Josephe de siquipa</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canas</region>
-                  <settlement type="municipality">Santiago de Yanaoca</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huarochirí</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Huarochirí</placeName>
+                     <placeName type="verbatim">Guarochiri</placeName>
+                  </region>
+                  <settlement type="pueblo">San Josephe de Siquipa</settlement>
                </location>
-               <placeName type="municipality">Yanaoca</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Canas</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Yanaoca</settlement>
+                  <region type="province">Huarochirí</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">San José de los Chorrillos</settlement>
                </location>
-               <location type="gps">
-                  <geo>-14.05138889 -71.43944444</geo>
-               </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">156</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <note>MAYBE. http://huarochiri.info/document/HistoriayArqueologia.pdf refers to a reduccion called San José de Chorrillos. It's the only San Jose in the region: http://historiadeyauyos.blogspot.com/ - Coordinates from: http://www.maplandia.com/peru/lima/huaro</note>
+               <bibl xml:id="bib171-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib171-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
+               </bibl>
+               <bibl xml:id="bib171-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/171</idno>
+               <note type="administrative" subtype="Moved">0</note>
+               <note type="administrative" subtype="MR_other_notes">Documents place this in Huarochiri, but I can't find anything more specific than that.</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/28/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

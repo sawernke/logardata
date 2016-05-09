@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Francisco de Oropesa</title>
+            <title level="a" xml:lang="es">San Anton de Chinchaypuquio</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-235" type="town">
-               <placeName xml:id="name235-1" xml:lang="es" full="yes">San Francisco de Oropesa</placeName>
-               <placeName xml:id="name235-2" xml:lang="es">San Francisco de Oropesa</placeName>
-               <placeName xml:id="name235-3" xml:lang="es"/>
-               <placeName xml:id="name235-4" xml:lang="es">san francisco de oropesa</placeName>
+            <place xml:id="place-235" source="bib235-1">
+               <placeName xml:id="name235-1" full="yes" type="standardized">San Anton de Chinchaypuquio</placeName>
+               <placeName xml:id="name235-2" type="standardized-Spanish">San Anton de</placeName>
+               <placeName xml:id="name235-3" type="standardized-Andean">Chinchaypuquio</placeName>
+               <placeName xml:id="name235-4" type="verbatim">san anton de chinchaypuquio</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Aymaraes</region>
-                  <settlement type="municipality">San Francisco de Oropesa</settlement>
+                  <region type="corregimiento">Abancay</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Chinchaypuquio</placeName>
+                     <placeName type="verbatim">chinchaypuquio</placeName>
+                  </region>
+                  <settlement type="pueblo">San Anton de Chinchaypuquio</settlement>
                </location>
-               <placeName type="municipality">Taype Ayllo</placeName>
-               <note>
-        San Francisco de Oropesa
-        
-        San Francisco de Oropesa
-        
-        san francisco de oropesa
-        Levillier 1921-26 v9
-        163
-        Levillier 1921-26 v9
-        163
-        AGI-L
-        
-        Lima
-        Cuzco
-        Aymaraes
-        0
-        
-        Taype Ayllo
-        taypeayllo
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Already have a pin for "Oropesa, Peru" in Cusco region
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">163</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Anta</region>
+                  <region type="department">Cusco</region>
+                  <settlement type="pueblo">Chinchaypuquio</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-13.62946018 -72.23287045</geo>
+               </location>
+               <location>
+                  <geo>-13 37 46.05600 -072 13 58.33200</geo>
+               </location>
+               <note>Coordinates from: http://geographic.org/geographic_names/name.php?uni=-518348&amp;fid=4529&amp;c=peru</note>
+               <bibl xml:id="bib235-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">168</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib235-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">168</citedRange>
+               </bibl>
+               <bibl xml:id="bib235-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/235</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

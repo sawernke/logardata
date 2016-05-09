@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Oviedo</title>
+            <title level="a" xml:lang="es">San Salvador [de Capachica]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,62 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-378" type="town">
-               <placeName xml:id="name378-1" xml:lang="es" full="yes">Oviedo</placeName>
-               <placeName xml:id="name378-2" xml:lang="es">Oviedo</placeName>
-               <placeName xml:id="name378-3" xml:lang="es"/>
-               <placeName xml:id="name378-4" xml:lang="es">Oviedo</placeName>
+            <place xml:id="place-378" source="bib378-1">
+               <placeName xml:id="name378-1" full="yes" type="standardized">San Salvador [de Capachica]</placeName>
+               <placeName xml:id="name378-2" type="standardized-Spanish">San Salvador</placeName>
+               <placeName xml:id="name378-3" type="standardized-Andean">[de Capachica]</placeName>
+               <placeName xml:id="name378-4" type="verbatim">san saluador</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Collaguas</region>
-                  <settlement type="municipality">Oviedo</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Paucarcolla</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Capachica</placeName>
+                     <placeName type="verbatim">la pachica</placeName>
+                  </region>
+                  <settlement type="pueblo">San Salvador [de Capachica]</settlement>
                </location>
-               <placeName type="municipality">[Cabana]</placeName>
-               <note>
-        Oviedo
-        
-        Oviedo
-        
-        Oviedo
-        Levillier 1921-26 v9
-        174
-        Levillier 1921-26 v9
-        174
-        AGI-L
-        
-        Lima
-        Arequipa
-        Collaguas
-        0
-        
-        [Cabana]
-        camana
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Only "Oviedo" I could find in Peru was near Lima
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">174</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Puno</region>
+                  <region type="department">Puno</region>
+                  <settlement type="pueblo">Capachica</settlement>
+               </location>
+               <population>
+                  <desc>5360</desc>
+               </population>
+               <population source="bib378-1" type="tributaries">
+                  <desc>1303</desc>
+               </population>
+               <location type="gps">
+                  <geo>-15.64197849 -69.83084375</geo>
+               </location>
+               <location>
+                  <geo>-15 38 31.12080 -069 49 51.03840</geo>
+               </location>
+               <bibl xml:id="bib378-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">148</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib378-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">148</citedRange>
+               </bibl>
+               <bibl xml:id="bib378-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/378</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/24/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

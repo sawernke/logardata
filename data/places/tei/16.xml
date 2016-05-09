@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de Belén de Tiquipaya</title>
+            <title level="a" xml:lang="es">Xumbilla</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,85 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-16" type="town">
-               <placeName xml:id="name16-1" xml:lang="es" full="yes">Nuestra Señora de Belén de Tiquipaya</placeName>
-               <placeName xml:id="name16-2" xml:lang="es">Nuestra Señora de Belén de</placeName>
-               <placeName xml:id="name16-3" xml:lang="es">Tiquipaya</placeName>
-               <placeName xml:id="name16-4" xml:lang="es">nuestra señora de beplem de tuquipaya</placeName>
+            <place xml:id="place-16" source="bib16-1">
+               <placeName xml:id="name16-1" full="yes" type="standardized">Xumbilla</placeName>
+               <placeName xml:id="name16-3" type="standardized-Andean">Xumbilla</placeName>
+               <placeName xml:id="name16-4" type="verbatim">dos pueblos llamados del mesmo nombre</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Porco</region>
-                  <settlement type="municipality">Nuestra Señora de Belén de Tiquipaya</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Paellas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Xumbilla</placeName>
+                     <placeName type="verbatim">xumbilla</placeName>
+                  </region>
+                  <settlement type="pueblo">Xumbilla</settlement>
                </location>
-               <population source="" type="tributaries">
-                  <desc>340</desc>
-               </population>
-               <placeName type="municipality">Colo,Caquina,Pilachuri</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">José María Linares</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Belén</settlement>
+                  <country>Peru</country>
+                  <region type="province">Bongara</region>
+                  <region type="department">Amazonas</region>
+                  <settlement type="pueblo">Villa de Jumbilla</settlement>
                </location>
                <location type="gps">
-                  <geo>-19.86905556 -65.556325</geo>
+                  <geo>-5.904350225 -77.79816516</geo>
                </location>
-               <note>
-        Nuestra Señora de Belén de
-        Tiquipaya
-        Nuestra Señora de Belén de Tiquipaya
-        
-        nuestra señora de beplem de tuquipaya
-        Levillier 1921-26 v9
-        137
-        Levillier 1921-26 v24
-        137
-        AGI-L
-        
-        La Plata
-        La Plata
-        Porco
-        1
-        -1
-        Colo,Caquina,Pilachuri
-        Colo y caquina y pilachuri
-        
-        
-        
-        
-        
-        
-        
-        Belén
-        Bolivia
-        Potosí
-        José María Linares
-        
-        -19.86905556
-        -65.556325
-        [Where did the other 108 families go?]
-        
-        340
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">137</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-05 54 15.66000 -077 47 53.39400</geo>
+               </location>
+               <note>could also be Jumbilla District,</note>
+               <bibl xml:id="bib16-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">215</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib16-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">215</citedRange>
+               </bibl>
+               <bibl xml:id="bib16-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/16</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

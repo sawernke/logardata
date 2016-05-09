@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santa Cruz de la Frontera [de Paucarpata?]</title>
+            <title level="a" xml:lang="es">Vilque</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-388" type="town">
-               <placeName xml:id="name388-1" xml:lang="es" full="yes">Santa Cruz de la Frontera [de Paucarpata?]</placeName>
-               <placeName xml:id="name388-2" xml:lang="es">Santa Cruz de la Frontera</placeName>
-               <placeName xml:id="name388-3" xml:lang="es">[Paucarpata?]</placeName>
-               <placeName xml:id="name388-4" xml:lang="es">santa cruz de la frontera</placeName>
+            <place xml:id="place-388" source="bib388-1">
+               <placeName xml:id="name388-1" full="yes" type="standardized">Vilque</placeName>
+               <placeName xml:id="name388-3" type="standardized-Andean">Vilque</placeName>
+               <placeName xml:id="name388-4" type="verbatim">vilque</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Caracato y Vitor</region>
-                  <settlement type="municipality">Santa Cruz de la Frontera [de Paucarpata?]</settlement>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Urcosuyo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Mañaso, Vilque, y Guaca</placeName>
+                     <placeName type="verbatim">manaso y bilque e guaca</placeName>
+                  </region>
+                  <settlement type="pueblo">Vilque</settlement>
                </location>
-               <placeName type="municipality">Paucarpata</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Arequipa</region>
-                  <region type="department">Arequipa</region>
-                  <settlement type="municipality">Paucarpata</settlement>
+                  <region type="province">Puno</region>
+                  <region type="department">Puno</region>
+                  <settlement type="pueblo">Vilque</settlement>
                </location>
                <location type="gps">
-                  <geo>-16.41444444 -71.47222222</geo>
+                  <geo>-15.76673989 -70.25854699</geo>
                </location>
-               <note>
-        Santa Cruz de la Frontera
-        [Paucarpata?]
-        Santa Cruz de la Frontera [de Paucarpata?]
-        
-        santa cruz de la frontera
-        Levillier 1921-26 v9
-        176
-        Levillier 1921-26 v9
-        176
-        AGI-L
-        
-        Lima
-        Arequipa
-        Caracato y Vitor
-        1
-        -1
-        Paucarpata
-        Paucarpata
-        Characoto
-        characoto
-        Chiguata
-        chiguata
-        
-        
-        
-        Paucarpata
-        Peru
-        Arequipa
-        Arequipa
-        
-        -16.41444444
-        -71.47222222
-        Pop numbers for indiv rpts are from Cook. Levillier gives total number at 1262/5564, which is much higher.
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">176</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-15 46 00.26400 -070 15 30.76920</geo>
+               </location>
+               <bibl xml:id="bib388-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">152</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib388-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">152</citedRange>
+               </bibl>
+               <bibl xml:id="bib388-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/388</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/24/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

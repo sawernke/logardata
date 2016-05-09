@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Villa de Santa Lucia de Pichigua</title>
+            <title level="a" xml:lang="es">Panpaqueche [Santiago de Pampa Quinche]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,119 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-176" type="town">
-               <placeName xml:id="name176-1" xml:lang="es" full="yes">Villa de Santa Lucia de Pichigua</placeName>
-               <placeName xml:id="name176-2" xml:lang="es">Villa de Santa Lucia de</placeName>
-               <placeName xml:id="name176-3" xml:lang="es">Pichigua</placeName>
-               <placeName xml:id="name176-4" xml:lang="es">villa de santa lucia de Pichigua</placeName>
+            <place xml:id="place-176" source="bib176-1">
+               <placeName xml:id="name176-1" full="yes" type="standardized">Panpaqueche [Santiago de Pampa Quinche]</placeName>
+               <placeName xml:id="name176-2" type="standardized-Spanish">Santiago de</placeName>
+               <placeName xml:id="name176-3" type="standardized-Andean">Panpaqueche [Pampa Quinche]</placeName>
+               <placeName xml:id="name176-4" type="verbatim">panpaqueche</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canas</region>
-                  <settlement type="municipality">Villa de Santa Lucia de Pichigua</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Yauyos</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yauyos</placeName>
+                     <placeName type="verbatim">yauyos</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Mancos y Laraos</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Panpaqueche [Santiago de Pampa Quinche]</settlement>
                </location>
-               <placeName type="municipality">Pichigua</placeName>
-               <note type="repartimiento">
-        Villa de Santa Lucia de
-        Pichigua
-        Villa de Santa Lucia de Pichigua
-        
-        villa de santa lucia de Pichigua
-        Levillier 1921-26 v9
-        157
-        Levillier 1921-26 v9
-        157
-        AGI-L
-        
-        Lima
-        Cuzco
-        Canas
-        1
-        
-        Pichigua
-        Pichigua
-        
-        
-        
-        
-        
-        
-        L 158: "ecepto algunos yndios que se rredugeron en santa ana de yaure"
-        Pichigua
-        Peru
-        Cusco
-        Espinar
-        
-        -14.01694444
-        -71.41416667
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-537946&amp;fid=4502&amp;c=peru
-        
-        
-    </note>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Espinar</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Pichigua</settlement>
+                  <region type="province">Yauyos</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">Quinches</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.01694444 -71.41416667</geo>
+                  <geo>-12.30745698 -76.14321871</geo>
                </location>
-               <note>
-        Villa de Santa Lucia de
-        Pichigua
-        Villa de Santa Lucia de Pichigua
-        
-        villa de santa lucia de Pichigua
-        Levillier 1921-26 v9
-        157
-        Levillier 1921-26 v9
-        157
-        AGI-L
-        
-        Lima
-        Cuzco
-        Canas
-        1
-        
-        Pichigua
-        Pichigua
-        
-        
-        
-        
-        
-        
-        L 158: "ecepto algunos yndios que se rredugeron en santa ana de yaure"
-        Pichigua
-        Peru
-        Cusco
-        Espinar
-        
-        -14.01694444
-        -71.41416667
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-537946&amp;fid=4502&amp;c=peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">157</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-12 18 26.84520 -076 08 35.58840</geo>
+               </location>
+               <bibl xml:id="bib176-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">192</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib176-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">192</citedRange>
+               </bibl>
+               <bibl xml:id="bib176-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/176</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

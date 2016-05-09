@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Ocoña</title>
+            <title level="a" xml:lang="es">San Juan de Challana</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,79 +51,51 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-396" type="town">
-               <placeName xml:id="name396-1" xml:lang="es" full="yes">Ocoña</placeName>
-               <placeName xml:id="name396-2" xml:lang="es">Ocoña</placeName>
-               <placeName xml:id="name396-3" xml:lang="es"/>
-               <placeName xml:id="name396-4" xml:lang="es">vn pueblo del mesmo nombre</placeName>
+            <place xml:id="place-396" source="bib396-1">
+               <placeName xml:id="name396-1" full="yes" type="standardized">San Juan de Challana</placeName>
+               <placeName xml:id="name396-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name396-3" type="standardized-Andean">Challana</placeName>
+               <placeName xml:id="name396-4" type="verbatim">sant joan de challana</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento"/>
-                  <settlement type="municipality">Ocoña</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Larecaja</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Songo, Challana y Chacapa</placeName>
+                     <placeName type="verbatim">songochallana y chacapa</placeName>
+                  </region>
+                  <settlement type="pueblo">San Juan de Challana</settlement>
                </location>
-               <placeName type="municipality">Ocoña (Luzia de Padilla)</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Camana</region>
-                  <region type="department">Arequipa</region>
-                  <settlement type="municipality">Ocoña</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Larecaja</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Challana</settlement>
                </location>
-               <note>
-        Ocoña
-        
-        Ocoña
-        
-        vn pueblo del mesmo nombre
-        Levillier 1921-26 v9
-        177
-        Levillier 1921-26 v9
-        177
-        AGI-L
-        
-        Lima
-        Arequipa
-        
-        1
-        
-        Ocoña (Luzia de Padilla)
-        ocoña encomendado en doña luzia de Padilla
-        Nasca mitimaes
-        algunos yndios mitimaes de la Nasca
-        
-        
-        
-        
-        
-        Ocoña
-        Peru
-        Arequipa
-        Camana
-        
-        
-        
-        Note that rept. de Chuquibamba above is also resetted in this reduccion
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">177</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <bibl xml:id="bib396-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib396-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
+               </bibl>
+               <bibl xml:id="bib396-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/396</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Other</note>
+               <note type="administrative" subtype="MR_other_notes">Wikipedia shows "San Juan de Challana" as one of the cantones of municipio Guanay, prov. Larecaja. The name Challana, by itself, also appears on Google Earth to the southwest of here, but I can find no settlement on the sat image corresponding to it.</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

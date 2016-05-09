@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">"Otros poblezuelos de muy pocos yndios encomendados en diferentes personas"</title>
+            <title level="a" xml:lang="es">San Juan de Ica</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-279" type="town">
-               <placeName xml:id="name279-1" xml:lang="es" full="yes">"Otros poblezuelos de muy pocos yndios encomendados en diferentes personas"</placeName>
-               <placeName xml:id="name279-2" xml:lang="es"/>
-               <placeName xml:id="name279-3" xml:lang="es"/>
-               <placeName xml:id="name279-4" xml:lang="es">"otros poblezuelos de muy pocos yndios encomendados en diferentes personas"</placeName>
+            <place xml:id="place-279" source="bib279-1">
+               <placeName xml:id="name279-1" full="yes" type="standardized">San Juan de Ica</placeName>
+               <placeName xml:id="name279-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name279-3" type="standardized-Andean">Ica</placeName>
+               <placeName xml:id="name279-4" type="verbatim">sant Joan de yca</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Andes</region>
-                  <settlement type="municipality">"Otros poblezuelos de muy pocos yndios encomendados en diferentes personas"</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Ica</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Hananica and Hurinica</placeName>
+                     <placeName type="verbatim">Hananyca y hurinica</placeName>
+                  </region>
+                  <settlement type="pueblo">San Juan de Ica</settlement>
                </location>
-               <placeName type="municipality">Various</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">166</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Ica</region>
+                  <region type="department">Ica</region>
+                  <settlement type="pueblo">Ica</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-14.01132353 -75.73505445</geo>
+               </location>
+               <location>
+                  <geo>-14 00 40.76640 -075 44 06.19440</geo>
+               </location>
+               <note>assuming this is the correct location and not the San Juan de Buatista district</note>
+               <bibl xml:id="bib279-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">194</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib279-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">194</citedRange>
+               </bibl>
+               <bibl xml:id="bib279-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/279</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">https://en.wikipedia.org/wiki/San_Juan_Bautista_District,_Ica Originally placed on Ica, but now believe that Villa de Valverde belongs there. This appeared to be a resonable alternate location.</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

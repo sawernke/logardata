@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Garganta la Olla</title>
+            <title level="a" xml:lang="es">[San Jeronimo de] Omas</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-186" type="town">
-               <placeName xml:id="name186-1" xml:lang="es" full="yes">Garganta la Olla</placeName>
-               <placeName xml:id="name186-2" xml:lang="es">Garganta la Olla</placeName>
-               <placeName xml:id="name186-3" xml:lang="es"/>
-               <placeName xml:id="name186-4" xml:lang="es">Garganta la olla</placeName>
+            <place xml:id="place-186" source="bib186-1">
+               <placeName xml:id="name186-1" full="yes" type="standardized">[San Jeronimo de] Omas</placeName>
+               <placeName xml:id="name186-2" type="standardized-Spanish">[San Jeronimo de]</placeName>
+               <placeName xml:id="name186-3" type="standardized-Andean">Omas</placeName>
+               <placeName xml:id="name186-4" type="verbatim">omas</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canches</region>
-                  <settlement type="municipality">Garganta la Olla</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Yauyos</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yauyos</placeName>
+                     <placeName type="verbatim">yauyos</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Mancos y Laraos</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">[San Jeronimo de] Omas</settlement>
                </location>
-               <placeName type="municipality">Garganta la olla</placeName>
-               <note>
-        Garganta la Olla
-        
-        Garganta la Olla
-        
-        Garganta la olla
-        Levillier 1921-26 v9
-        158
-        Levillier 1921-26 v9
-        158
-        AGI-L
-        
-        Lima
-        Cuzco
-        Canches
-        0
-        
-        Garganta la olla
-        Garganta la olla
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Already searched for this - see row 347
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">158</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Yauyos</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">Omas</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-12.51471282 -76.28921144</geo>
+               </location>
+               <location>
+                  <geo>-12 30 52.96680 -076 17 21.15960</geo>
+               </location>
+               <bibl xml:id="bib186-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">192</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib186-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">192</citedRange>
+               </bibl>
+               <bibl xml:id="bib186-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/186</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Todo San Santos</title>
+            <title level="a" xml:lang="es">Villareal de Aullaga</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-461" type="town">
-               <placeName xml:id="name461-1" xml:lang="es" full="yes">Todo San Santos</placeName>
-               <placeName xml:id="name461-2" xml:lang="es">Todo San Santos</placeName>
-               <placeName xml:id="name461-3" xml:lang="es"/>
-               <placeName xml:id="name461-4" xml:lang="es">todos santos</placeName>
+            <place xml:id="place-461" source="bib461-1">
+               <placeName xml:id="name461-1" full="yes" type="standardized">Villareal de Aullaga</placeName>
+               <placeName xml:id="name461-2" type="standardized-Spanish">Villareal de</placeName>
+               <placeName xml:id="name461-3" type="standardized-Andean">Aullaga</placeName>
+               <placeName xml:id="name461-4" type="verbatim">villareal de aullaga</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Angaraes</region>
-                  <settlement type="municipality">Todo San Santos</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Paria</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Aullagas y Uruquillas</placeName>
+                     <placeName type="verbatim">avllagas y vruquillas</placeName>
+                  </region>
+                  <settlement type="pueblo">Villareal de Aullaga</settlement>
                </location>
-               <placeName type="municipality">Guaros</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">180</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Chayanta</region>
+                  <region type="department">Potosí</region>
+                  <settlement type="pueblo">Aullagas</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-19.1963633 -67.06186745</geo>
+               </location>
+               <location>
+                  <geo>-19 11 46.90680 -067 03 42.72120</geo>
+               </location>
+               <bibl xml:id="bib461-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">139</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib461-2">
+                  <title>Levillier 1921-26 v49</title>
+                  <citedRange unit="pp">139</citedRange>
+               </bibl>
+               <bibl xml:id="bib461-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/461</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Abercrombie, Pathways, 238 identifies Villareal de Aullagas as modern Pampa Aullagas, dept Oruro, Prov Ladislao Cabrera. [Note: I had put it in Aullagas, Dept Potosi, Prov Chayanta - this is wrong.]</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

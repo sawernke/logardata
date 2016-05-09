@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Pedro de Larcay</title>
+            <title level="a" xml:lang="es">[San Andrés de] Machaca la Grande</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-432" type="town">
-               <placeName xml:id="name432-1" xml:lang="es" full="yes">San Pedro de Larcay</placeName>
-               <placeName xml:id="name432-2" xml:lang="es">San Pedro</placeName>
-               <placeName xml:id="name432-3" xml:lang="es">Larcay</placeName>
-               <placeName xml:id="name432-4" xml:lang="es">san pedro de larcay</placeName>
+            <place xml:id="place-432" source="bib432-1">
+               <placeName xml:id="name432-1" full="yes" type="standardized">[San Andrés de] Machaca la Grande</placeName>
+               <placeName xml:id="name432-2" type="standardized-Spanish">[San Andrés de]</placeName>
+               <placeName xml:id="name432-3" type="standardized-Andean">Machaca la Grande</placeName>
+               <placeName xml:id="name432-4" type="verbatim">vn pueblo</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">San Pedro de Larcay</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Pacajes</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Machaca la Grande</placeName>
+                     <placeName type="verbatim">machaca la grande</placeName>
+                  </region>
+                  <settlement type="pueblo">[San Andrés de] Machaca la Grande</settlement>
                </location>
-               <placeName type="municipality">Soras</placeName>
-               <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Sucre</region>
-                  <region type="department">Ayacucho</region>
-                  <settlement type="municipality">San Pedro de Larcay District</settlement>
-               </location>
+               <population>
+                  <desc>6702</desc>
+               </population>
+               <population source="bib432-1" type="tributaries">
+                  <desc>1310</desc>
+               </population>
                <location type="gps">
-                  <geo>-14.69388889 -74.12416667</geo>
+                  <geo>-16.95601973 -68.96881261</geo>
                </location>
-               <note>
-        San Pedro
-        Larcay
-        San Pedro de Larcay
-        
-        san pedro de larcay
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        1
-        
-        Soras
-        soras
-        
-        
-        
-        
-        
-        
-        
-        San Pedro de Larcay District
-        Peru
-        Ayacucho
-        Sucre
-        
-        -14.69388889
-        -74.12416667
-        Coordinates from: http://en.wikipedia.org/wiki/San_Pedro_de_Larcay_District
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-16 57 21.67200 -068 58 07.72680</geo>
+               </location>
+               <note>Initially pinned "Machaca, Bolivia" in Cochabamba dept. - "San Andres de Machaca" is pinned as well, but it's even farther away from La Paz...</note>
+               <bibl xml:id="bib432-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">145</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib432-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">145</citedRange>
+               </bibl>
+               <bibl xml:id="bib432-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/432</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/12/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Pedro de Tacna</title>
+            <title level="a" xml:lang="es">San Pedro de Chumbe</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-343" type="town">
-               <placeName xml:id="name343-1" xml:lang="es" full="yes">San Pedro de Tacna</placeName>
-               <placeName xml:id="name343-2" xml:lang="es">San Pedro</placeName>
-               <placeName xml:id="name343-3" xml:lang="es">Tacna</placeName>
-               <placeName xml:id="name343-4" xml:lang="es">san pedro de tacna</placeName>
+            <place xml:id="place-343" source="bib343-1">
+               <placeName xml:id="name343-1" full="yes" type="standardized">San Pedro de Chumbe</placeName>
+               <placeName xml:id="name343-2" type="standardized-Spanish">San Pedro de</placeName>
+               <placeName xml:id="name343-3" type="standardized-Andean">Chumbe</placeName>
+               <placeName xml:id="name343-4" type="verbatim">san pedro de chumbe</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Arica</region>
-                  <settlement type="municipality">San Pedro de Tacna</settlement>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Parinacocha</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Parinacocha</placeName>
+                     <placeName type="verbatim">Parinacocha</placeName>
+                  </region>
+                  <settlement type="pueblo">San Pedro de Chumbe</settlement>
                </location>
-               <placeName type="municipality">Tacna</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Tacna</region>
-                  <region type="department">Tacna</region>
-                  <settlement type="municipality">Tacna</settlement>
+                  <region type="province">Parinacochas</region>
+                  <region type="department">Ayacucho</region>
+                  <settlement type="pueblo">Chumpi</settlement>
                </location>
                <location type="gps">
-                  <geo>-18.045 -70.27305556</geo>
+                  <geo>-15.09478649 -73.74817554</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">172</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-15 05 41.22960 -073 44 53.43360</geo>
+               </location>
+               <bibl xml:id="bib343-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">162</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib343-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">162</citedRange>
+               </bibl>
+               <bibl xml:id="bib343-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/343</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/3/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

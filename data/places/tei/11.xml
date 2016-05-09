@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de la Concepción [de Toropalca?]</title>
+            <title level="a" xml:lang="es">Bagua</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-11" type="town">
-               <placeName xml:id="name11-1" xml:lang="es" full="yes">Nuestra Señora de la Concepción [de Toropalca?]</placeName>
-               <placeName xml:id="name11-2" xml:lang="es">Nuestra Señora de la Concepción de</placeName>
-               <placeName xml:id="name11-3" xml:lang="es">[Toropalca?]</placeName>
-               <placeName xml:id="name11-4" xml:lang="es">nuestra señora de la concepción</placeName>
+            <place xml:id="place-11" source="bib11-1">
+               <placeName xml:id="name11-1" full="yes" type="standardized">Bagua</placeName>
+               <placeName xml:id="name11-2" type="standardized-Spanish">Bagua</placeName>
+               <placeName xml:id="name11-3" type="standardized-Andean">Bagua</placeName>
+               <placeName xml:id="name11-4" type="verbatim">vn pueblo del mesmo nombre</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Porco</region>
-                  <settlement type="municipality">Nuestra Señora de la Concepción [de Toropalca?]</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Luya y Chillao</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Bagua</placeName>
+                     <placeName type="verbatim">Bagua</placeName>
+                  </region>
+                  <settlement type="pueblo">Bagua</settlement>
                </location>
-               <placeName type="municipality">Bisisa y Cayza</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Nor Chichas</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Toropalca</settlement>
+                  <country>Peru</country>
+                  <region type="province">Bagua</region>
+                  <region type="department">Amazonas</region>
+                  <settlement type="pueblo">Bagua</settlement>
                </location>
                <location type="gps">
-                  <geo>-20.20472222 -66.1125</geo>
+                  <geo>-5.639155067 -78.53162415</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">136</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-05 38 20.95800 -078 31 53.84640</geo>
+               </location>
+               <note>There is also a Bagua Grande very close to Bagua.</note>
+               <bibl xml:id="bib11-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">218</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib11-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">218</citedRange>
+               </bibl>
+               <bibl xml:id="bib11-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/11</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Paucartambo</title>
+            <title level="a" xml:lang="es">San Juan de Payco</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-274" type="town">
-               <placeName xml:id="name274-1" xml:lang="es" full="yes">Paucartambo</placeName>
-               <placeName xml:id="name274-2" xml:lang="es"/>
-               <placeName xml:id="name274-3" xml:lang="es">Paucartambo</placeName>
-               <placeName xml:id="name274-4" xml:lang="es">vn pueblo del mismo nombre</placeName>
+            <place xml:id="place-274" source="bib274-1">
+               <placeName xml:id="name274-1" full="yes" type="standardized">San Juan de Payco</placeName>
+               <placeName xml:id="name274-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name274-3" type="standardized-Andean">Payco</placeName>
+               <placeName xml:id="name274-4" type="verbatim">san Joan de payco</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Andes</region>
-                  <settlement type="municipality">Paucartambo</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Lucanas/Andamarcas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Soras</placeName>
+                     <placeName type="verbatim">soras</placeName>
+                  </region>
+                  <settlement type="pueblo">San Juan de Payco</settlement>
                </location>
-               <placeName type="municipality">Paucartambo</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Paucartambo</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Paucartambo</settlement>
+                  <region type="province">Sucre</region>
+                  <region type="department">Ayacucho</region>
+                  <settlement type="pueblo">Paico District</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.13333333 -71.59305556</geo>
+                  <geo>-14.03842784 -73.64214752</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">165</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-14 02 18.34080 -073 38 31.73280</geo>
+               </location>
+               <note>Same location as?: http://es.wikipedia.org/wiki/Distrito_de_Paico - Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-537566&amp;fid=4509&amp;c=peru - not the same location according to the Coordinates given on the Wikipedia page in you</note>
+               <bibl xml:id="bib274-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib274-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
+               </bibl>
+               <bibl xml:id="bib274-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/274</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

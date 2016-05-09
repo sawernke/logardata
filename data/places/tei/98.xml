@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santiago [de Guaqui]</title>
+            <title level="a" xml:lang="es">Guarmey</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,51 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-98" type="town">
-               <placeName xml:id="name98-1" xml:lang="es" full="yes">Santiago [de Guaqui]</placeName>
-               <placeName xml:id="name98-2" xml:lang="es">Santiago</placeName>
-               <placeName xml:id="name98-3" xml:lang="es">[de Guaqui]</placeName>
-               <placeName xml:id="name98-4" xml:lang="es">santiago</placeName>
+            <place xml:id="place-98" source="bib98-1">
+               <placeName xml:id="name98-1" full="yes" type="standardized">Guarmey</placeName>
+               <placeName xml:id="name98-3" type="standardized-Andean">Guarmey</placeName>
+               <placeName xml:id="name98-4" type="verbatim">Guarmey</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Pacajes</region>
-                  <settlement type="municipality">Santiago [de Guaqui]</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">V. de Santa</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Guarmey</placeName>
+                     <placeName type="verbatim">Guarmey</placeName>
+                  </region>
+                  <settlement type="pueblo">Guarmey</settlement>
                </location>
-               <population source="">
-                  <desc>5800</desc>
-               </population>
-               <population source="" type="tributaries">
-                  <desc>1286</desc>
-               </population>
-               <placeName type="municipality">Guaqui</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Ingavi</region>
-                  <region type="department">La Paz</region>
-                  <settlement type="municipality">Guaqui Municipality</settlement>
+                  <country>Peru</country>
+                  <region type="province">Huarmey</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Huarmey</settlement>
                </location>
                <location type="gps">
-                  <geo>-16.61708333 -68.83402778</geo>
+                  <geo>-10.06870671 -78.15228144</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">146</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-10 04 07.34520 -078 09 08.21160</geo>
+               </location>
+               <bibl xml:id="bib98-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">206</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib98-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">206</citedRange>
+               </bibl>
+               <bibl xml:id="bib98-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/98</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

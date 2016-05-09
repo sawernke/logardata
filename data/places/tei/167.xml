@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Pablo [de Cacha?]</title>
+            <title level="a" xml:lang="es">San Pedro de Guancayo [Huancayre]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,59 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-167" type="town">
-               <placeName xml:id="name167-1" xml:lang="es" full="yes">San Pablo [de Cacha?]</placeName>
-               <placeName xml:id="name167-2" xml:lang="es">San Pablo de</placeName>
-               <placeName xml:id="name167-3" xml:lang="es">[Cacha?]</placeName>
-               <placeName xml:id="name167-4" xml:lang="es">san Pablo</placeName>
+            <place xml:id="place-167" source="bib167-1">
+               <placeName xml:id="name167-1" full="yes" type="standardized">San Pedro de Guancayo [Huancayre]</placeName>
+               <placeName xml:id="name167-2" type="standardized-Spanish">San Pedro de</placeName>
+               <placeName xml:id="name167-3" type="standardized-Andean">Guancayo [Huancayre]</placeName>
+               <placeName xml:id="name167-4" type="verbatim">san pedro Guancayo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canas</region>
-                  <settlement type="municipality">San Pablo [de Cacha?]</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huarochirí</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Huarochirí</placeName>
+                     <placeName type="verbatim">Guarochiri</placeName>
+                  </region>
+                  <settlement type="pueblo">San Pedro de Guancayo [Huancayre]</settlement>
                </location>
-               <placeName type="municipality">Cacha</placeName>
-               <note>
-        San Pablo de
-        [Cacha?]
-        San Pablo [de Cacha?]
-        
-        san Pablo
-        Levillier 1921-26 v9
-        156
-        Levillier 1921-26 v9
-        156
-        AGI-L
-        
-        Lima
-        Cuzco
-        Canas
-        0
-        
-        Cacha
-        cacha
-        Charrachape
-        charrachape
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Only location in Peru I can find for either names/variations is "Cacha, Peru" in Ancash region
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">156</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Huarochirí</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">San Pedro de Huancayre</settlement>
+                  <note type="modern-location">Pueblo in Huarochirí District</note>
+               </location>
+               <location type="gps">
+                  <geo>-12.13037865 -76.21639496</geo>
+               </location>
+               <location>
+                  <geo>-12 07 49.36440 -076 12 59.02200</geo>
+               </location>
+               <note>Coordinates from: http://mapcarta.com/29047790</note>
+               <bibl xml:id="bib167-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib167-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
+               </bibl>
+               <bibl xml:id="bib167-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/167</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Used cpurbine as reference, and Google satellite for specific location. Cpurbine name of town is only "San Pedro", but the district name polygon (dist98) is "San Pedro de Huancayre". Still, it is not clear that "Guancayo" = Huancayre.</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

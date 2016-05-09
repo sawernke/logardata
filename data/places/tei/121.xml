@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Jule</title>
+            <title level="a" xml:lang="es">Paccho</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-121" type="town">
-               <placeName xml:id="name121-1" xml:lang="es" full="yes">Jule</placeName>
-               <placeName xml:id="name121-2" xml:lang="es"/>
-               <placeName xml:id="name121-3" xml:lang="es">Jule</placeName>
-               <placeName xml:id="name121-4" xml:lang="es">jule</placeName>
+            <place xml:id="place-121" source="bib121-1">
+               <placeName xml:id="name121-1" full="yes" type="standardized">Paccho</placeName>
+               <placeName xml:id="name121-3" type="standardized-Andean">Paccho</placeName>
+               <placeName xml:id="name121-4" type="verbatim">paccho</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Chucuito</region>
-                  <settlement type="municipality">Jule</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Arnedo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Checras</placeName>
+                     <placeName type="verbatim">checras</placeName>
+                  </region>
+                  <settlement type="pueblo">Paccho</settlement>
                </location>
-               <placeName type="municipality">Chucuito</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">149</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Huaura</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">Paccho</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-10.9574721 -76.93313955</geo>
+               </location>
+               <location>
+                  <geo>-10 57 26.89920 -076 55 59.30400</geo>
+               </location>
+               <note>found Auquimarca in Prov. Cajatambo, not sure which is supposed to be this location</note>
+               <bibl xml:id="bib121-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">197</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib121-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">197</citedRange>
+               </bibl>
+               <bibl xml:id="bib121-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/121</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

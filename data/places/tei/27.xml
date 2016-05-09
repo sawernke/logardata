@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Almagro de Tomata</title>
+            <title level="a" xml:lang="es">San Matheo</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-27" type="town">
-               <placeName xml:id="name27-1" xml:lang="es" full="yes">Almagro de Tomata</placeName>
-               <placeName xml:id="name27-2" xml:lang="es">Almagro de</placeName>
-               <placeName xml:id="name27-3" xml:lang="es">Tomata</placeName>
-               <placeName xml:id="name27-4" xml:lang="es">almagro de tomata</placeName>
+            <place xml:id="place-27" source="bib27-1">
+               <placeName xml:id="name27-1" full="yes" type="standardized">San Matheo</placeName>
+               <placeName xml:id="name27-2" type="standardized-Spanish">San Matheo</placeName>
+               <placeName xml:id="name27-4" type="verbatim">san matheo</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Chayanta</region>
-                  <settlement type="municipality">Almagro de Tomata</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">Villa de Zaña</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Penachi y Salas</placeName>
+                     <placeName type="verbatim">Penachi ysalas</placeName>
+                  </region>
+                  <settlement type="pueblo">San Matheo</settlement>
                </location>
-               <placeName type="municipality">Chayanta</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">not sure</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Tomatas</settlement>
+                  <country>Peru</country>
+                  <region type="province">Lambayeque</region>
+                  <region type="department">Lambayeque</region>
+                  <settlement type="pueblo">Salas</settlement>
                </location>
                <location type="gps">
-                  <geo>-21.56666667 -65.6</geo>
+                  <geo>-6.274020636 -79.60573432</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">138</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-06 16 26.47560 -079 36 20.64240</geo>
+               </location>
+               <note>Alejandro Diez confirms, S. Mateo de Salas. There's also a Penachi, which started as an anejo</note>
+               <bibl xml:id="bib27-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">210</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib27-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">210</citedRange>
+               </bibl>
+               <bibl xml:id="bib27-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/27</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Is San Mateo the patron saint of Salas? Requires followup.</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/31/2015</note>
             </place>
          </listPlace>
       </body>

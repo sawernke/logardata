@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santa Ana de [Guanpalpa]</title>
+            <title level="a" xml:lang="es">Santiago de Ycaca [Talina?]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,83 +51,50 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-487" type="town">
-               <placeName xml:id="name487-1" xml:lang="es" full="yes">Santa Ana de [Guanpalpa]</placeName>
-               <placeName xml:id="name487-2" xml:lang="es">Santa Ana</placeName>
-               <placeName xml:id="name487-3" xml:lang="es">[Guanpalpa]</placeName>
-               <placeName xml:id="name487-4" xml:lang="es">santa Ana de gonpalpa</placeName>
+            <place xml:id="place-487" source="bib487-1">
+               <placeName xml:id="name487-1" full="yes" type="standardized">Santiago de Ycaca [Talina?]</placeName>
+               <placeName xml:id="name487-2" type="standardized-Spanish">Santiago de</placeName>
+               <placeName xml:id="name487-3" type="standardized-Andean">Ycaca [Talina?]</placeName>
+               <placeName xml:id="name487-4" type="verbatim">santiago de ycaca</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Hananchilques</region>
-                  <settlement type="municipality">Santa Ana de [Guanpalpa]</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Tarija</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Chichas</placeName>
+                     <placeName type="verbatim">chichas</placeName>
+                  </region>
+                  <settlement type="pueblo">Santiago de Ycaca [Talina?]</settlement>
                </location>
-               <placeName type="municipality">Tanquiguas</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Vilcas Huaman</region>
-                  <region type="department">Ayacucho</region>
-                  <settlement type="municipality">Huambalpa</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Sur Chichas</region>
+                  <region type="department">Potosí</region>
+                  <settlement type="pueblo">Talina</settlement>
                </location>
-               <note type="modern-location">Huambalpa (capital)</note>
-               <location type="gps">
-                  <geo>-13.74972222 -73.93111111</geo>
-               </location>
-               <note>
-        Santa Ana
-        [Guanpalpa]
-        Santa Ana de [Guanpalpa]
-        
-        santa Ana de gonpalpa
-        Levillier 1921-26 v9
-        181
-        Levillier 1921-26 v9
-        181
-        AGI-L
-        
-        Lima
-        Guamanga
-        Hananchilques
-        1
-        
-        Tanquiguas
-        tanquiguas
-        
-        
-        
-        
-        
-        
-        
-        Huambalpa
-        Peru
-        Ayacucho
-        Vilcas Huaman
-        Huambalpa (capital)
-        -13.74972222
-        -73.93111111
-        Coordinates from: http://mapcarta.com/20225044
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">181</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <note>Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-984269&amp;fid=650&amp;c=bolivia - thought I'd give it a try as this location is much closer to Calcha</note>
+               <bibl xml:id="bib487-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">135</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib487-2">
+                  <title>Levillier 1921-26 v12</title>
+                  <citedRange unit="pp">135</citedRange>
+               </bibl>
+               <bibl xml:id="bib487-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/487</idno>
+               <note type="administrative" subtype="Moved">0</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/23/2015</note>
+               <note type="administrative" subtype="Delete_notes">There is no reason to identify this reduccion with Talina. I can't find any place called Icaca, Icaza, Ycaca, Ycaza, etc. online.</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Para</title>
+            <title level="a" xml:lang="es">San Pedro de Mama</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-156" type="town">
-               <placeName xml:id="name156-1" xml:lang="es" full="yes">San Juan de Para</placeName>
-               <placeName xml:id="name156-2" xml:lang="es">San Juan</placeName>
-               <placeName xml:id="name156-3" xml:lang="es">Para</placeName>
-               <placeName xml:id="name156-4" xml:lang="es">san Joan de Para</placeName>
+            <place xml:id="place-156" source="bib156-1">
+               <placeName xml:id="name156-1" full="yes" type="standardized">San Pedro de Mama</placeName>
+               <placeName xml:id="name156-2" type="standardized-Spanish">San Pedro de</placeName>
+               <placeName xml:id="name156-4" type="verbatim">san pedro de mama</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Caravaya</region>
-                  <settlement type="municipality">San Juan de Para</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huarochirí</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Mama</placeName>
+                     <placeName type="verbatim">Mama</placeName>
+                  </region>
+                  <settlement type="pueblo">San Pedro de Mama</settlement>
                </location>
-               <placeName type="municipality">Caravaya</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Sandia</region>
-                  <region type="department">Puno</region>
-                  <settlement type="municipality">Phara</settlement>
+                  <region type="province">Huarochirí</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">Ricardo Palma</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.10083333 -69.56222222</geo>
+                  <geo>-11.92380557 -76.66496242</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">155</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-11 55 25.70160 -076 39 53.86320</geo>
+               </location>
+               <note>I think this is the place called Ricardo Palma, at the fork of the rivers Rimac and Santa Eulalia, which appears in GE as CAFAE-MININTER (I have no idea what that means. (See http://www.peruturismo.com/CateInfo.asp?CateInfoI=8). Pin as Ricardo Palma.</note>
+               <bibl xml:id="bib156-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib156-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
+               </bibl>
+               <bibl xml:id="bib156-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/156</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">According to Carla, modern name is Ricardo Palma</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/28/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santiago del Valle [de Chocorbos]</title>
+            <title level="a" xml:lang="es">Quillaquilla</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-472" type="town">
-               <placeName xml:id="name472-1" xml:lang="es" full="yes">Santiago del Valle [de Chocorbos]</placeName>
-               <placeName xml:id="name472-2" xml:lang="es">Santiago del Valle</placeName>
-               <placeName xml:id="name472-3" xml:lang="es">[Chocorbos]</placeName>
-               <placeName xml:id="name472-4" xml:lang="es">santiago del valle</placeName>
+            <place xml:id="place-472" source="bib472-1">
+               <placeName xml:id="name472-1" full="yes" type="standardized">Quillaquilla</placeName>
+               <placeName xml:id="name472-3" type="standardized-Andean">Quillaquilla</placeName>
+               <placeName xml:id="name472-4" type="verbatim">quilaquila</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Angaraes</region>
-                  <settlement type="municipality">Santiago del Valle [de Chocorbos]</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Amparaes</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yamparaes</placeName>
+                     <placeName type="verbatim">amparaes</placeName>
+                  </region>
+                  <settlement type="pueblo">Quillaquilla</settlement>
                </location>
-               <placeName type="municipality">Chocorbos  de Guaitara</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Huaytará</region>
-                  <region type="department">Huancavelica</region>
-                  <settlement type="municipality">Santiago de Chocoruos</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Oropeza</region>
+                  <region type="department">Chuquisaca</region>
+                  <settlement type="pueblo">Quilla Quilla</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.83805556 -75.27722222</geo>
+                  <geo>-19.1197592 -65.37703118</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">180</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-19 07 11.13240 -065 22 37.31160</geo>
+               </location>
+               <note>I'm confused. IndexMundi has two Quillaquilla's, one of them in Dept. Chuquisaca, which is probably the right one. But the location you pinned doesn't show up in IndexMundi.</note>
+               <bibl xml:id="bib472-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">138</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib472-2">
+                  <title>Levillier 1921-26 v31</title>
+                  <citedRange unit="pp">138</citedRange>
+               </bibl>
+               <bibl xml:id="bib472-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/472</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

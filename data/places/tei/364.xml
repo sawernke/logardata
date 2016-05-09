@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Villacastín de Coporaque</title>
+            <title level="a" xml:lang="es">Salamanca de Cuyomayo</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,61 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-364" type="town">
-               <placeName xml:id="name364-1" xml:lang="es" full="yes">Villacastín de Coporaque</placeName>
-               <placeName xml:id="name364-2" xml:lang="es">Villacastín</placeName>
-               <placeName xml:id="name364-3" xml:lang="es">Coporaque</placeName>
-               <placeName xml:id="name364-4" xml:lang="es">Villacastin de coporaque</placeName>
+            <place xml:id="place-364" source="bib364-1">
+               <placeName xml:id="name364-1" full="yes" type="standardized">Salamanca de Cuyomayo</placeName>
+               <placeName xml:id="name364-2" type="standardized-Spanish">Salamanca de</placeName>
+               <placeName xml:id="name364-3" type="standardized-Andean">Cuyomayo</placeName>
+               <placeName xml:id="name364-4" type="verbatim">salamanca de cuyomayo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Collaguas</region>
-                  <settlement type="municipality">Villacastín de Coporaque</settlement>
+                  <region type="corregimiento">Condesuyu</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Achanquillo y Ayanque</placeName>
+                     <placeName type="verbatim">achanquillo y ayanque</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Achamarca</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Salamanca de Cuyomayo</settlement>
                </location>
-               <placeName type="municipality">Yanquecollagua</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Caylloma</region>
+                  <region type="province">Condesuyos</region>
                   <region type="department">Arequipa</region>
-                  <settlement type="municipality">Coporaque</settlement>
+                  <settlement type="pueblo">Salamanca</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.63472222 -71.65694444</geo>
+                  <geo>-15.50452164 -72.83415707</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
+               <location>
+                  <geo>-15 30 16.27920 -072 50 02.96520</geo>
+               </location>
+               <note>Coordinates from: http://www.maplandia.com/peru/arequipa/condesuyos/salamanca-15-30-9-s-72-49-47-w/</note>
+               <bibl xml:id="bib364-1">
+                  <title>Levillier 1921-26 v9</title>
                   <citedRange unit="pp">174</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib364-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">174</citedRange>
+               </bibl>
+               <bibl xml:id="bib364-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/364</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

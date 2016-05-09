@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de la Concepcion [de Llaxa]</title>
+            <title level="a" xml:lang="es">San Juan de Racha</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,51 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-100" type="town">
-               <placeName xml:id="name100-1" xml:lang="es" full="yes">Nuestra Señora de la Concepcion [de Llaxa]</placeName>
-               <placeName xml:id="name100-2" xml:lang="es">Nuestra Señora de la Concepcion</placeName>
-               <placeName xml:id="name100-3" xml:lang="es">[de Llaxa]</placeName>
-               <placeName xml:id="name100-4" xml:lang="es">nuestra señora de la concepcion</placeName>
+            <place xml:id="place-100" source="bib100-1">
+               <placeName xml:id="name100-1" full="yes" type="standardized">San Juan de Racha</placeName>
+               <placeName xml:id="name100-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name100-3" type="standardized-Andean">Racha</placeName>
+               <placeName xml:id="name100-4" type="verbatim">san joan de racha</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Omasuyo</region>
-                  <settlement type="municipality">Nuestra Señora de la Concepcion [de Llaxa]</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Jarama y Chinchacocha</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Guamalies (M de Guzmán)</placeName>
+                     <placeName type="verbatim">guamalies</placeName>
+                  </region>
+                  <settlement type="pueblo">San Juan de Racha</settlement>
                </location>
-               <population source="">
-                  <desc>4441</desc>
-               </population>
-               <population source="" type="tributaries">
-                  <desc>752</desc>
-               </population>
-               <placeName type="municipality">Llaxa</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Los Andes</region>
-                  <region type="department">La Paz</region>
-                  <settlement type="municipality">Laja Municipality</settlement>
+                  <country>Peru</country>
+                  <region type="province">Huánuco</region>
+                  <region type="department">Huánuco</region>
+                  <settlement type="pueblo">Raccha</settlement>
+                  <note type="modern-location">Province designation tentative</note>
                </location>
                <location type="gps">
-                  <geo>-16.5325 -68.38472222</geo>
+                  <geo>-10.14242318 -76.27666072</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">146</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-10 08 32.72280 -076 16 35.97960</geo>
+               </location>
+               <bibl xml:id="bib100-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">204</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib100-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">204</citedRange>
+               </bibl>
+               <bibl xml:id="bib100-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/100</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">and Digital Peru</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/3/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

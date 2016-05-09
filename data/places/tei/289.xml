@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Salvador de Pampallacha</title>
+            <title level="a" xml:lang="es">San Felipe [de] [Tungasuca]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-289" type="town">
-               <placeName xml:id="name289-1" xml:lang="es" full="yes">San Salvador de Pampallacha</placeName>
-               <placeName xml:id="name289-2" xml:lang="es">San Salvador</placeName>
-               <placeName xml:id="name289-3" xml:lang="es">Pampallacha</placeName>
-               <placeName xml:id="name289-4" xml:lang="es">sant saluador de Pampallacha</placeName>
+            <place xml:id="place-289" source="bib289-1">
+               <placeName xml:id="name289-1" full="yes" type="standardized">San Felipe [de] [Tungasuca]</placeName>
+               <placeName xml:id="name289-2" type="standardized-Spanish">San Felipe</placeName>
+               <placeName xml:id="name289-3" type="standardized-Andean">[Tungasuca]</placeName>
+               <placeName xml:id="name289-4" type="verbatim">san felipe tungasupa</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Yucay</region>
-                  <settlement type="municipality">San Salvador de Pampallacha</settlement>
+                  <region type="corregimiento">Canas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Tinta</placeName>
+                     <placeName type="verbatim">tinta</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Cacha</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">San Felipe [de] [Tungasuca]</settlement>
                </location>
-               <placeName type="municipality">Various</placeName>
-               <note>
-        San Salvador
-        Pampallacha
-        San Salvador de Pampallacha
-        
-        sant saluador de Pampallacha
-        Levillier 1921-26 v9
-        166
-        Levillier 1921-26 v9
-        166
-        AGI-L
-        
-        Lima
-        Cuzco
-        Yucay
-        0
-        
-        Various
-        de diferentes encomenderos
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Removed pin for "Pampallacta, Peru" in Apurímac region
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">166</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Canas</region>
+                  <region type="department">Cusco</region>
+                  <settlement type="pueblo">Tungasuca</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-14.16397992 -71.47599056</geo>
+               </location>
+               <location>
+                  <geo>-14 09 50.32800 -071 28 33.56760</geo>
+               </location>
+               <bibl xml:id="bib289-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">156</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib289-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">156</citedRange>
+               </bibl>
+               <bibl xml:id="bib289-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/289</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/3/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

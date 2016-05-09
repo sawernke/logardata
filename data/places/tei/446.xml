@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">La Santa Trinidad de Guando [Huando]</title>
+            <title level="a" xml:lang="es">Cicaya</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,76 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-446" type="town">
-               <placeName xml:id="name446-1" xml:lang="es" full="yes">La Santa Trinidad de Guando [Huando]</placeName>
-               <placeName xml:id="name446-2" xml:lang="es">La Santa Trinidad</placeName>
-               <placeName xml:id="name446-3" xml:lang="es">Guando [Huando]</placeName>
-               <placeName xml:id="name446-4" xml:lang="es">la santa trinidad de Guando</placeName>
+            <place xml:id="place-446" source="bib446-1">
+               <placeName xml:id="name446-1" full="yes" type="standardized">Cicaya</placeName>
+               <placeName xml:id="name446-3" type="standardized-Andean">Cicaya</placeName>
+               <placeName xml:id="name446-4" type="verbatim">Cicaya</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Angaraes</region>
-                  <settlement type="municipality">La Santa Trinidad de Guando [Huando]</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Paria</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Paria</placeName>
+                     <placeName type="verbatim">Paria</placeName>
+                  </region>
+                  <settlement type="pueblo">Cicaya</settlement>
                </location>
-               <placeName type="municipality">Angaraes (Ines de Villalobos)</placeName>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Capinota</region>
+                  <region type="department">Cochabamba</region>
+                  <settlement type="pueblo">Sicaya Municipality</settlement>
+               </location>
                <location type="gps">
-                  <geo>-12.48333333 -74.96666667</geo>
+                  <geo>-17.79959112 -66.33367866</geo>
                </location>
-               <note>
-        La Santa Trinidad
-        Guando [Huando]
-        La Santa Trinidad de Guando [Huando]
-        
-        la santa trinidad de Guando
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Angaraes
-        1
-        
-        Angaraes (Ines de Villalobos)
-        angaraes encomendado de doña Ynes de Villalobos
-        
-        
-        
-        
-        
-        
-        
-        Huando
-        
-        
-        
-        
-        -12.48333333
-        -74.96666667
-        Coordinates from: http://www.maplandia.com/peru/huancavelica/tayacaja/huando/
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-17 47 58.52760 -066 20 01.24440</geo>
+               </location>
+               <bibl xml:id="bib446-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">139</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib446-2">
+                  <title>Levillier 1921-26 v46</title>
+                  <citedRange unit="pp">139</citedRange>
+               </bibl>
+               <bibl xml:id="bib446-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/446</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

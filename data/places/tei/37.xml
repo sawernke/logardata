@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Saucare</title>
+            <title level="a" xml:lang="es">Santo Tomas de Quillay</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,46 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-37" type="town">
-               <placeName xml:id="name37-1" xml:lang="es" full="yes">Saucare</placeName>
-               <placeName xml:id="name37-2" xml:lang="es"/>
-               <placeName xml:id="name37-3" xml:lang="es">Saucare</placeName>
-               <placeName xml:id="name37-4" xml:lang="es">Saucare</placeName>
+            <place xml:id="place-37" source="bib37-1">
+               <placeName xml:id="name37-1" full="yes" type="standardized">Santo Tomas de Quillay</placeName>
+               <placeName xml:id="name37-2" type="standardized-Spanish">Santo Tomas de</placeName>
+               <placeName xml:id="name37-3" type="standardized-Andean">Quillay</placeName>
+               <placeName xml:id="name37-4" type="verbatim">santo tomas de quillay</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Paria</region>
-                  <settlement type="municipality">Saucare</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Cajamarquilla</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Ymebamba [Limebamba?] y Cochabamba</placeName>
+                     <placeName type="verbatim">ymebamba y cochabamba</placeName>
+                  </region>
+                  <settlement type="pueblo">Santo Tomas de Quillay</settlement>
                </location>
-               <placeName type="municipality">Paria</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Saucari</region>
-                  <region type="department">Oruro</region>
-                  <settlement type="municipality">Saucari</settlement>
+                  <country>Peru</country>
+                  <region type="province">Luya</region>
+                  <region type="department">Amazonas</region>
+                  <settlement type="pueblo">San Tomas</settlement>
                </location>
-               <note type="modern-location">Not a capital</note>
                <location type="gps">
-                  <geo>-18.12722222 -67.47725556</geo>
+                  <geo>-6.572689104 -77.86577483</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">139</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-06 34 21.68040 -077 51 56.79000</geo>
+               </location>
+               <bibl xml:id="bib37-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">214</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib37-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">214</citedRange>
+               </bibl>
+               <bibl xml:id="bib37-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/37</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google map</note>
+               <note type="administrative" subtype="MR_other_notes">and Google Earth</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/17/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

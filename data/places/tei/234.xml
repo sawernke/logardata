@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Huaquirca</title>
+            <title level="a" xml:lang="es">Guaytará</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,76 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-234" type="town">
-               <placeName xml:id="name234-1" xml:lang="es" full="yes">Huaquirca</placeName>
-               <placeName xml:id="name234-2" xml:lang="es"/>
-               <placeName xml:id="name234-3" xml:lang="es">Huaquirca</placeName>
-               <placeName xml:id="name234-4" xml:lang="es">Guaquerca</placeName>
+            <place xml:id="place-234" source="bib234-1">
+               <placeName xml:id="name234-1" full="yes" type="standardized">Guaytará</placeName>
+               <placeName xml:id="name234-3" type="standardized-Andean">Guaytará</placeName>
+               <placeName xml:id="name234-4" type="verbatim">guaitara</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Aymaraes</region>
-                  <settlement type="municipality">Huaquirca</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Angaraes</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Chocorbos  de Guaitara</placeName>
+                     <placeName type="verbatim">chocorbos de Guaitara</placeName>
+                  </region>
+                  <settlement type="pueblo">Guaytará</settlement>
                </location>
-               <placeName type="municipality">Collana Aymara</placeName>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Huaytará</region>
+                  <region type="department">Huancavelica</region>
+                  <settlement type="pueblo">Huaytará</settlement>
+                  <note type="modern-location">Capital</note>
+               </location>
                <location type="gps">
-                  <geo>-13.13388889 -73.75694444</geo>
+                  <geo>-13.60446556 -75.3531901</geo>
                </location>
-               <note>
-        
-        Huaquirca
-        Huaquirca
-        
-        Guaquerca
-        Levillier 1921-26 v9
-        163
-        Levillier 1921-26 v9
-        163
-        AGI-L
-        
-        Lima
-        Cuzco
-        Aymaraes
-        1
-        
-        Collana Aymara
-        collanaaymara
-        
-        
-        
-        
-        
-        
-        
-        Huaquirca
-        Peru
-        Apurímac
-        
-        
-        -13.13388889
-        -73.75694444
-        Coordinates from: http://en.wikipedia.org/wiki/Huaquirca_District
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">163</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-13 36 16.07760 -075 21 11.48400</geo>
+               </location>
+               <bibl xml:id="bib234-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">180</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib234-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">180</citedRange>
+               </bibl>
+               <bibl xml:id="bib234-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/234</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

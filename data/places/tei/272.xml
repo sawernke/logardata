@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Colquepata</title>
+            <title level="a" xml:lang="es">San Pedro de Guacana</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,52 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-272" type="town">
-               <placeName xml:id="name272-1" xml:lang="es" full="yes">Colquepata</placeName>
-               <placeName xml:id="name272-2" xml:lang="es"/>
-               <placeName xml:id="name272-3" xml:lang="es">Colquepata</placeName>
-               <placeName xml:id="name272-4" xml:lang="es">colquepata</placeName>
+            <place xml:id="place-272" source="bib272-1">
+               <placeName xml:id="name272-1" full="yes" type="standardized">San Pedro de Guacana</placeName>
+               <placeName xml:id="name272-2" type="standardized-Spanish">San Pedro de</placeName>
+               <placeName xml:id="name272-3" type="standardized-Andean">Guacana</placeName>
+               <placeName xml:id="name272-4" type="verbatim">san Pedro de Gucana</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Andes</region>
-                  <settlement type="municipality">Colquepata</settlement>
-               </location>
-               <placeName type="municipality">Tonono,Colquepata</placeName>
-               <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Paucartambo</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Colquepata</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Lucanas/Andamarcas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Soras</placeName>
+                     <placeName type="verbatim">soras</placeName>
+                  </region>
+                  <settlement type="pueblo">San Pedro de Guacana</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.035 -71.67888889</geo>
+                  <geo>-14.17186909 -73.88626921</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">165</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-14 10 18.72840 -073 53 10.56840</geo>
+               </location>
+               <note>Coordinates from: http://www.maplandia.com/peru/ayacucho/victor-fajardo/huacana/ (Wikipedia Coordinates same problematic ones)</note>
+               <bibl xml:id="bib272-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib272-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
+               </bibl>
+               <bibl xml:id="bib272-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/272</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Spelling</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

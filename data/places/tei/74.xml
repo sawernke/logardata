@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Capinata [Capinota?]</title>
+            <title level="a" xml:lang="es">San Ildefonso de Caras</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,110 +51,64 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-74" type="town">
-               <placeName xml:id="name74-1" xml:lang="es" full="yes">Capinata [Capinota?]</placeName>
-               <placeName xml:id="name74-2" xml:lang="es"/>
-               <placeName xml:id="name74-3" xml:lang="es">Capinata [Capinota?]</placeName>
-               <placeName xml:id="name74-4" xml:lang="es">capinata</placeName>
+            <place xml:id="place-74" source="bib74-1">
+               <placeName xml:id="name74-1" full="yes" type="standardized">San Ildefonso de Caras</placeName>
+               <placeName xml:id="name74-2" type="standardized-Spanish">San Ilde</placeName>
+               <placeName xml:id="name74-3" type="standardized-Andean">Caras</placeName>
+               <placeName xml:id="name74-4" type="verbatim">sant ildefonso de caras</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Sicasica / Caracollo</region>
-                  <settlement type="municipality">Capinata [Capinota?]</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huaylas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Huaylas</placeName>
+                     <placeName type="verbatim">Huailas</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Recuay mitimaes</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Gonzalo de Caceres mitimaes</placeName>
+                     <placeName type="verbatim">mitimaes de la encomienda de Gonzalo de caceres</placeName>
+                  </region>
+                  <settlement type="pueblo">San Ildefonso de Caras</settlement>
                </location>
-               <placeName type="municipality">Various mitimaes</placeName>
-               <note type="repartimiento">
-        
-        Capinata [Capinota?]
-        Capinata [Capinota?]
-        
-        capinata
-        Levillier 1921-26 v9
-        144
-        Levillier 1921-26 v9
-        144
-        AGI-L
-        
-        La Plata
-        La Paz
-        Sicasica / Caracollo
-        0
-        
-        Various mitimaes
-        yndios mitimaes de diuersos repartimientos
-        
-        
-        
-        
-        
-        
-        "Tiene asimismo el pueblo de san joan de cauari de otros yndios mitimaes y el pueblo de capinata y el pueblo de ynquisiue y el pueblo de collana y cocone todos los yndios mitimaes de diuersos repartimientos e todos son poblezuelos pequeños."
-        
-        
-        
-        
-        
-        
-        
-        The Capinota I have pinned is closer to Sicaya Municipality than it is to Coroico or Inquisivi - could this be Capinata, as seen on IM? link: http://www.indexmundi.com/zp/bl/1380.htm.  I THINK THIS LOCATION IS WRONG - IT IS THE CAPINOTA IN PARIA (DISTRICT OF LA PLATA]. NOT SICASICA.
-        
-        
-    </note>
-               <note>
-        
-        Capinata [Capinota?]
-        Capinata [Capinota?]
-        
-        capinata
-        Levillier 1921-26 v9
-        144
-        Levillier 1921-26 v9
-        144
-        AGI-L
-        
-        La Plata
-        La Paz
-        Sicasica / Caracollo
-        0
-        
-        Various mitimaes
-        yndios mitimaes de diuersos repartimientos
-        
-        
-        
-        
-        
-        
-        "Tiene asimismo el pueblo de san joan de cauari de otros yndios mitimaes y el pueblo de capinata y el pueblo de ynquisiue y el pueblo de collana y cocone todos los yndios mitimaes de diuersos repartimientos e todos son poblezuelos pequeños."
-        
-        
-        
-        
-        
-        
-        
-        The Capinota I have pinned is closer to Sicaya Municipality than it is to Coroico or Inquisivi - could this be Capinata, as seen on IM? link: http://www.indexmundi.com/zp/bl/1380.htm.  I THINK THIS LOCATION IS WRONG - IT IS THE CAPINOTA IN PARIA (DISTRICT OF LA PLATA]. NOT SICASICA.
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">144</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Caraz</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Caraz</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-9.04847796 -77.81011026</geo>
+               </location>
+               <location>
+                  <geo>-09 02 54.52080 -077 48 36.39600</geo>
+               </location>
+               <bibl xml:id="bib74-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib74-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
+               </bibl>
+               <bibl xml:id="bib74-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/74</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

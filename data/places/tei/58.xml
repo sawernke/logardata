@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Miguel de Tiquipaya</title>
+            <title level="a" xml:lang="es">Guambo [Huaso?]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,51 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-58" type="town">
-               <placeName xml:id="name58-1" xml:lang="es" full="yes">San Miguel de Tiquipaya</placeName>
-               <placeName xml:id="name58-2" xml:lang="es">San Miguel de</placeName>
-               <placeName xml:id="name58-3" xml:lang="es">Tiquipaya</placeName>
-               <placeName xml:id="name58-4" xml:lang="es">san miguel</placeName>
+            <place xml:id="place-58" source="bib58-1">
+               <placeName xml:id="name58-1" full="yes" type="standardized">Guambo [Huaso?]</placeName>
+               <placeName xml:id="name58-3" type="standardized-Andean">Guambo [Huaso?]</placeName>
+               <placeName xml:id="name58-4" type="verbatim">guambo</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Cochabamba</region>
-                  <settlement type="municipality">San Miguel de Tiquipaya</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">V. de Santa</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Moro Quizquiz</placeName>
+                     <placeName type="verbatim">moro quizquiz</placeName>
+                  </region>
+                  <settlement type="pueblo">Guambo [Huaso?]</settlement>
                </location>
-               <population source="">
-                  <desc>2573</desc>
-               </population>
-               <population source="" type="tributaries">
-                  <desc>505</desc>
-               </population>
-               <placeName type="municipality">Tiquipaya</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Cercado</region>
-                  <region type="department">Cochabamba</region>
-                  <settlement type="municipality">Tiquipaya</settlement>
+                  <country>Peru</country>
+                  <region type="province">Julcan</region>
+                  <region type="department">La Libertad</region>
+                  <settlement type="pueblo">Huaso</settlement>
                </location>
                <location type="gps">
-                  <geo>-17.33426111 -66.21300833</geo>
+                  <geo>-8.224478939 -78.41399176</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">141</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-08 13 28.12440 -078 24 50.37120</geo>
+               </location>
+               <bibl xml:id="bib58-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">206</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib58-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">206</citedRange>
+               </bibl>
+               <bibl xml:id="bib58-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/58</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Bing sat</note>
+               <note type="administrative" subtype="MR_other_notes">and digital peru. Placed in Huaso</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/17/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

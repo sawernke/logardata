@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">La Caxeulla</title>
+            <title level="a" xml:lang="es">Zebreros del Hachas [Chachas]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-398" type="town">
-               <placeName xml:id="name398-1" xml:lang="es" full="yes">La Caxeulla</placeName>
-               <placeName xml:id="name398-2" xml:lang="es"/>
-               <placeName xml:id="name398-3" xml:lang="es">La Caxeulla</placeName>
-               <placeName xml:id="name398-4" xml:lang="es">la caxeulla</placeName>
+            <place xml:id="place-398" source="bib398-1">
+               <placeName xml:id="name398-1" full="yes" type="standardized">Zebreros del Hachas [Chachas]</placeName>
+               <placeName xml:id="name398-2" type="standardized-Spanish">Zebreros de</placeName>
+               <placeName xml:id="name398-3" type="standardized-Andean">del Hachas [Chachas]</placeName>
+               <placeName xml:id="name398-4" type="verbatim">Zebreros del hachas</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Camana</region>
-                  <settlement type="municipality">La Caxeulla</settlement>
+                  <region type="corregimiento">Condesuyu</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Chachas y Veuchachas [Uchuchachas?]</placeName>
+                     <placeName type="verbatim">chachas y veuchachas</placeName>
+                  </region>
+                  <settlement type="pueblo">Zebreros del Hachas [Chachas]</settlement>
                </location>
-               <placeName type="municipality">Atiquipa</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Caravelí</region>
+                  <region type="province">Castilla</region>
                   <region type="department">Arequipa</region>
-                  <settlement type="municipality">Atiquipa</settlement>
+                  <settlement type="pueblo">Chachas</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.81333333 -74.39611111</geo>
+                  <geo>-15.50135149 -72.27020278</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">177</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-15 30 04.86360 -072 16 12.73080</geo>
+               </location>
+               <note>Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-516968&amp;fid=4530&amp;c=peru</note>
+               <bibl xml:id="bib398-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">174</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib398-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">174</citedRange>
+               </bibl>
+               <bibl xml:id="bib398-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/398</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">cpurbine "Chachas" for orientation, then Google satellite hybrid to specifically locate.</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">1/7/2016</note>
             </place>
          </listPlace>
       </body>

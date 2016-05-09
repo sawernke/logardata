@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Miguel de Gualvas [Guaguas]</title>
+            <title level="a" xml:lang="es">Santa Barbara de Yanacache</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,79 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-407" type="town">
-               <placeName xml:id="name407-1" xml:lang="es" full="yes">San Miguel de Gualvas [Guaguas]</placeName>
-               <placeName xml:id="name407-2" xml:lang="es">San Miguel</placeName>
-               <placeName xml:id="name407-3" xml:lang="es">Gualvas [Guaguas]</placeName>
-               <placeName xml:id="name407-4" xml:lang="es">san miguel de gualuas</placeName>
+            <place xml:id="place-407" source="bib407-1">
+               <placeName xml:id="name407-1" full="yes" type="standardized">Santa Barbara de Yanacache</placeName>
+               <placeName xml:id="name407-2" type="standardized-Spanish">Santa Barbara de</placeName>
+               <placeName xml:id="name407-3" type="standardized-Andean">Yanacache</placeName>
+               <placeName xml:id="name407-4" type="verbatim">Santa Barbara de yanacache</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">San Miguel de Gualvas [Guaguas]</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Sicasica / Caracollo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various</placeName>
+                     <placeName type="verbatim">yndios de diuersos encomenderos</placeName>
+                  </region>
+                  <settlement type="pueblo">Santa Barbara de Yanacache</settlement>
+                  <note type="repartimiento">"El pueblo de Santa Barbara de yanacache y Santa Barbara de yanacache y sant pedro de lasa y san bartolome de chulumani en los quales ay rreduzidos 200 y tantos yndios de diuersos encomenderos - de la ciudad de la Paz"</note>
                </location>
-               <placeName type="municipality">Hatunlucana y Laramati</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Lucanas</region>
-                  <region type="department">Ayacucho</region>
-                  <settlement type="municipality">Huac-Huas</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Sud Yungas</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Yanacachi</settlement>
                </location>
-               <note>
-        San Miguel
-        Gualvas [Guaguas]
-        San Miguel de Gualvas [Guaguas]
-        
-        san miguel de gualuas
-        Levillier 1921-26 v9
-        178
-        Levillier 1921-26 v9
-        178
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        1
-        -1
-        Hatunlucana y Laramati
-        Hatunlucana y laramati
-        
-        
-        
-        
-        
-        
-        
-        Huac-Huas
-        Peru
-        Ayacucho
-        Lucanas
-        
-        
-        
-        http://es.wikipedia.org/wiki/Distrito_de_Huacuas - Prov. Lucanas - "Aniguamente por los años 1569 el pueblo pertenecia a la reparticion del Hatun Rucaca - Laramati y se llamaba San Miguel de Guaguas"
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">178</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="gps">
+                  <geo>-16.39939346 -67.73646314</geo>
+               </location>
+               <location>
+                  <geo>-16 23 57.81480 -067 44 11.26680</geo>
+               </location>
+               <bibl xml:id="bib407-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib407-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
+               </bibl>
+               <bibl xml:id="bib407-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/407</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">This does not look like a Toledan reducción.</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

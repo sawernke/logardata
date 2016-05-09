@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Acobamba</title>
+            <title level="a" xml:lang="es">Villaverde de la Fuente</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,52 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-460" type="town">
-               <placeName xml:id="name460-1" xml:lang="es" full="yes">San Juan de Acobamba</placeName>
-               <placeName xml:id="name460-2" xml:lang="es">San Juan</placeName>
-               <placeName xml:id="name460-3" xml:lang="es">Acobamba</placeName>
-               <placeName xml:id="name460-4" xml:lang="es">san joan de acobamba</placeName>
+            <place xml:id="place-460" source="bib460-1">
+               <placeName xml:id="name460-1" full="yes" type="standardized">Villaverde de la Fuente</placeName>
+               <placeName xml:id="name460-2" type="standardized-Spanish">Villaverde</placeName>
+               <placeName xml:id="name460-4" type="verbatim">Villaverde de la Fuente</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Angaraes</region>
-                  <settlement type="municipality">San Juan de Acobamba</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Amparaes</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various</placeName>
+                     <placeName type="verbatim">yndios mojos y chuuimatas de diuersos encomenderos</placeName>
+                  </region>
+                  <settlement type="pueblo">Villaverde de la Fuente</settlement>
                </location>
-               <placeName type="municipality">Guaros</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Angaraes</region>
-                  <region type="department">Huancavelica</region>
-                  <settlement type="municipality">Acobamba</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Oropeza</region>
+                  <region type="department">Chuquisaca</region>
+                  <settlement type="pueblo">Copavilque</settlement>
                </location>
-               <location type="gps">
-                  <geo>-12.84083333 -74.57055556</geo>
-               </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">180</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <population>
+                  <desc>1754</desc>
+               </population>
+               <population source="bib460-1" type="tributaries">
+                  <desc>551</desc>
+               </population>
+               <note>Matienzo re-founded Copavilque as Villaverde de la Fuente - but did he change its location, and if so, is modern Copavilque in the original or the new location? Churumatas and Moyos Moyos were two groups from Tarija which had mitimaes in Chuquisaca valle</note>
+               <bibl xml:id="bib460-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">138</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib460-2">
+                  <title>Levillier 1921-26 v32</title>
+                  <citedRange unit="pp">138</citedRange>
+               </bibl>
+               <bibl xml:id="bib460-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/460</idno>
+               <note type="administrative" subtype="Moved">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santa Maria Magdalena de Pomay</title>
+            <title level="a" xml:lang="es">Santiago de Mohosa [Hurmire? Caracollo?]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,63 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-444" type="town">
-               <placeName xml:id="name444-1" xml:lang="es" full="yes">Santa Maria Magdalena de Pomay</placeName>
-               <placeName xml:id="name444-2" xml:lang="es">Santa Maria Magdalena</placeName>
-               <placeName xml:id="name444-3" xml:lang="es">Pomay</placeName>
-               <placeName xml:id="name444-4" xml:lang="es">santa maria magdalena de Pomay</placeName>
+            <place xml:id="place-444" source="bib444-1">
+               <placeName xml:id="name444-1" full="yes" type="standardized">Santiago de Mohosa [Hurmire? Caracollo?]</placeName>
+               <placeName xml:id="name444-2" type="standardized-Spanish">Santiago de</placeName>
+               <placeName xml:id="name444-3" type="standardized-Andean">Mohosa  [Hurmire? Caracollo?]</placeName>
+               <placeName xml:id="name444-4" type="verbatim">santiago de mohosa</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">Santa Maria Magdalena de Pomay</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Sicasica / Caracollo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Caracollo</placeName>
+                     <placeName type="verbatim">Caracollo</placeName>
+                  </region>
+                  <settlement type="pueblo">Santiago de Mohosa [Hurmire? Caracollo?]</settlement>
                </location>
-               <placeName type="municipality">Soras</placeName>
-               <note>
-        Santa Maria Magdalena
-        Pomay
-        Santa Maria Magdalena de Pomay
-        
-        santa maria magdalena de Pomay
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        0
-        
-        Soras
-        soras
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find a location for full name - only "Pomay" I found in Peru was in Ancash region...
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Pacajes</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Caracollo</settlement>
+               </location>
+               <population>
+                  <desc>4378</desc>
+               </population>
+               <population source="bib444-1" type="tributaries">
+                  <desc>853</desc>
+               </population>
+               <location type="gps">
+                  <geo>-17.63647563 -67.21663977</geo>
+               </location>
+               <location>
+                  <geo>-17 38 11.31360 -067 12 59.90400</geo>
+               </location>
+               <note>2015: Rio 2005:126: This reduccion was called Santiago de Hurmire. Mohosa, meanwhile, was name of a reduccion in Paria repartimiento, not named in G - but this may be a misprint]</note>
+               <bibl xml:id="bib444-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">143</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib444-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">143</citedRange>
+               </bibl>
+               <bibl xml:id="bib444-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/444</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/12/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

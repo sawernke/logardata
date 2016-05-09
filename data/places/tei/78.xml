@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Challana</title>
+            <title level="a" xml:lang="es">Guambacho</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-78" type="town">
-               <placeName xml:id="name78-1" xml:lang="es" full="yes">San Juan de Challana</placeName>
-               <placeName xml:id="name78-2" xml:lang="es">San Juan de</placeName>
-               <placeName xml:id="name78-3" xml:lang="es">Challana</placeName>
-               <placeName xml:id="name78-4" xml:lang="es">sant joan de challana</placeName>
+            <place xml:id="place-78" source="bib78-1">
+               <placeName xml:id="name78-1" full="yes" type="standardized">Guambacho</placeName>
+               <placeName xml:id="name78-3" type="standardized-Andean">Guambacho</placeName>
+               <placeName xml:id="name78-4" type="verbatim">guambacho</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Larecaja</region>
-                  <settlement type="municipality">San Juan de Challana</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">V. de Santa</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Santa,Guambacho</placeName>
+                     <placeName type="verbatim">sancta y Guambacho</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Encomienda de Luis de Atienza y Alonso Gonzalez</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Guambacho</settlement>
                </location>
-               <placeName type="municipality">Songo, Challana y Chacapa</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Larecaja</region>
-                  <region type="department">La Paz</region>
-                  <settlement type="municipality">Challana</settlement>
+                  <country>Peru</country>
+                  <region type="province">Santa</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Huambacho</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.95269444 -68.20508333</geo>
+                  <geo>-9.264169077 -78.42491964</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">144</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-09 15 51.00840 -078 25 29.71200</geo>
+               </location>
+               <bibl xml:id="bib78-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">207</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib78-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">207</citedRange>
+               </bibl>
+               <bibl xml:id="bib78-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/78</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Bing sat</note>
+               <note type="administrative" subtype="MR_other_notes">and digital peru</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/17/2017</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

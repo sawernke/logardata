@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Yaco</title>
+            <title level="a" xml:lang="es">San Luis de Macati</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,64 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-66" type="town">
-               <placeName xml:id="name66-1" xml:lang="es" full="yes">San Juan de Yaco</placeName>
-               <placeName xml:id="name66-2" xml:lang="es">San Juan de</placeName>
-               <placeName xml:id="name66-3" xml:lang="es">Yaco</placeName>
-               <placeName xml:id="name66-4" xml:lang="es">san Joan de yaco</placeName>
+            <place xml:id="place-66" source="bib66-1">
+               <placeName xml:id="name66-1" full="yes" type="standardized">San Luis de Macati</placeName>
+               <placeName xml:id="name66-2" type="standardized-Spanish">San Luis de</placeName>
+               <placeName xml:id="name66-3" type="standardized-Andean">Macati</placeName>
+               <placeName xml:id="name66-4" type="verbatim">san luis de macati</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Sicasica / Caracollo</region>
-                  <settlement type="municipality">San Juan de Yaco</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huaylas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Huaylas</placeName>
+                     <placeName type="verbatim">Huailas</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Recuay mitimaes</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Gonzalo de Caceres mitimaes</placeName>
+                     <placeName type="verbatim">mitimaes de la encomienda de Gonzalo de caceres</placeName>
+                  </region>
+                  <settlement type="pueblo">San Luis de Macati</settlement>
                </location>
-               <placeName type="municipality">Quiruas de Oyune</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">143</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Santa</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Macate District</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-8.760600756 -78.06125604</geo>
+               </location>
+               <location>
+                  <geo>-08 45 38.16360 -078 03 40.52160</geo>
+               </location>
+               <bibl xml:id="bib66-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib66-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
+               </bibl>
+               <bibl xml:id="bib66-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/66</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

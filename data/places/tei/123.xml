@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Yunguyo</title>
+            <title level="a" xml:lang="es">San Francisco Higuare</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-123" type="town">
-               <placeName xml:id="name123-1" xml:lang="es" full="yes">Yunguyo</placeName>
-               <placeName xml:id="name123-2" xml:lang="es"/>
-               <placeName xml:id="name123-3" xml:lang="es">Yunguyo</placeName>
-               <placeName xml:id="name123-4" xml:lang="es">yunguyo</placeName>
+            <place xml:id="place-123" source="bib123-1">
+               <placeName xml:id="name123-1" full="yes" type="standardized">San Francisco Higuare</placeName>
+               <placeName xml:id="name123-2" type="standardized-Spanish">San Francisco</placeName>
+               <placeName xml:id="name123-3" type="standardized-Andean">Higuare</placeName>
+               <placeName xml:id="name123-4" type="verbatim">san Francisco higuare</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Chucuito</region>
-                  <settlement type="municipality">Yunguyo</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Arnedo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Checras</placeName>
+                     <placeName type="verbatim">checras</placeName>
+                  </region>
+                  <settlement type="pueblo">San Francisco Higuare</settlement>
                </location>
-               <placeName type="municipality">Chucuito</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">150</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Huaura</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">Huaura</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-11.07008694 -77.59931626</geo>
+               </location>
+               <location>
+                  <geo>-11 04 12.31320 -077 35 57.53760</geo>
+               </location>
+               <note>http://historiadehuaura.galeon.com/: "Fundación de la "Villa de Huaura" o de "Carrión de Velasco" 1597. Al pasar por el antiguo pueblo de Indios de Huaura, el 20 de Julio de 1596, el virrey don Luis de Velasco fue acogido con vivas muestras de simpatía p</note>
+               <bibl xml:id="bib123-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">197</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib123-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">197</citedRange>
+               </bibl>
+               <bibl xml:id="bib123-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/123</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">and digital peru</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/24/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

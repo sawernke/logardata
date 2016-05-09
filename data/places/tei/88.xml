@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Miguel de Usadca</title>
+            <title level="a" xml:lang="es">Santa Ana de Sicllapata</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,110 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-88" type="town">
-               <placeName xml:id="name88-1" xml:lang="es" full="yes">San Miguel de Usadca</placeName>
-               <placeName xml:id="name88-2" xml:lang="es">San Miguel de</placeName>
-               <placeName xml:id="name88-3" xml:lang="es">Usadca</placeName>
-               <placeName xml:id="name88-4" xml:lang="es">sant miguel de vsadca</placeName>
+            <place xml:id="place-88" source="bib88-1">
+               <placeName xml:id="name88-1" full="yes" type="standardized">Santa Ana de Sicllapata</placeName>
+               <placeName xml:id="name88-2" type="standardized-Spanish">Santa Ana de</placeName>
+               <placeName xml:id="name88-3" type="standardized-Andean">Sicllapata</placeName>
+               <placeName xml:id="name88-4" type="verbatim">santa ana de sicllapata</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Larecaja</region>
-                  <settlement type="municipality">San Miguel de Usadca</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Guamalies</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Allauca Guanuco</placeName>
+                     <placeName type="verbatim">Allauca Guanuco</placeName>
+                  </region>
+                  <settlement type="pueblo">Santa Ana de Sicllapata</settlement>
                </location>
-               <placeName type="municipality">Charazane</placeName>
-               <note type="repartimiento">
-        San Miguel de
-        Usadca
-        San Miguel de Usadca
-        
-        sant miguel de vsadca
-        Levillier 1921-26 v9
-        145
-        Levillier 1921-26 v9
-        145
-        AGI-L
-        
-        La Plata
-        La Paz
-        Larecaja
-        0
-        
-        Charazane
-        Charaçana
-        Various
-        indios tributarios de diuersos repartimientos
-        
-        
-        
-        
-        Charazane, Mocomoco, Usadca, Carijana: "asimesmo estan rreducidos en estos pueblos otros 300 yndios tributarios de diuersos repartimientos."
-        
-        
-        
-        
-        
-        
-        
-        Maybe this should be S Miguel de Omanata?
-        
-        
-    </note>
-               <note>
-        San Miguel de
-        Usadca
-        San Miguel de Usadca
-        
-        sant miguel de vsadca
-        Levillier 1921-26 v9
-        145
-        Levillier 1921-26 v9
-        145
-        AGI-L
-        
-        La Plata
-        La Paz
-        Larecaja
-        0
-        
-        Charazane
-        Charaçana
-        Various
-        indios tributarios de diuersos repartimientos
-        
-        
-        
-        
-        Charazane, Mocomoco, Usadca, Carijana: "asimesmo estan rreducidos en estos pueblos otros 300 yndios tributarios de diuersos repartimientos."
-        
-        
-        
-        
-        
-        
-        
-        Maybe this should be S Miguel de Omanata?
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">145</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Dos de Mayo</region>
+                  <region type="department">Huánuco</region>
+                  <settlement type="pueblo">Sallapata</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-9.756931493 -76.77472417</geo>
+               </location>
+               <location>
+                  <geo>-09 45 24.95160 -076 46 29.00640</geo>
+               </location>
+               <bibl xml:id="bib88-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">201</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib88-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">201</citedRange>
+               </bibl>
+               <bibl xml:id="bib88-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/88</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Spelling</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

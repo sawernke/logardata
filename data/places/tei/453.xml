@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Pedro de Congalla</title>
+            <title level="a" xml:lang="es">Saucare</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-453" type="town">
-               <placeName xml:id="name453-1" xml:lang="es" full="yes">San Pedro de Congalla</placeName>
-               <placeName xml:id="name453-2" xml:lang="es">San Pedro</placeName>
-               <placeName xml:id="name453-3" xml:lang="es">Congalla</placeName>
-               <placeName xml:id="name453-4" xml:lang="es">san pedro de congalla</placeName>
+            <place xml:id="place-453" source="bib453-1">
+               <placeName xml:id="name453-1" full="yes" type="standardized">Saucare</placeName>
+               <placeName xml:id="name453-3" type="standardized-Andean">Saucare</placeName>
+               <placeName xml:id="name453-4" type="verbatim">Saucare</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Angaraes</region>
-                  <settlement type="municipality">San Pedro de Congalla</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Paria</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Paria</placeName>
+                     <placeName type="verbatim">Paria</placeName>
+                  </region>
+                  <settlement type="pueblo">Saucare</settlement>
                </location>
-               <placeName type="municipality">Angaraes (Garcia Gonzalez Gadea y Elvira Garcia)</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Angaraes</region>
-                  <region type="department">Huancavelica</region>
-                  <settlement type="municipality">Congalla</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Saucari</region>
+                  <region type="department">Oruro</region>
+                  <settlement type="pueblo">Saucari</settlement>
+                  <note type="modern-location">Not a capital</note>
                </location>
                <location type="gps">
-                  <geo>-12.91666667 -74.48333333</geo>
+                  <geo>-18.18128621 -67.40626263</geo>
                </location>
-               <note>
-        San Pedro
-        Congalla
-        San Pedro de Congalla
-        
-        san pedro de congalla
-        Levillier 1921-26 v9
-        180
-        Levillier 1921-26 v9
-        180
-        AGI-L
-        
-        Lima
-        Guamanga
-        Angaraes
-        1
-        
-        Angaraes (Garcia Gonzalez Gadea y Elvira Garcia)
-        angaraes encomendado en garcia gonzalez gadea y eluira garcia
-        Guayllay
-        guayllay
-        
-        
-        
-        
-        
-        Congalla
-        Peru
-        Huancavelica
-        Angaraes
-        
-        -12.91666667
-        -74.48333333
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-520550&amp;fid=4504&amp;c=peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">180</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-18 10 52.62960 -067 24 22.54680</geo>
+               </location>
+               <bibl xml:id="bib453-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">139</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib453-2">
+                  <title>Levillier 1921-26 v45</title>
+                  <citedRange unit="pp">139</citedRange>
+               </bibl>
+               <bibl xml:id="bib453-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/453</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Other</note>
+               <note type="administrative" subtype="MR_other_notes">https://es.wikipedia.org/wiki/Provincia_de_Saucar%C3%AD: "La provincia está conformada por el municipio de: Toledo." See: http://www.ine.gob.bo/publicaciones/visorPdf.aspx?Codigo=041001&amp;tipo=1</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

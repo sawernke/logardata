@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Guayllapampa</title>
+            <title level="a" xml:lang="es">Talavera de Sipesipe</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,83 +51,62 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-438" type="town">
-               <placeName xml:id="name438-1" xml:lang="es" full="yes">San Juan de Guayllapampa</placeName>
-               <placeName xml:id="name438-2" xml:lang="es">San Juan</placeName>
-               <placeName xml:id="name438-3" xml:lang="es">Guayllapampa</placeName>
-               <placeName xml:id="name438-4" xml:lang="es">sant joan de guayllapampa</placeName>
+            <place xml:id="place-438" source="bib438-1">
+               <placeName xml:id="name438-1" full="yes" type="standardized">Talavera de Sipesipe</placeName>
+               <placeName xml:id="name438-2" type="standardized-Spanish">Talavera de</placeName>
+               <placeName xml:id="name438-3" type="standardized-Andean">Sipesipe</placeName>
+               <placeName xml:id="name438-4" type="verbatim">talauera de sipesipe</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">San Juan de Guayllapampa</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Cochabamba</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Sipesipe</placeName>
+                     <placeName type="verbatim">sipesipe</placeName>
+                  </region>
+                  <settlement type="pueblo">Talavera de Sipesipe</settlement>
                </location>
-               <placeName type="municipality">Soras</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Cangallo</region>
-                  <region type="department">Ayacucho</region>
-                  <settlement type="municipality">Huayllapampa</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Quillacollo</region>
+                  <region type="department">Cochabamba</region>
+                  <settlement type="pueblo">Sipe Sipe</settlement>
                </location>
-               <note type="modern-location">Distrito Totos</note>
+               <population>
+                  <desc>3691</desc>
+               </population>
+               <population source="bib438-1" type="tributaries">
+                  <desc>819</desc>
+               </population>
                <location type="gps">
-                  <geo>-13.41805556 -74.52416667</geo>
+                  <geo>-17.45378133 -66.35752317</geo>
                </location>
-               <note>
-        San Juan
-        Guayllapampa
-        San Juan de Guayllapampa
-        
-        sant joan de guayllapampa
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        1
-        
-        Soras
-        soras
-        
-        
-        
-        
-        
-        
-        
-        Huayllapampa
-        Peru
-        Ayacucho
-        Cangallo
-        Distrito Totos
-        -13.41805556
-        -74.52416667
-        Coordinates from: http://www.postalcodedb.com/05830_Huayllapampa_Peru.html - But it does not appear as centro poblado or comunidad campesina in http://es.wikipedia.org/wiki/Distrito_de_Totos
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-17 27 13.61160 -066 21 27.08280</geo>
+               </location>
+               <bibl xml:id="bib438-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">141</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib438-2">
+                  <title>Levillier 1921-26 v63</title>
+                  <citedRange unit="pp">141</citedRange>
+               </bibl>
+               <bibl xml:id="bib438-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/438</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

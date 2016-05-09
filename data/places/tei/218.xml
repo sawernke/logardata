@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Challa</title>
+            <title level="a" xml:lang="es">Colquepata</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,59 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-218" type="town">
-               <placeName xml:id="name218-1" xml:lang="es" full="yes">San Juan de Challa</placeName>
-               <placeName xml:id="name218-2" xml:lang="es">San Juan de</placeName>
-               <placeName xml:id="name218-3" xml:lang="es">Challa</placeName>
-               <placeName xml:id="name218-4" xml:lang="es">san joan de challa</placeName>
+            <place xml:id="place-218" source="bib218-1">
+               <placeName xml:id="name218-1" full="yes" type="standardized">Colquepata</placeName>
+               <placeName xml:id="name218-3" type="standardized-Andean">Colquepata</placeName>
+               <placeName xml:id="name218-4" type="verbatim">colquepata</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Parinacocha</region>
-                  <settlement type="municipality">San Juan de Challa</settlement>
+                  <region type="corregimiento">Andes</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Tonono,Colquepata</placeName>
+                     <placeName type="verbatim">tonono y colquepata</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Ovay</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Colquepata</settlement>
                </location>
-               <placeName type="municipality">Parinacocha</placeName>
-               <note>
-        San Juan de
-        Challa
-        San Juan de Challa
-        
-        san joan de challa
-        Levillier 1921-26 v9
-        162
-        Levillier 1921-26 v9
-        162
-        AGI-L
-        
-        Lima
-        Cuzco
-        Parinacocha
-        0
-        
-        Parinacocha
-        Parinacocha
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find a Challa in Ayacucho--there are 2 in Cusco and 1 in Arequipa accoridng to IM: http://www.indexmundi.com/zp/pe/3060.htm
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">162</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Paucartambo</region>
+                  <region type="department">Cusco</region>
+                  <settlement type="pueblo">Colquepata</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-13.36028857 -71.67335194</geo>
+               </location>
+               <location>
+                  <geo>-13 21 37.04040 -071 40 24.06720</geo>
+               </location>
+               <bibl xml:id="bib218-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">165</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib218-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">165</citedRange>
+               </bibl>
+               <bibl xml:id="bib218-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/218</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

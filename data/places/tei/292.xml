@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de Monserrate</title>
+            <title level="a" xml:lang="es">San Cristobal Saco</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-292" type="town">
-               <placeName xml:id="name292-1" xml:lang="es" full="yes">Nuestra Señora de Monserrate</placeName>
-               <placeName xml:id="name292-2" xml:lang="es">Nuestra Señora de Monserrate</placeName>
-               <placeName xml:id="name292-3" xml:lang="es"/>
-               <placeName xml:id="name292-4" xml:lang="es">nuestra señora de Monserrate</placeName>
+            <place xml:id="place-292" source="bib292-1">
+               <placeName xml:id="name292-1" full="yes" type="standardized">San Cristobal Saco</placeName>
+               <placeName xml:id="name292-2" type="standardized-Spanish">San Cristobal</placeName>
+               <placeName xml:id="name292-3" type="standardized-Andean">Saco</placeName>
+               <placeName xml:id="name292-4" type="verbatim">san cristoval saco</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Yucay</region>
-                  <settlement type="municipality">Nuestra Señora de Monserrate</settlement>
+                  <region type="ciudad">Arequipa</region>
+                  <region type="corregimiento">Carumas y Ubinas de Colesuyo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Carumas</placeName>
+                     <placeName type="verbatim">carumas</placeName>
+                  </region>
+                  <settlement type="pueblo">San Cristobal Saco</settlement>
                </location>
-               <placeName type="municipality">Chinchero y Cupirpongo</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Urubamba</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Chinchero</settlement>
+                  <region type="province">Carabaya</region>
+                  <region type="department">Puno</region>
+                  <settlement type="pueblo">Saco</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.0525 -72.04805556</geo>
+                  <geo>-13.94623066 -69.83089133</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">167</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-13 56 46.43160 -069 49 51.20760</geo>
+               </location>
+               <note>not sure if this is correct - Coordinates from: http://www.indexmundi.com/zp/pe/15520.htm</note>
+               <bibl xml:id="bib292-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">175</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib292-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">175</citedRange>
+               </bibl>
+               <bibl xml:id="bib292-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/292</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">and Digital Peru</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/2/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

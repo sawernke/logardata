@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Salvador de Oropesa</title>
+            <title level="a" xml:lang="es">[San Pedro de] Pilas</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-181" type="town">
-               <placeName xml:id="name181-1" xml:lang="es" full="yes">San Salvador de Oropesa</placeName>
-               <placeName xml:id="name181-2" xml:lang="es">San Salvador de Oropesa</placeName>
-               <placeName xml:id="name181-3" xml:lang="es"/>
-               <placeName xml:id="name181-4" xml:lang="es">san sluador de oropesa</placeName>
+            <place xml:id="place-181" source="bib181-1">
+               <placeName xml:id="name181-1" full="yes" type="standardized">[San Pedro de] Pilas</placeName>
+               <placeName xml:id="name181-2" type="standardized-Spanish">[San Pedro de]</placeName>
+               <placeName xml:id="name181-3" type="standardized-Andean">Pilas</placeName>
+               <placeName xml:id="name181-4" type="verbatim">pilas</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canches</region>
-                  <settlement type="municipality">San Salvador de Oropesa</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Yauyos</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yauyos</placeName>
+                     <placeName type="verbatim">yauyos</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Mancos y Laraos</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">[San Pedro de] Pilas</settlement>
                </location>
-               <placeName type="municipality">Various</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Quispicanchi</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Oropesa</settlement>
+                  <region type="province">Yauyos</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">San Pedro de Pilas</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.08416667 -71.78916667</geo>
+                  <geo>-12.4544655 -76.22659682</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">158</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-12 27 16.07760 -076 13 35.74920</geo>
+               </location>
+               <bibl xml:id="bib181-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">192</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib181-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">192</citedRange>
+               </bibl>
+               <bibl xml:id="bib181-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/181</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

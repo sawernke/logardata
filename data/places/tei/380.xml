@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Pampamico</title>
+            <title level="a" xml:lang="es">Corral de Almaguer de Yanque</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-380" type="town">
-               <placeName xml:id="name380-1" xml:lang="es" full="yes">Pampamico</placeName>
-               <placeName xml:id="name380-2" xml:lang="es"/>
-               <placeName xml:id="name380-3" xml:lang="es">Pampamico</placeName>
-               <placeName xml:id="name380-4" xml:lang="es">Pampamico</placeName>
+            <place xml:id="place-380" source="bib380-1">
+               <placeName xml:id="name380-1" full="yes" type="standardized">Corral de Almaguer de Yanque</placeName>
+               <placeName xml:id="name380-2" type="standardized-Spanish">Corral de</placeName>
+               <placeName xml:id="name380-3" type="standardized-Andean">Yanque</placeName>
+               <placeName xml:id="name380-4" type="verbatim">corral de almaguer de yanque</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Arequipa</region>
                   <region type="corregimiento">Collaguas</region>
-                  <settlement type="municipality">Pampamico</settlement>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yanquecollagua</placeName>
+                     <placeName type="verbatim">yanquecollagua</placeName>
+                  </region>
+                  <settlement type="pueblo">Corral de Almaguer de Yanque</settlement>
                </location>
-               <placeName type="municipality">[Cabana]</placeName>
-               <note>
-        
-        Pampamico
-        Pampamico
-        
-        Pampamico
-        Levillier 1921-26 v9
-        174
-        Levillier 1921-26 v9
-        174
-        AGI-L
-        
-        Lima
-        Arequipa
-        Collaguas
-        0
-        
-        [Cabana]
-        camana
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find a location for "Pampamico" or "Pampa Mico"
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Caylloma</region>
+                  <region type="department">Arequipa</region>
+                  <settlement type="pueblo">Yanque</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-15.64949484 -71.65885824</geo>
+               </location>
+               <location>
+                  <geo>-15 38 58.18200 -071 39 31.88880</geo>
+               </location>
+               <bibl xml:id="bib380-1">
+                  <title>Levillier 1921-26 v9</title>
                   <citedRange unit="pp">174</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib380-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">174</citedRange>
+               </bibl>
+               <bibl xml:id="bib380-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/380</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/23/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

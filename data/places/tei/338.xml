@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Lorenzo de Tarapacá</title>
+            <title level="a" xml:lang="es">Santiago[de Pupuja?]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-338" type="town">
-               <placeName xml:id="name338-1" xml:lang="es" full="yes">San Lorenzo de Tarapacá</placeName>
-               <placeName xml:id="name338-2" xml:lang="es">San Lorenzo</placeName>
-               <placeName xml:id="name338-3" xml:lang="es">Tarapacá</placeName>
-               <placeName xml:id="name338-4" xml:lang="es">san Lorenzo de tarapaca</placeName>
+            <place xml:id="place-338" source="bib338-1">
+               <placeName xml:id="name338-1" full="yes" type="standardized">Santiago[de Pupuja?]</placeName>
+               <placeName xml:id="name338-2" type="standardized-Spanish">Santiago[de</placeName>
+               <placeName xml:id="name338-3" type="standardized-Andean">[Pupuja?]</placeName>
+               <placeName xml:id="name338-4" type="verbatim">santiago</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Arica</region>
-                  <settlement type="municipality">San Lorenzo de Tarapacá</settlement>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Collasuyo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Arapa</placeName>
+                     <placeName type="verbatim">arapa</placeName>
+                  </region>
+                  <settlement type="pueblo">Santiago[de Pupuja?]</settlement>
                </location>
-               <placeName type="municipality">Tarapacá</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Tamarugal</region>
-                  <region type="department">Tarapacá</region>
-                  <settlement type="municipality">San Lorenzo de Tarapacá</settlement>
+                  <region type="province">Azangaro</region>
+                  <region type="department">Puno</region>
+                  <settlement type="pueblo">Santiago de Pupuja District</settlement>
                </location>
                <location type="gps">
-                  <geo>-20.28333333 -69.33333333</geo>
+                  <geo>-15.05287674 -70.2783458</geo>
                </location>
-               <note>
-        San Lorenzo
-        Tarapacá
-        San Lorenzo de Tarapacá
-        
-        san Lorenzo de tarapaca
-        Levillier 1921-26 v9
-        172
-        Levillier 1921-26 v9
-        172
-        AGI-L
-        
-        Lima
-        Arequipa
-        Arica
-        1
-        -1
-        Tarapacá
-        tarapacá
-        
-        
-        
-        
-        
-        
-        
-        San Lorenzo de Tarapacá
-        Peru
-        Tarapacá
-        Tamarugal
-        
-        -20.28333333
-        -69.33333333
-        NO - GET Coordinates FROM: http://es.wikipedia.org/wiki/San_Lorenzo_de_Tarapac%C3%A1 - -19.924089°, -69.510911°
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">172</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-15 03 10.35720 -070 16 42.04560</geo>
+               </location>
+               <note>There are a lot of places called Santiago. Maybe Santiago de Pupuja? But speculative.</note>
+               <bibl xml:id="bib338-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">154</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib338-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">154</citedRange>
+               </bibl>
+               <bibl xml:id="bib338-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/338</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/24/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

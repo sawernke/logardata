@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Salvador de Ayapata</title>
+            <title level="a" xml:lang="es">San  Geronimo de Tunan</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-157" type="town">
-               <placeName xml:id="name157-1" xml:lang="es" full="yes">San Salvador de Ayapata</placeName>
-               <placeName xml:id="name157-2" xml:lang="es">San Salvador</placeName>
-               <placeName xml:id="name157-3" xml:lang="es">Ayapata</placeName>
-               <placeName xml:id="name157-4" xml:lang="es">san salvador de ayapata</placeName>
+            <place xml:id="place-157" source="bib157-1">
+               <placeName xml:id="name157-1" full="yes" type="standardized">San  Geronimo de Tunan</placeName>
+               <placeName xml:id="name157-2" type="standardized-Spanish">San  Geronimo de</placeName>
+               <placeName xml:id="name157-3" type="standardized-Andean">[Tunan]</placeName>
+               <placeName xml:id="name157-4" type="verbatim">san Geronimo de puna</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Caravaya</region>
-                  <settlement type="municipality">San Salvador de Ayapata</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Jauja</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Huringuanca</placeName>
+                     <placeName type="verbatim">Huringuanca</placeName>
+                  </region>
+                  <settlement type="pueblo">San  Geronimo de Tunan</settlement>
                </location>
-               <placeName type="municipality">Ollachea</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Carabaya</region>
-                  <region type="department">Puno</region>
-                  <settlement type="municipality">Ayapata District</settlement>
+                  <region type="province">Huancayo</region>
+                  <region type="department">Junín</region>
+                  <settlement type="pueblo">S Jeronimo de Tunán</settlement>
+                  <note type="modern-location">Adjoining Orcotuna. Coordinates from: http://www.postalcodedb.com/12116_San%20Jeronimo%20de%20Tunan_Peru.html</note>
                </location>
                <location type="gps">
-                  <geo>-13.1025 -70.32888889</geo>
+                  <geo>-11.94905854 -75.2826588</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">156</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-11 56 56.61240 -075 16 57.57240</geo>
+               </location>
+               <bibl xml:id="bib157-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">190</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib157-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">190</citedRange>
+               </bibl>
+               <bibl xml:id="bib157-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/157</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

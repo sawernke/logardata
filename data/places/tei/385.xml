@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Mateo de Zunilata</title>
+            <title level="a" xml:lang="es">Hatuncolla</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,52 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-385" type="town">
-               <placeName xml:id="name385-1" xml:lang="es" full="yes">San Mateo de Zunilata</placeName>
-               <placeName xml:id="name385-2" xml:lang="es">San Mateo</placeName>
-               <placeName xml:id="name385-3" xml:lang="es">Zunilata</placeName>
-               <placeName xml:id="name385-4" xml:lang="es">san mateo de çunilata</placeName>
+            <place xml:id="place-385" source="bib385-1">
+               <placeName xml:id="name385-1" full="yes" type="standardized">Hatuncolla</placeName>
+               <placeName xml:id="name385-3" type="standardized-Andean">Hatuncolla</placeName>
+               <placeName xml:id="name385-4" type="verbatim">vn pueblo que se llama del propio nombre</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Carumas y Ubinas de Colesuyo</region>
-                  <settlement type="municipality">San Mateo de Zunilata</settlement>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Urcosuyo</region>
+                  <settlement type="pueblo">Hatuncolla</settlement>
                </location>
-               <placeName type="municipality">Cochuna</placeName>
-               <note>
-        San Mateo
-        Zunilata
-        San Mateo de Zunilata
-        
-        san mateo de çunilata
-        Levillier 1921-26 v9
-        175
-        Levillier 1921-26 v9
-        175
-        AGI-L
-        
-        Lima
-        Arequipa
-        Carumas y Ubinas de Colesuyo
-        0
-        
-        Cochuna
-        cochuna
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find locations for "Zunilata" or "Cochuna" in Peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">175</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Puno</region>
+                  <region type="department">Puno</region>
+                  <settlement type="pueblo">Hatuncolla</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-15.68868208 -70.14392415</geo>
+               </location>
+               <location>
+                  <geo>-15 41 19.25520 -070 08 38.12640</geo>
+               </location>
+               <note>according to the Spanish language Wikipedia entry for the archaeological site Sillustani, which gives Coordinates, the small locality Sillustani is in is called Hatuncolla, while the page for Hatuncolla does not have Coordinates... I have used the Sillu</note>
+               <bibl xml:id="bib385-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">152</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib385-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">152</citedRange>
+               </bibl>
+               <bibl xml:id="bib385-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/385</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/23/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

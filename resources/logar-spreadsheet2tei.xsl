@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:syriaca="http://syriaca.org"
-    xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    exclude-result-prefixes="xs syriaca functx saxon" version="2.0" 
+    xmlns:tei="http://www.tei-c.org/ns/1.0" 
+    xmlns:syriaca="http://syriaca.org"
+    xmlns:saxon="http://saxon.sf.net/" 
+    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" 
+    xmlns:functx="http://www.functx.com">
         
     <xsl:output encoding="UTF-8" indent="yes" method="xml" name="xml" />
    
@@ -67,146 +70,167 @@
                     <text>
                         <body>
                             <listPlace>
-                                <!-- NOTE: question place-type? controlled vocabulary   source=""-->
-                                <place xml:id="place-{$record-id}" type="town">
-                                    <xsl:for-each select="Name_reduccion_standardized_both_parts">
-                                        <!-- 
-                                            NOTE: question xml:lang  
-                                        http://www-01.sil.org/iso639-3/codes.asp?order=lang_type&letter=a
-                                        NOTE: use @full='yes'
-                                        should or should not use syriaca-headowrd, or equivelant?
-                                        syriaca-tags="#syriaca-headword" 
-                                        NOTE: deal with @source
-                                        -->
-                                        <!-- NOTE blank placeName nodes in original run, see Andamarca for an example  -->
-                                        <xsl:if test="not(empty(.))">
-                                            <placeName xml:id="name{$record-id}-1"  xml:lang="es" full="yes" source="bib{$record-id}-1"><xsl:value-of select="."/></placeName>    
-                                        </xsl:if>
+                                <!-- NOTE: question place-type? controlled vocabulary   source=""  type="town"-->
+                                <place xml:id="place-{$record-id}" source="bib{$record-id}-1">
+                                    <xsl:for-each select="Name_reduccion_standardized_both_parts[. != '']">
+                                        <!-- NOTE blank placeName nodes in original run, see Andamarca for an example  -->    
+                                        <placeName xml:id="name{$record-id}-1" full="yes" type="standardized"><xsl:value-of select="."/></placeName>    
                                     </xsl:for-each>
                                     <!-- Spanish name -->
-                                    <xsl:for-each select="Name_reduccion_standardized_S_part">
-                                        <placeName xml:id="name{$record-id}-2"  xml:lang="es" source="bib{$record-id}-1"><xsl:value-of select="."/></placeName>
+                                    <xsl:for-each select="Name_reduccion_standardized_S_part[. != '']">
+                                        <placeName xml:id="name{$record-id}-2" type="standardized-Spanish"><xsl:value-of select="."/></placeName>
                                     </xsl:for-each>
-                                    <!-- 
-                                        NOTE: lang code for andean other way to denote name parts?
-                                        Andean name
-                                    -->
-                                    <xsl:for-each select="Name_reduccion_standardized_A_part">
-                                        <placeName xml:id="name{$record-id}-3"  xml:lang="es" source="bib{$record-id}-1"><xsl:value-of select="."/></placeName>
+                                    <!-- Andean name -->
+                                    <xsl:for-each select="Name_reduccion_standardized_A_part[. != '']">
+                                        <placeName xml:id="name{$record-id}-3" type="standardized-Andean"><xsl:value-of select="."/></placeName>
                                     </xsl:for-each>
-                                    <!-- NOTE: name as given -->
-                                    <xsl:for-each select="Name_reduccion_as_given">
-                                        <placeName xml:id="name{$record-id}-4"  xml:lang="es" source="bib{$record-id}-1"><xsl:value-of select="."/></placeName>
+                                    <!-- NOTE: name as given in source -->
+                                    <xsl:for-each select="Name_reduccion_as_given[. != '']">
+                                        <placeName xml:id="name{$record-id}-4" type="verbatim"><xsl:value-of select="."/></placeName>
                                     </xsl:for-each>
 
                                     <!-- Nested/hierarchical place name -->
-                                    <location type="ancient" source="bib{$record-id}-1">
-                                        <region type="audiencia"><xsl:value-of select="Audiencia"/></region>
-                                        <region type="ciudad"><xsl:value-of select="Ciudad"/></region>
-                                        <region type="corregimiento"><xsl:value-of select="Corregimiento"/></region>                                        
-                                        <settlement type="pueblo"><xsl:value-of select="Name_reduccion_standardized_both_parts"/></settlement>
+                                    <location type="ancient">
+                                        <xsl:if test="Audiencia[. != '']">
+                                            <region type="audiencia"><xsl:value-of select="Audiencia"/></region>    
+                                        </xsl:if>
+                                        <xsl:if test="Ciudad[. != '']">
+                                            <region type="ciudad"><xsl:value-of select="Ciudad"/></region>
+                                        </xsl:if>
+                                        <xsl:if test="Corregimiento[. != '']">
+                                            <region type="corregimiento"><xsl:value-of select="Corregimiento"/></region>
+                                        </xsl:if>
+                                        <xsl:if test="Repart1_name_standardized[. != '']">
+                                            <region type="repartimiento">
+                                                <placeName type="standardized" full="yes"><xsl:value-of select="Repart1_name_standardized"/></placeName>
+                                                <placeName type="verbatim"><xsl:value-of select="Repart1_name_as_given"/></placeName>
+                                            </region>
+                                        </xsl:if>
+                                        <xsl:if test="Repart2_name_standardized[. != '']">
+                                            <region type="repartimiento">
+                                                <placeName type="standardized" full="yes"><xsl:value-of select="Repart2_name_standardized"/></placeName>
+                                                <placeName type="verbatim"><xsl:value-of select="Repart2_name_as_given"/></placeName>
+                                            </region>
+                                        </xsl:if>
+                                        <xsl:if test="Repart3_name_standardized[. != '']">
+                                            <region type="repartimiento">
+                                                <placeName type="standardized" full="yes"><xsl:value-of select="Repart3_name_standardized"/></placeName>
+                                                <placeName type="verbatim"><xsl:value-of select="Repart3_name_as_given"/></placeName>
+                                            </region>
+                                        </xsl:if>
+                                        <xsl:if test="Repart4_name_standardized[. != '']">
+                                            <region type="repartimiento">
+                                                <placeName type="standardized" full="yes"><xsl:value-of select="Repart4_name_standardized"/></placeName>
+                                                <placeName type="verbatim"><xsl:value-of select="Repart4_name_as_given"/></placeName>
+                                            </region>
+                                        </xsl:if>
+                                        <xsl:if test="Name_reduccion_standardized_both_parts[. != '']">
+                                            <settlement type="pueblo"><xsl:value-of select="Name_reduccion_standardized_both_parts"/></settlement>
+                                        </xsl:if> 
+                                        <!-- Should this include @source, or should the whole record place include the @source? -->
+                                        <xsl:if test="Repart_notes[. != '']">
+                                            <note type="repartimiento"><xsl:value-of select="normalize-space(Repart_notes)"></xsl:value-of></note>
+                                        </xsl:if>
                                     </location>
                                     
-                                    <!-- or http://quod.lib.umich.edu/cgi/t/tei/tei-idx?type=HTML&rgn=DIV2&byte=1813646
-                                    <placeName xml:id="name{$record-id}-5"  xml:lang="es" source="" type="audiencia"><xsl:value-of select="."/></placeName>
-                                    -->
-                                    <!-- 
-                                        <Located_>1</Located_>
-                                        Has the reducción town been located on a modern map? No = 0, Yes = 1
-                                    -->
+                                    <!-- NOTE: Need controlled vocab for place types, can use http://syriaca.org/documentation/place-types.html as a starting point -->
+                                    <xsl:if test="Mod_prov[. != '']">
+                                        <location type="modern">
+                                            <xsl:if test="Mod_country[. != '']">
+                                                <country><xsl:value-of select="Mod_country"/></country>
+                                            </xsl:if>
+                                            <xsl:if test="Mod_prov[. != '']">
+                                                <region type="province"><xsl:value-of select="Mod_prov"/></region>
+                                            </xsl:if>
+                                            <xsl:if test="Mod_dept[. != '']">
+                                                <region type="department"><xsl:value-of select="Mod_dept"/></region>
+                                            </xsl:if>
+                                            <xsl:if test="Mod_settlmt[. != '']">
+                                                <settlement type="pueblo"><xsl:value-of select="Mod_settlmt"/></settlement>
+                                            </xsl:if>
+                                            <xsl:if test="Notes_mod_loc[. != '']">
+                                                <note type="modern-location"><xsl:value-of select="normalize-space(Notes_mod_loc)"/></note>    
+                                            </xsl:if>
+                                        </location>
+                                    </xsl:if>
+                                    
                                     <!-- is there a date? @when -->
-                                    <xsl:if test="Pop_reduc != ''">
-                                        <population source="bib{$record-id}-1">    
+                                    <!-- Population of the reducción town, if indicated -->
+                                    <xsl:if test="Pop_reduc[. != '']">
+                                        <population>    
                                             <desc><xsl:value-of select="Pop_reduc"/></desc>
                                         </population>
                                     </xsl:if>
-                                    <xsl:if test="Tribs_reduc != ''">
+                                    <!-- Number of tributaries in the reducción town, if indicated -->
+                                    <xsl:if test="Tribs_reduc[. != '']">
                                         <population source="bib{$record-id}-1" type="tributaries">
                                             <desc><xsl:value-of select="Tribs_reduc"/></desc>
                                         </population>
                                     </xsl:if>
                                     
-                                    <!-- NOTE:  Repartmento names are related names... not sure how to add them. with a ref, to thier record? -->
-                                    <!-- 
-                                    <Repart1_name_standardized>Tarabuco</Repart1_name_standardized>
-                                    <Repart1_name_as_given>Tarabuco</Repart1_name_as_given>
-                                    <Repart2_name_standardized></Repart2_name_standardized>
-                                    <Repart2_name_as_given></Repart2_name_as_given>
-                                    <Repart3_name_standardized></Repart3_name_standardized>
-                                    <Repart3_name_as_given></Repart3_name_as_given>
-                                    <Repart4_name_standardized></Repart4_name_standardized>
-                                    <Repart4_name_as_given></Repart4_name_as_given>
-                                    -->
-                                    <xsl:for-each select="Repart1_name_standardized">
-                                        <placeName type="pueblo"><xsl:value-of select="."/></placeName>
-                                    </xsl:for-each>
-                                    <!-- Should this include @source, or should the whole record place include the @source? -->
-                                    <xsl:if test="Repart_notes != ''">
-                                        <note type="repartimiento"><xsl:value-of select="."></xsl:value-of></note>
-                                    </xsl:if>
-                                    
-                                    <!-- NOTE: Need controlled vocab for place types, can use http://syriaca.org/documentation/place-types.html as a starting point -->
-                                    <xsl:if test="Mod_prov != ''">
-                                        <location type="modern">
-                                            <xsl:if test="Mod_country != ''">
-                                                <country><xsl:value-of select="Mod_country"/></country>
-                                            </xsl:if>
-                                            <xsl:if test="Mod_prov != ''">
-                                                <region type="province"><xsl:value-of select="Mod_prov"/></region>
-                                            </xsl:if>
-                                            <xsl:if test="Mod_dept != ''">
-                                                <region type="department"><xsl:value-of select="Mod_dept"/></region>
-                                            </xsl:if>
-                                            <xsl:if test="Mod_settlmt != ''">
-                                                <settlement type="pueblo"><xsl:value-of select="Mod_settlmt"/></settlement>
-                                            </xsl:if>
-                                        </location>
-                                    </xsl:if>
-                                    <xsl:if test="Notes_mod_loc != ''">
-                                        <note type="modern-location"><xsl:value-of select="Notes_mod_loc"/></note>    
-                                    </xsl:if>
-                                    
-                                    <xsl:if test="LatDD != ''">
+                                    <xsl:if test="Latdd_new[. != '']">
                                         <location type="gps">
                                             <!--<xsl:if test="Confidence != ''"><xsl:attribute name="cert" select="Confidence"/></xsl:if>-->
-                                            <geo><xsl:value-of select="concat(LatDD,' ',LongDD)"/></geo>
+                                            <geo><xsl:value-of select="concat(Latdd_new,' ',Longdd_new)"/></geo>
                                         </location>
                                     </xsl:if>
-                                    <!--
-                                        <placeName type="ancient" subtype="settlement">
-                                        <placeName type="modern" subtype="settlement">
-                                    -->
-                                    <xsl:if test="Reduccion_notes != ''">
-                                        <note><xsl:value-of select="."></xsl:value-of></note>
+                                    <xsl:if test="DMLat_new[. != '']">
+                                        <location>
+                                            <!--<xsl:if test="Confidence != ''"><xsl:attribute name="cert" select="Confidence"/></xsl:if>-->
+                                            <geo><xsl:value-of select="concat(DMLat_new,' ',DMLonG_new)"/></geo>
+                                        </location>
                                     </xsl:if>
-                                    <!-- bibl
+                                    <xsl:if test="Reduccion_notes[. != '']">
+                                        <note><xsl:value-of select="normalize-space(Reduccion_notes)"></xsl:value-of></note>
+                                    </xsl:if>
                                     
-                                    <Info_source>Levillier 1921-26 v9</Info_source>
-                                    <Info_source_page_number>134</Info_source_page_number>
-                                    <Secondary_source>Levillier 1921-26 v9</Secondary_source>
-                                    <Secondary_source_page_number>134</Secondary_source_page_number>
-                                    <Primary_source>AGI-L</Primary_source>
-                                    <Primary_source_folio></Primary_source_folio>
-                                    
-                                        <Info_source>Levillier 1921-26 v9</Info_source>
-                                        <Info_source_page_number>221</Info_source_page_number>
-                                        <Transcription>Levillier 1921-26 v9</Transcription>
-                                        <Transcription_page_number>221</Transcription_page_number>
-                                        <Manuscript>AGI-L</Manuscript>
-                                        <Manuscript_folio></Manuscript_folio>
-                                    -->
-                                    <xsl:if test="Info_source != ''">
+                                    <xsl:if test="Info_source[. != '']">
                                         <bibl xml:id="bib{$record-id}-1">
-                                            <title>Gobernantes del Perú, Volume IX</title>
-                                            <author>Levilier 1925</author>
-                                            <xsl:if test="Info_source_page_number != ''">
+                                            <title><xsl:value-of select="Info_source[. != '']"/></title>
+                                            <xsl:if test="Info_source_page_number[. != '']">
                                                 <citedRange unit="pp"><xsl:value-of select="Info_source_page_number"/></citedRange>
                                             </xsl:if>
-                                            <publisher>Imprenta de Juan Pueyo</publisher>
-                                            <pubPlace>Madrid</pubPlace>
+                                        </bibl>
+                                       <!--
+                                        <xsl:choose>
+                                            <xsl:when test="contains(Info_source,'Levillier 1921-26 v9')">
+                                                <bibl xml:id="bib{$record-id}-1">
+                                                    <title>Gobernantes del Perú, Volume IX</title>
+                                                    <author>Levilier 1925</author>
+                                                    <xsl:if test="Info_source_page_number[. != '']">
+                                                        <citedRange unit="pp"><xsl:value-of select="Info_source_page_number"/></citedRange>
+                                                    </xsl:if>
+                                                    <ptr target="http://logarandes.org/bibl/6396629"/>
+                                                </bibl>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <bibl xml:id="bib{$record-id}-1">
+                                                    <title><xsl:value-of select="Info_source[. != '']"/></title>
+                                                    <xsl:if test="Info_source_page_number[. != '']">
+                                                        <citedRange unit="pp"><xsl:value-of select="Info_source_page_number"/></citedRange>
+                                                    </xsl:if>
+                                                </bibl>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                        -->
+                                    </xsl:if>
+                                    <xsl:if test="Secondary_source[. != '']">
+                                        <bibl xml:id="bib{$record-id}-2">
+                                            <title><xsl:value-of select="Secondary_source"/></title>
+                                            <xsl:if test="Secondary_source_page_number[. != '']">
+                                                <citedRange unit="pp"><xsl:value-of select="Info_source_page_number"/></citedRange>
+                                            </xsl:if>
                                         </bibl>
                                     </xsl:if>
-                                    <xsl:if test="Manuscript != ''">
+                                    <xsl:if test="Primary_source[. != ''][not(contains(.,'Levillier 1921-26 v9'))]">
+                                            <bibl xml:id="bib{$record-id}-3">
+                                                <title><xsl:value-of select="Primary_source"/></title>
+                                                <xsl:if test="Primary_source_folio[. != '']">
+                                                    <citedRange unit="folio"><xsl:value-of select="Primary_source_folio"/></citedRange>
+                                                </xsl:if>
+                                            </bibl>                                            
+                                    </xsl:if>
+                                    <xsl:if test="Manuscript[. != '']">
                                         <msDesc>
                                             <msIdentifier><xsl:value-of select="Manuscript"/></msIdentifier>
                                             <xsl:if test="Manuscript_folio">
@@ -216,6 +240,13 @@
                                     </xsl:if>
                                     <!-- Logar id -->
                                     <idno type="URI">http://logarandes.org/place/<xsl:value-of select="$record-id"/></idno>
+                                    <!-- Administrative notes -->
+                                    <xsl:for-each select="Moved[. != ''] | Moved_by[. != ''] | Move_date[. != ''] | Move_ref[. != ''] | MR_other_notes[. != ''] | Delete_2[. != ''] | Delete_notes[. != ''] | MR_other_notes[. != '']">
+                                        <note type="administrative" subtype="{name(.)}">
+                                            <xsl:value-of select="normalize-space(.)"/>
+                                        </note>
+                                    </xsl:for-each>
+
                                 </place>
                             </listPlace>
                         </body>
@@ -232,7 +263,7 @@
         <teiHeader>
             <fileDesc>
                 <titleStmt>
-                    <title level="a" xml:lang="en"><xsl:value-of select="Name_reduccion_standardized_both_parts"/></title>
+                    <title level="a" xml:lang="es"><xsl:value-of select="Name_reduccion_standardized_both_parts"/></title>
                     <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
                     <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
                     <funder>The National Endowment for the Humanities</funder>

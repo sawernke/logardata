@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santo Domingo de Ulcay</title>
+            <title level="a" xml:lang="es">San Juan de la Fuente [de Coporaque?]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-326" type="town">
-               <placeName xml:id="name326-1" xml:lang="es" full="yes">Santo Domingo de Ulcay</placeName>
-               <placeName xml:id="name326-2" xml:lang="es">Santo Domingo</placeName>
-               <placeName xml:id="name326-3" xml:lang="es">Ulcay</placeName>
-               <placeName xml:id="name326-4" xml:lang="es">santo domingo de Vlcay</placeName>
+            <place xml:id="place-326" source="bib326-1">
+               <placeName xml:id="name326-1" full="yes" type="standardized">San Juan de la Fuente [de Coporaque?]</placeName>
+               <placeName xml:id="name326-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name326-3" type="standardized-Andean">[Coporaque?]</placeName>
+               <placeName xml:id="name326-4" type="verbatim">sant joan de la Fuente</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Andaguaylas</region>
-                  <settlement type="municipality">Santo Domingo de Ulcay</settlement>
+                  <region type="corregimiento">Canas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Coporaque</placeName>
+                     <placeName type="verbatim">coporaque</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">hancocaua</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">San Juan de la Fuente [de Coporaque?]</settlement>
                </location>
-               <placeName type="municipality">Andaguaylas</placeName>
-               <note>
-        Santo Domingo
-        Ulcay
-        Santo Domingo de Ulcay
-        
-        santo domingo de Vlcay
-        Levillier 1921-26 v9
-        169
-        Levillier 1921-26 v9
-        169
-        AGI-L
-        
-        Lima
-        Cuzco
-        Andaguaylas
-        0
-        
-        Andaguaylas
-        andaguailas
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find a location for "Ulcay," "Ulcai," "Olcay," or "Olcai"
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">169</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Espinar</region>
+                  <region type="department">Cusco</region>
+               </location>
+               <location type="gps">
+                  <geo>-14.80075151 -71.53174666</geo>
+               </location>
+               <location>
+                  <geo>-14 48 02.70720 -071 31 54.28920</geo>
+               </location>
+               <note>[Note to self: distinguish from Coporaque in Colca valley?]</note>
+               <bibl xml:id="bib326-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">157</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib326-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">157</citedRange>
+               </bibl>
+               <bibl xml:id="bib326-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/326</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/25/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santa Maria de Palca</title>
+            <title level="a" xml:lang="es">San Juan de Sicllabamba</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-64" type="town">
-               <placeName xml:id="name64-1" xml:lang="es" full="yes">Santa Maria de Palca</placeName>
-               <placeName xml:id="name64-2" xml:lang="es">Santa Maria de</placeName>
-               <placeName xml:id="name64-3" xml:lang="es">Palca</placeName>
-               <placeName xml:id="name64-4" xml:lang="es">santa maria de Palca</placeName>
+            <place xml:id="place-64" source="bib64-1">
+               <placeName xml:id="name64-1" full="yes" type="standardized">San Juan de Sicllabamba</placeName>
+               <placeName xml:id="name64-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name64-3" type="standardized-Andean">Sicllabamba</placeName>
+               <placeName xml:id="name64-4" type="verbatim">sant joan de sicllabamba</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Sicasica / Caracollo</region>
-                  <settlement type="municipality">Santa Maria de Palca</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Conchucos</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Conchucos [Valentino Pardaue]</placeName>
+                     <placeName type="verbatim">conchucos encomendado en el capitan Valentino Pardaue</placeName>
+                  </region>
+                  <settlement type="pueblo">San Juan de Sicllabamba</settlement>
                </location>
-               <placeName type="municipality">Quiruas de Oyune</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Murillo</region>
-                  <region type="department">La Paz</region>
-                  <settlement type="municipality">Palca</settlement>
+                  <country>Peru</country>
+                  <region type="province">Sihuas</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Sicsibamba District</settlement>
                </location>
                <location type="gps">
-                  <geo>-16.56111111 -67.95305556</geo>
+                  <geo>-8.623668095 -77.57949019</geo>
                </location>
-               <note>
-        Santa Maria de
-        Palca
-        Santa Maria de Palca
-        
-        santa maria de Palca
-        Levillier 1921-26 v9
-        143
-        Levillier 1921-26 v9
-        143
-        AGI-L
-        
-        La Plata
-        La Paz
-        Sicasica / Caracollo
-        1
-        
-        Quiruas de Oyune
-        quiruas de oyune
-        
-        
-        
-        
-        
-        
-        
-        Palca
-        Bolivia
-        La Paz
-        Murillo
-        
-        -16.56111111
-        -67.95305556
-        Found no S Maria de Palca, but there are three Palca locations in Dept. La Paz (http://www.indexmundi.com/zp/bl/6860.htm)
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">143</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-08 37 25.20480 -077 34 46.16400</geo>
+               </location>
+               <note>MAYBE. It's not close to Pallasca, but close to the other Conchucos rpt.</note>
+               <bibl xml:id="bib64-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">200</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib64-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">200</citedRange>
+               </bibl>
+               <bibl xml:id="bib64-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/64</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

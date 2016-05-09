@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Francisco de [Pocsi]</title>
+            <title level="a" xml:lang="es">Eladrada</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-384" type="town">
-               <placeName xml:id="name384-1" xml:lang="es" full="yes">San Francisco de [Pocsi]</placeName>
-               <placeName xml:id="name384-2" xml:lang="es">San Francisco</placeName>
-               <placeName xml:id="name384-3" xml:lang="es">[Pocsi]</placeName>
-               <placeName xml:id="name384-4" xml:lang="es">san Francisco de Potosi</placeName>
+            <place xml:id="place-384" source="bib384-1">
+               <placeName xml:id="name384-1" full="yes" type="standardized">Eladrada</placeName>
+               <placeName xml:id="name384-4" type="verbatim">eladrada</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Carumas y Ubinas de Colesuyo</region>
-                  <settlement type="municipality">San Francisco de [Pocsi]</settlement>
+                  <region type="corregimiento">Condesuyu</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Pampacolca [Pompacolca]</placeName>
+                     <placeName type="verbatim">Pampacolca</placeName>
+                  </region>
+                  <settlement type="pueblo">Eladrada</settlement>
                </location>
-               <placeName type="municipality">Pocosi</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Arequipa</region>
+                  <region type="province">Castilla</region>
                   <region type="department">Arequipa</region>
-                  <settlement type="municipality">Pocsi District</settlement>
+                  <settlement type="pueblo">Pampacolca</settlement>
                </location>
                <location type="gps">
-                  <geo>-16.515 -71.38888889</geo>
+                  <geo>-15.71441131 -72.57354164</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">175</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-15 42 51.87960 -072 34 24.75120</geo>
+               </location>
+               <note>no resutls in Google search for Eladrada</note>
+               <bibl xml:id="bib384-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">173</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib384-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">173</citedRange>
+               </bibl>
+               <bibl xml:id="bib384-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/384</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Bing sat</note>
+               <note type="administrative" subtype="MR_other_notes">Corresponds to Pampacolca. Was Pampacolca originally called Eladrada?</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/2/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

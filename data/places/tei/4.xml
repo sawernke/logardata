@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santiago de Ycaca [Talina?]</title>
+            <title level="a" xml:lang="es">Frias</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,54 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-4" type="town">
-               <placeName xml:id="name4-1" xml:lang="es" full="yes">Santiago de Ycaca [Talina?]</placeName>
-               <placeName xml:id="name4-2" xml:lang="es">Santiago de</placeName>
-               <placeName xml:id="name4-3" xml:lang="es">Ycaca [Talina?]</placeName>
-               <placeName xml:id="name4-4" xml:lang="es">santiago de ycaca</placeName>
+            <place xml:id="place-4" source="bib4-1">
+               <placeName xml:id="name4-1" full="yes" type="standardized">Frias</placeName>
+               <placeName xml:id="name4-4" type="verbatim">Frias</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Tarija</region>
-                  <settlement type="municipality">Santiago de Ycaca [Talina?]</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Piura</region>
+                  <region type="corregimiento">Piura</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Chinchachara,Sondor,Serra</placeName>
+                     <placeName type="verbatim">chinchachara sondor serra</placeName>
+                  </region>
+                  <settlement type="pueblo">Frias</settlement>
                </location>
-               <placeName type="municipality">Chichas</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Sur Chichas</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Talina</settlement>
+                  <country>Peru</country>
+                  <region type="province">Ayabaca</region>
+                  <region type="department">Piura</region>
+                  <settlement type="pueblo">Frías</settlement>
                </location>
                <location type="gps">
-                  <geo>-20.55 -66.48333333</geo>
+                  <geo>-4.93160251 -79.94722301</geo>
                </location>
-               <note>
-        Santiago de
-        Ycaca [Talina?]
-        Santiago de Ycaca [Talina?]
-        
-        santiago de ycaca
-        Levillier 1921-26 v9
-        135
-        Levillier 1921-26 v12
-        135
-        AGI-L
-        
-        La Plata
-        La Plata
-        Tarija
-        1
-        -1
-        Chichas
-        chichas
-        
-        
-        
-        
-        
-        
-        
-        Talina
-        Bolivia
-        Potosí
-        Sur Chichas
-        
-        -20.55
-        -66.48333333
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-984269&amp;fid=650&amp;c=bolivia  - thought I'd give it a try as this location is much closer to Calcha
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">135</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-04 55 53.77080 -079 56 50.00280</geo>
+               </location>
+               <bibl xml:id="bib4-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">212</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib4-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">212</citedRange>
+               </bibl>
+               <bibl xml:id="bib4-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/4</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

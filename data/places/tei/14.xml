@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Pedro de Tacobamba</title>
+            <title level="a" xml:lang="es">Oromina</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,54 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-14" type="town">
-               <placeName xml:id="name14-1" xml:lang="es" full="yes">San Pedro de Tacobamba</placeName>
-               <placeName xml:id="name14-2" xml:lang="es">San Pedro de</placeName>
-               <placeName xml:id="name14-3" xml:lang="es">Tacobamba</placeName>
-               <placeName xml:id="name14-4" xml:lang="es">san pedro de tacobamba</placeName>
+            <place xml:id="place-14" source="bib14-1">
+               <placeName xml:id="name14-1" full="yes" type="standardized">Oromina</placeName>
+               <placeName xml:id="name14-3" type="standardized-Andean">Oromina</placeName>
+               <placeName xml:id="name14-4" type="verbatim">vn pueblo del mesmo nombre</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Porco</region>
-                  <settlement type="municipality">San Pedro de Tacobamba</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Paellas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Oromina</placeName>
+                     <placeName type="verbatim">oromina</placeName>
+                  </region>
+                  <settlement type="pueblo">Oromina</settlement>
                </location>
-               <placeName type="municipality">Tacobamba</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Cornelio Saavedra</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Tacobamba</settlement>
+                  <country>Peru</country>
+                  <region type="province">Alto Amazonas</region>
+                  <region type="department">Loreto</region>
+                  <settlement type="pueblo">Oromina</settlement>
                </location>
                <location type="gps">
-                  <geo>-19.18333333 -65.55</geo>
+                  <geo>-6.111162034 -77.02400148</geo>
                </location>
-               <note>
-        San Pedro de
-        Tacobamba
-        San Pedro de Tacobamba
-        
-        san pedro de tacobamba
-        Levillier 1921-26 v9
-        137
-        Levillier 1921-26 v22
-        137
-        AGI-L
-        
-        La Plata
-        La Plata
-        Porco
-        1
-        
-        Tacobamba
-        Tacobamba
-        Colo
-        colo
-        
-        
-        
-        
-        
-        Tacobamba
-        Bolivia
-        Potosí
-        Cornelio Saavedra
-        
-        -19.18333333
-        -65.55
-        Coordinates from: http://www.indexmundi.com/zp/bl/9700.htm
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">137</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-06 06 40.18320 -077 01 26.40360</geo>
+               </location>
+               <bibl xml:id="bib14-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">217</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib14-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">217</citedRange>
+               </bibl>
+               <bibl xml:id="bib14-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/14</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/17/2015</note>
             </place>
          </listPlace>
       </body>

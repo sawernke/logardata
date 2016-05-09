@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Chuquicota</title>
+            <title level="a" xml:lang="es">Xequetepec</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,63 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-51" type="town">
-               <placeName xml:id="name51-1" xml:lang="es" full="yes">Chuquicota</placeName>
-               <placeName xml:id="name51-2" xml:lang="es"/>
-               <placeName xml:id="name51-3" xml:lang="es">Chuquicota</placeName>
-               <placeName xml:id="name51-4" xml:lang="es">chuquicota</placeName>
+            <place xml:id="place-51" source="bib51-1">
+               <placeName xml:id="name51-1" full="yes" type="standardized">Xequetepec</placeName>
+               <placeName xml:id="name51-3" type="standardized-Andean">Xequetepec</placeName>
+               <placeName xml:id="name51-4" type="verbatim">xequetepec</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Carangas</region>
-                  <settlement type="municipality">Chuquicota</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">Chicama</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Xequetepec</placeName>
+                     <placeName type="verbatim">xequetepec</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Chepen</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Moro</placeName>
+                     <placeName type="verbatim">moro</placeName>
+                  </region>
+                  <settlement type="pueblo">Xequetepec</settlement>
                </location>
-               <placeName type="municipality">Chuquicota y Sabaya</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Carangas</region>
-                  <region type="department">Oruro</region>
-                  <settlement type="municipality">Choquecota</settlement>
+                  <country>Peru</country>
+                  <region type="province">Pacasmayo</region>
+                  <region type="department">La Libertad</region>
+                  <settlement type="pueblo">Jequetepeque</settlement>
                </location>
                <location type="gps">
-                  <geo>-18.25 -67.95</geo>
+                  <geo>-7.337889286 -79.56322753</geo>
                </location>
-               <note>
-        
-        Chuquicota
-        Chuquicota
-        
-        chuquicota
-        Levillier 1921-26 v9
-        140
-        Levillier 1921-26 v59
-        140
-        AGI-L
-        
-        La Plata
-        La Plata
-        Carangas
-        1
-        
-        Chuquicota y Sabaya
-        Chuquicota y Sauaya
-        
-        
-        
-        
-        
-        
-        
-        Choquecota
-        Bolivia
-        Oruro
-        Carangas
-        
-        -18.25
-        -67.95
-        http://www.indexmundi.com/zp/bl/2220.htm: There are two Choquecota's in Dept. Oruro: one in Prov. Carangas and a canton of Belen de Choquecota in Prov. Nor Carangas, municipio Huayllamarca. Two (I'm not sure which is which) show up on IndexMundi, very close to each other. Let's pin this one: http://www.indexmundi.com/z/?lat=-18.25&amp;lon=-67.95&amp;t=p&amp;r=2220&amp;p=choquecota&amp;cc=bl&amp;c=bolivia
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">140</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-07 20 16.40040 -079 33 47.62080</geo>
+               </location>
+               <bibl xml:id="bib51-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">207</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib51-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">207</citedRange>
+               </bibl>
+               <bibl xml:id="bib51-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/51</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

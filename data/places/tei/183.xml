@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de Jesus</title>
+            <title level="a" xml:lang="es">La Santa Trinidad de Guando [Huando]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,51 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-183" type="town">
-               <placeName xml:id="name183-1" xml:lang="es" full="yes">Nuestra Señora de Jesus</placeName>
-               <placeName xml:id="name183-2" xml:lang="es">Nuestra Señora de Jesus</placeName>
-               <placeName xml:id="name183-3" xml:lang="es"/>
-               <placeName xml:id="name183-4" xml:lang="es">nuestra señora de Jesus</placeName>
+            <place xml:id="place-183" source="bib183-1">
+               <placeName xml:id="name183-1" full="yes" type="standardized">La Santa Trinidad de Guando [Huando]</placeName>
+               <placeName xml:id="name183-2" type="standardized-Spanish">La Santa Trinidad de</placeName>
+               <placeName xml:id="name183-3" type="standardized-Andean">Guando [Huando]</placeName>
+               <placeName xml:id="name183-4" type="verbatim">la santa trinidad de Guando</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canches</region>
-                  <settlement type="municipality">Nuestra Señora de Jesus</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Angaraes</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Angaraes (Ines de Villalobos)</placeName>
+                     <placeName type="verbatim">angaraes encomendado de doña Ynes de Villalobos</placeName>
+                  </region>
+                  <settlement type="pueblo">La Santa Trinidad de Guando [Huando]</settlement>
                </location>
-               <placeName type="municipality">Various</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">158</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="gps">
+                  <geo>-12.56436393 -74.94732262</geo>
+               </location>
+               <location>
+                  <geo>-12 33 51.71040 -074 56 50.36280</geo>
+               </location>
+               <note>Coordinates from: http://www.maplandia.com/peru/huancavelica/tayacaja/huando/</note>
+               <bibl xml:id="bib183-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib183-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
+               </bibl>
+               <bibl xml:id="bib183-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/183</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

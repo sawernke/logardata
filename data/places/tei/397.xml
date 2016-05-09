@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Puerto de Quilca</title>
+            <title level="a" xml:lang="es">Villa de Cáceres [de Achacache]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,59 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-397" type="town">
-               <placeName xml:id="name397-1" xml:lang="es" full="yes">Puerto de Quilca</placeName>
-               <placeName xml:id="name397-2" xml:lang="es">Puerto</placeName>
-               <placeName xml:id="name397-3" xml:lang="es">Quilca</placeName>
-               <placeName xml:id="name397-4" xml:lang="es">puerto de quilca en el qual esta vn pueblo</placeName>
+            <place xml:id="place-397" source="bib397-1">
+               <placeName xml:id="name397-1" full="yes" type="standardized">Villa de Cáceres [de Achacache]</placeName>
+               <placeName xml:id="name397-2" type="standardized-Spanish">Villa de</placeName>
+               <placeName xml:id="name397-3" type="standardized-Andean">[de Achacache]</placeName>
+               <placeName xml:id="name397-4" type="verbatim">villa de caceres</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Camana</region>
-                  <settlement type="municipality">Puerto de Quilca</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Achacache</placeName>
+                     <placeName type="verbatim">achacache</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Quinaquitara</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Villa de Cáceres [de Achacache]</settlement>
                </location>
-               <placeName type="municipality">Encomienda de Luis Cornejo</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Camana</region>
-                  <region type="department">Arequipa</region>
-                  <settlement type="municipality">Quilca District</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Omasuyos</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Achacachi</settlement>
                </location>
                <location type="gps">
-                  <geo>-16.71666667 -72.42777778</geo>
+                  <geo>-16.04400648 -68.6850292</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">177</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-16 02 38.42160 -068 41 06.10440</geo>
+               </location>
+               <bibl xml:id="bib397-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">147</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib397-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">147</citedRange>
+               </bibl>
+               <bibl xml:id="bib397-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/397</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

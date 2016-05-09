@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Villa de los Reyes</title>
+            <title level="a" xml:lang="es">San Pedro de Chipao</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-299" type="town">
-               <placeName xml:id="name299-1" xml:lang="es" full="yes">Villa de los Reyes</placeName>
-               <placeName xml:id="name299-2" xml:lang="es">Villa de los Reyes</placeName>
-               <placeName xml:id="name299-3" xml:lang="es"/>
-               <placeName xml:id="name299-4" xml:lang="es">villa de los rreyes</placeName>
+            <place xml:id="place-299" source="bib299-1">
+               <placeName xml:id="name299-1" full="yes" type="standardized">San Pedro de Chipao</placeName>
+               <placeName xml:id="name299-2" type="standardized-Spanish">San Pedro de</placeName>
+               <placeName xml:id="name299-3" type="standardized-Andean">Chipao</placeName>
+               <placeName xml:id="name299-4" type="verbatim">san pedro de chipao</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Abancay</region>
-                  <settlement type="municipality">Villa de los Reyes</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Lucanas/Andamarcas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Lucanas Andamarcas</placeName>
+                     <placeName type="verbatim">Lucanas andamarcas</placeName>
+                  </region>
+                  <settlement type="pueblo">San Pedro de Chipao</settlement>
                </location>
-               <placeName type="municipality">Abancay</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Abancay</region>
-                  <region type="department">Apurímac</region>
-                  <settlement type="municipality">Abancay</settlement>
+                  <region type="province">Lucanas</region>
+                  <region type="department">Ayacucho</region>
+                  <settlement type="pueblo">Chipao</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.13527778 -72.89277778</geo>
+                  <geo>-14.3659146 -73.87628156</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">167</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-14 21 57.29400 -073 52 34.61520</geo>
+               </location>
+               <bibl xml:id="bib299-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib299-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
+               </bibl>
+               <bibl xml:id="bib299-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/299</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

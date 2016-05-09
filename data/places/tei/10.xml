@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Ayquile</title>
+            <title level="a" xml:lang="es">San Martin de Sechura</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,51 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-10" type="town">
-               <placeName xml:id="name10-1" xml:lang="es" full="yes">Ayquile</placeName>
-               <placeName xml:id="name10-2" xml:lang="es"/>
-               <placeName xml:id="name10-3" xml:lang="es">Ayquile</placeName>
-               <placeName xml:id="name10-4" xml:lang="es">ayquile</placeName>
+            <place xml:id="place-10" source="bib10-1">
+               <placeName xml:id="name10-1" full="yes" type="standardized">San Martin de Sechura</placeName>
+               <placeName xml:id="name10-2" type="standardized-Spanish">San Martin de</placeName>
+               <placeName xml:id="name10-3" type="standardized-Andean">Sechura</placeName>
+               <placeName xml:id="name10-4" type="verbatim">san martin de sechura</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Mizque</region>
-                  <settlement type="municipality">Ayquile</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Piura</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">encomienda de Rui Lopez y gaspar troche de buytrago</placeName>
+                     <placeName type="verbatim">encomienda de rruilopez y gaspar troche de buytrago</placeName>
+                  </region>
+                  <settlement type="pueblo">San Martin de Sechura</settlement>
                </location>
-               <population source="">
-                  <desc>154</desc>
-               </population>
-               <population source="" type="tributaries">
-                  <desc>47</desc>
-               </population>
-               <placeName type="municipality">Ayquile?</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Campero</region>
-                  <region type="department">Cochabamba</region>
-                  <settlement type="municipality">Aiquile</settlement>
+                  <country>Peru</country>
+                  <region type="province">Sechura</region>
+                  <region type="department">Piura</region>
+                  <settlement type="pueblo">Sechura</settlement>
                </location>
                <location type="gps">
-                  <geo>-18.18916389 -65.18046944</geo>
+                  <geo>-5.557591768 -80.82232372</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">136</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-05 33 27.33120 -080 49 20.36640</geo>
+               </location>
+               <note>Alejandro Diez: has changed location</note>
+               <bibl xml:id="bib10-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">212</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib10-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">212</citedRange>
+               </bibl>
+               <bibl xml:id="bib10-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/10</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

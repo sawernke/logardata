@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Suri</title>
+            <title level="a" xml:lang="es">San Lorenzo de Chachas</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-67" type="town">
-               <placeName xml:id="name67-1" xml:lang="es" full="yes">San Juan de Suri</placeName>
-               <placeName xml:id="name67-2" xml:lang="es">San Juan de</placeName>
-               <placeName xml:id="name67-3" xml:lang="es">Suri</placeName>
-               <placeName xml:id="name67-4" xml:lang="es">san joan de suri</placeName>
+            <place xml:id="place-67" source="bib67-1">
+               <placeName xml:id="name67-1" full="yes" type="standardized">San Lorenzo de Chachas</placeName>
+               <placeName xml:id="name67-2" type="standardized-Spanish">San Lorenzo de</placeName>
+               <placeName xml:id="name67-3" type="standardized-Andean">Chachas</placeName>
+               <placeName xml:id="name67-4" type="verbatim">san lorenzo de chachas</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Sicasica / Caracollo</region>
-                  <settlement type="municipality">San Juan de Suri</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Guamalies</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Icho Guanuco 2</placeName>
+                     <placeName type="verbatim">ycho guanuco encomendado en doña Petronila de mendoza</placeName>
+                  </region>
+                  <settlement type="pueblo">San Lorenzo de Chachas</settlement>
                </location>
-               <placeName type="municipality">Yngas de Suri</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Inquisivi</region>
-                  <region type="department">La Paz</region>
-                  <settlement type="municipality">Suri</settlement>
+                  <country>Peru</country>
+                  <region type="province">Santa</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Chachas</settlement>
+                  <note type="modern-location">Not a capital</note>
                </location>
                <location type="gps">
-                  <geo>-16.85361111 -67.23694444</geo>
+                  <geo>-8.797684242 -78.15430136</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">143</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-08 47 51.66240 -078 09 15.48360</geo>
+               </location>
+               <note>1</note>
+               <bibl xml:id="bib67-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">201</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib67-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">201</citedRange>
+               </bibl>
+               <bibl xml:id="bib67-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/67</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">This is the location of the anejo "Chachas" (cpurine), and there is a small hamlet here in Google Satellite imagery, but the hamlet is very small.</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">2/18/2016</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de Calcha</title>
+            <title level="a" xml:lang="es">Nuestra Señora del Pilar</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-3" type="town">
-               <placeName xml:id="name3-1" xml:lang="es" full="yes">Nuestra Señora de Calcha</placeName>
-               <placeName xml:id="name3-2" xml:lang="es">Nuestra Señora de</placeName>
-               <placeName xml:id="name3-3" xml:lang="es">Calcha</placeName>
-               <placeName xml:id="name3-4" xml:lang="es">nuestra señora de calcha</placeName>
+            <place xml:id="place-3" source="bib3-1">
+               <placeName xml:id="name3-1" full="yes" type="standardized">Nuestra Señora del Pilar</placeName>
+               <placeName xml:id="name3-2" type="standardized-Spanish">Nuestra Señora de</placeName>
+               <placeName xml:id="name3-4" type="verbatim">nuestra señora del pilar</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Tarija</region>
-                  <settlement type="municipality">Nuestra Señora de Calcha</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Piura</region>
+                  <region type="corregimiento">Piura</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yavaca [Ayavaca]</placeName>
+                     <placeName type="verbatim">yavaca</placeName>
+                  </region>
+                  <settlement type="pueblo">Nuestra Señora del Pilar</settlement>
                </location>
-               <placeName type="municipality">Chichas</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Nor Chichas</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Calcha</settlement>
+                  <country>Peru</country>
+                  <region type="province">Ayabaca</region>
+                  <region type="department">Piura</region>
+                  <settlement type="pueblo">Ayabaca</settlement>
                </location>
                <location type="gps">
-                  <geo>-20.37152778 -65.46694444</geo>
+                  <geo>-4.640094674 -79.71522447</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">135</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-04 38 24.34200 -079 42 54.80640</geo>
+               </location>
+               <note>Per Alejandro Diez, 11/2013</note>
+               <bibl xml:id="bib3-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">212</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib3-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">212</citedRange>
+               </bibl>
+               <bibl xml:id="bib3-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/3</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Full name of original reducción Nuestra Señora del Pilar de Ayavaca/Ayabaca. Unclear if present Ayabaca is in the same location or if the reducción was relocated at some point.</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/14/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

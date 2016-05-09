@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Bamba [Pampa?] de [Aucara]</title>
+            <title level="a" xml:lang="es">San Agustin de Viacha</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,39 +51,62 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-422" type="town">
-               <placeName xml:id="name422-1" xml:lang="es" full="yes">Bamba [Pampa?] de [Aucara]</placeName>
-               <placeName xml:id="name422-2" xml:lang="es"/>
-               <placeName xml:id="name422-3" xml:lang="es">Bamba [Pampa?] de [Aucara]</placeName>
-               <placeName xml:id="name422-4" xml:lang="es">bamba de apucara</placeName>
+            <place xml:id="place-422" source="bib422-1">
+               <placeName xml:id="name422-1" full="yes" type="standardized">San Agustin de Viacha</placeName>
+               <placeName xml:id="name422-2" type="standardized-Spanish">San Agustin de</placeName>
+               <placeName xml:id="name422-3" type="standardized-Andean">Viacha</placeName>
+               <placeName xml:id="name422-4" type="verbatim">sant agustin de viacha</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">Bamba [Pampa?] de [Aucara]</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Pacajes</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Viacha</placeName>
+                     <placeName type="verbatim">Viacha</placeName>
+                  </region>
+                  <settlement type="pueblo">San Agustin de Viacha</settlement>
                </location>
-               <placeName type="municipality">Lucanas Andamarcas</placeName>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Ingavi</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Viacha</settlement>
+               </location>
+               <population>
+                  <desc>3574</desc>
+               </population>
+               <population source="bib422-1" type="tributaries">
+                  <desc>855</desc>
+               </population>
                <location type="gps">
-                  <geo>-14.28055556 -74.08416667</geo>
+                  <geo>-16.65344935 -68.30171362</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-16 39 12.41640 -068 18 06.17040</geo>
+               </location>
+               <bibl xml:id="bib422-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">146</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib422-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">146</citedRange>
+               </bibl>
+               <bibl xml:id="bib422-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/422</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

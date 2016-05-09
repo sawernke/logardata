@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Miguel de la Quebrada</title>
+            <title level="a" xml:lang="es">San Francisco de Cicicaya [Sisicaya]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-162" type="town">
-               <placeName xml:id="name162-1" xml:lang="es" full="yes">San Miguel de la Quebrada</placeName>
-               <placeName xml:id="name162-2" xml:lang="es">San Miguel de la Quebrada</placeName>
-               <placeName xml:id="name162-3" xml:lang="es"/>
-               <placeName xml:id="name162-4" xml:lang="es">san miguel de la quebrada</placeName>
+            <place xml:id="place-162" source="bib162-1">
+               <placeName xml:id="name162-1" full="yes" type="standardized">San Francisco de Cicicaya [Sisicaya]</placeName>
+               <placeName xml:id="name162-2" type="standardized-Spanish">San Francisco de</placeName>
+               <placeName xml:id="name162-3" type="standardized-Andean">Cicicaya [Sisicaya]</placeName>
+               <placeName xml:id="name162-4" type="verbatim">san Francisco de cicicaya</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canas</region>
-                  <settlement type="municipality">San Miguel de la Quebrada</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huarochirí</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Huarochirí</placeName>
+                     <placeName type="verbatim">Guarochiri</placeName>
+                  </region>
+                  <settlement type="pueblo">San Francisco de Cicicaya [Sisicaya]</settlement>
                </location>
-               <placeName type="municipality">Chicacopi e Hilavi</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">156</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Huarochirí</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">Sisicaya</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-12.0265362 -76.63127068</geo>
+               </location>
+               <location>
+                  <geo>-12 01 35.52960 -076 37 52.57560</geo>
+               </location>
+               <bibl xml:id="bib162-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib162-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
+               </bibl>
+               <bibl xml:id="bib162-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/162</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Not in Plaza</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/24/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

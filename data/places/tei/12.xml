@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de la Incarnación de Yura</title>
+            <title level="a" xml:lang="es">Techo</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,49 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-12" type="town">
-               <placeName xml:id="name12-1" xml:lang="es" full="yes">Nuestra Señora de la Incarnación de Yura</placeName>
-               <placeName xml:id="name12-2" xml:lang="es">Nuestra Señora de la Incarnación de</placeName>
-               <placeName xml:id="name12-3" xml:lang="es">Yura</placeName>
-               <placeName xml:id="name12-4" xml:lang="es">nuestra señora de la encarnación</placeName>
+            <place xml:id="place-12" source="bib12-1">
+               <placeName xml:id="name12-1" full="yes" type="standardized">Techo</placeName>
+               <placeName xml:id="name12-3" type="standardized-Andean">Techo</placeName>
+               <placeName xml:id="name12-4" type="verbatim">techo</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Porco</region>
-                  <settlement type="municipality">Nuestra Señora de la Incarnación de Yura</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Paellas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Santiago de Yamarabamba</placeName>
+                     <placeName type="verbatim">santiago de yamarabamba</placeName>
+                  </region>
+                  <settlement type="pueblo">Techo</settlement>
                </location>
-               <placeName type="municipality">Bisisa y Cayza</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Antonio Quijarro</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Yura</settlement>
+                  <country>Peru</country>
+                  <region type="province">Bongara</region>
+                  <region type="department">Amazonas</region>
+                  <settlement type="pueblo">Yambrasbamba</settlement>
                </location>
-               <location type="gps">
-                  <geo>-19.71484444 -66.37934722</geo>
-               </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">136</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <bibl xml:id="bib12-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">215</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib12-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">215</citedRange>
+               </bibl>
+               <bibl xml:id="bib12-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/12</idno>
+               <note type="administrative" subtype="Moved">0</note>
+               <note type="administrative" subtype="MR_other_notes">Reviewed, but not moved. Cannot find reference.</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/29/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

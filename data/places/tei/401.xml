@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Villa de Valverde</title>
+            <title level="a" xml:lang="es">Villa de Mérida [de Guarina]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,61 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-401" type="town">
-               <placeName xml:id="name401-1" xml:lang="es" full="yes">Villa de Valverde</placeName>
-               <placeName xml:id="name401-2" xml:lang="es">Villa de Valverde</placeName>
-               <placeName xml:id="name401-3" xml:lang="es"/>
-               <placeName xml:id="name401-4" xml:lang="es">villa de Valuerde</placeName>
+            <place xml:id="place-401" source="bib401-1">
+               <placeName xml:id="name401-1" full="yes" type="standardized">Villa de Mérida [de Guarina]</placeName>
+               <placeName xml:id="name401-2" type="standardized-Spanish">Villa de</placeName>
+               <placeName xml:id="name401-3" type="standardized-Andean">[de Guarina]</placeName>
+               <placeName xml:id="name401-4" type="verbatim">villa de merida</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Camana</region>
-                  <settlement type="municipality">Villa de Valverde</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Omasuyo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Guarina</placeName>
+                     <placeName type="verbatim">Guarina</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yaya</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Villa de Mérida [de Guarina]</settlement>
+                  <note type="repartimiento">"y en este propio pueblo se rredugeron 197 yndios tributarios del repartimiento de yaya"</note>
                </location>
-               <placeName type="municipality">Molleguaca</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Caravelí</region>
-                  <region type="department">Arequipa</region>
-                  <settlement type="municipality">Mollehuaca</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Omasuyos</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Huarina</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.63 -74.04638889</geo>
+                  <geo>-16.19072181 -68.60099202</geo>
                </location>
-               <note>
-        Villa de Valverde
-        
-        Villa de Valverde
-        
-        villa de Valuerde
-        Levillier 1921-26 v9
-        177
-        Levillier 1921-26 v9
-        177
-        AGI-L
-        
-        Lima
-        Arequipa
-        Camana
-        1
-        -1
-        Molleguaca
-        molleguaca
-        
-        
-        
-        
-        
-        
-        
-        Mollehuaca
-        Peru
-        Arequipa
-        Caravelí
-        
-        -15.63
-        -74.04638889
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-533930&amp;fid=4566&amp;c=peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">177</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-16 11 26.59920 -068 36 03.57120</geo>
+               </location>
+               <bibl xml:id="bib401-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">147</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib401-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">147</citedRange>
+               </bibl>
+               <bibl xml:id="bib401-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/401</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

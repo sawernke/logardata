@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de la Fuente [de Coporaque?]</title>
+            <title level="a" xml:lang="es">[Jesus de] Ayavire</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,81 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-178" type="town">
-               <placeName xml:id="name178-1" xml:lang="es" full="yes">San Juan de la Fuente [de Coporaque?]</placeName>
-               <placeName xml:id="name178-2" xml:lang="es">San Juan de la Fuente de</placeName>
-               <placeName xml:id="name178-3" xml:lang="es">[Coporaque?]</placeName>
-               <placeName xml:id="name178-4" xml:lang="es">sant joan de la Fuente</placeName>
+            <place xml:id="place-178" source="bib178-1">
+               <placeName xml:id="name178-1" full="yes" type="standardized">[Jesus de] Ayavire</placeName>
+               <placeName xml:id="name178-2" type="standardized-Spanish">[Jesus de]</placeName>
+               <placeName xml:id="name178-3" type="standardized-Andean">Ayavire</placeName>
+               <placeName xml:id="name178-4" type="verbatim">ayauire</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canas</region>
-                  <settlement type="municipality">San Juan de la Fuente [de Coporaque?]</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Yauyos</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yauyos</placeName>
+                     <placeName type="verbatim">yauyos</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Mancos y Laraos</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">[Jesus de] Ayavire</settlement>
                </location>
-               <placeName type="municipality">Coporaque</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Espinar</region>
-                  <region type="department">Cusco</region>
+                  <region type="province">Yauyos</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">Ayaviri</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.1 -71.58916667</geo>
+                  <geo>-12.38247717 -76.13727508</geo>
                </location>
-               <note>
-        San Juan de la Fuente de
-        [Coporaque?]
-        San Juan de la Fuente [de Coporaque?]
-        
-        sant joan de la Fuente
-        Levillier 1921-26 v9
-        157
-        Levillier 1921-26 v9
-        157
-        AGI-L
-        
-        Lima
-        Cuzco
-        Canas
-        1
-        
-        Coporaque
-        coporaque
-        hancocaua
-        hancocaua
-        
-        
-        
-        
-        
-        
-        Peru
-        Cusco
-        Espinar
-        
-        -14.1
-        -71.58916667
-        [Note to self: distinguish from Coporaque in Colca valley?]
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">157</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-12 22 56.91720 -076 08 14.19000</geo>
+               </location>
+               <bibl xml:id="bib178-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">192</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib178-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">192</citedRange>
+               </bibl>
+               <bibl xml:id="bib178-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/178</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

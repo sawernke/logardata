@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Totorguaila</title>
+            <title level="a" xml:lang="es">Anocalla</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-266" type="town">
-               <placeName xml:id="name266-1" xml:lang="es" full="yes">Totorguaila</placeName>
-               <placeName xml:id="name266-2" xml:lang="es"/>
-               <placeName xml:id="name266-3" xml:lang="es">Totorguaila</placeName>
-               <placeName xml:id="name266-4" xml:lang="es">dos pueblos llamados totorguaila</placeName>
+            <place xml:id="place-266" source="bib266-1">
+               <placeName xml:id="name266-1" full="yes" type="standardized">Anocalla</placeName>
+               <placeName xml:id="name266-3" type="standardized-Andean">Anocalla</placeName>
+               <placeName xml:id="name266-4" type="verbatim">anocalla</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
                   <region type="corregimiento">Cotabambas</region>
-                  <settlement type="municipality">Totorguaila</settlement>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Guancallo y Chararo</placeName>
+                     <placeName type="verbatim">guancallo y chararo</placeName>
+                  </region>
+                  <settlement type="pueblo">Anocalla</settlement>
                </location>
-               <placeName type="municipality">Yanaguaras Malmanyas</placeName>
                <location type="modern">
                   <country>Peru</country>
                   <region type="province">Cotabambas</region>
                   <region type="department">Apurímac</region>
-                  <settlement type="municipality">Totorhuaylas</settlement>
+                  <settlement type="pueblo">Anocalla</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.13388889 -72.14888889</geo>
+                  <geo>-13.96418278 -72.26495738</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">164</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-13 57 51.05880 -072 15 53.84520</geo>
+               </location>
+               <note>Coordinates from: http://mapcarta.com/20240974</note>
+               <bibl xml:id="bib266-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">165</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib266-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">165</citedRange>
+               </bibl>
+               <bibl xml:id="bib266-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/266</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">And google satellite. Not in plaza (could not identify from imagery)</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/2/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

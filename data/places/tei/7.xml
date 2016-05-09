@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Pocona</title>
+            <title level="a" xml:lang="es">Unnamed reduccion next to Piura</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,46 +51,49 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-7" type="town">
-               <placeName xml:id="name7-1" xml:lang="es" full="yes">Pocona</placeName>
-               <placeName xml:id="name7-2" xml:lang="es"/>
-               <placeName xml:id="name7-3" xml:lang="es">Pocona</placeName>
-               <placeName xml:id="name7-4" xml:lang="es">pocona</placeName>
+            <place xml:id="place-7" source="bib7-1">
+               <placeName xml:id="name7-1" full="yes" type="standardized">Unnamed reduccion next to Piura</placeName>
+               <placeName xml:id="name7-4" type="verbatim">Junto a la dicha ciudad [Piura] estan poblados…</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Mizque</region>
-                  <settlement type="municipality">Pocona</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Piura</region>
+                  <region type="corregimiento">Piura</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">encomienda de gonzalo farfan y gaspar troche de buytrago</placeName>
+                     <placeName type="verbatim">encomienda de gonzalo farfan y gaspar troche de buytrago</placeName>
+                  </region>
+                  <settlement type="pueblo">Unnamed reduccion next to Piura</settlement>
                </location>
-               <placeName type="municipality">Pocona</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Carrasco</region>
-                  <region type="department">Cochabamba</region>
-                  <settlement type="municipality">Pocona</settlement>
+                  <country>Peru</country>
+                  <region type="province">Piura</region>
+                  <region type="department">Piura</region>
+                  <settlement type="pueblo">Piura</settlement>
                </location>
-               <note type="modern-location">Not a capital</note>
-               <location type="gps">
-                  <geo>-17.65105278 -65.40197222</geo>
-               </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">136</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <bibl xml:id="bib7-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">211</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib7-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">211</citedRange>
+               </bibl>
+               <bibl xml:id="bib7-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/7</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Placed in plaza for Piura</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/3/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

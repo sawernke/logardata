@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Salvador de [Andujar] de [Pucyura]</title>
+            <title level="a" xml:lang="es">Libitaca</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,79 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-304" type="town">
-               <placeName xml:id="name304-1" xml:lang="es" full="yes">San Salvador de [Andujar] de [Pucyura]</placeName>
-               <placeName xml:id="name304-2" xml:lang="es">San Salvador de [Andujar]</placeName>
-               <placeName xml:id="name304-3" xml:lang="es">[Pucyura]</placeName>
-               <placeName xml:id="name304-4" xml:lang="es">san saluador de anduxa</placeName>
+            <place xml:id="place-304" source="bib304-1">
+               <placeName xml:id="name304-1" full="yes" type="standardized">Libitaca</placeName>
+               <placeName xml:id="name304-3" type="standardized-Andean">Libitaca</placeName>
+               <placeName xml:id="name304-4" type="verbatim">vn pueblo del mesmo nombre</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Abancay</region>
-                  <settlement type="municipality">San Salvador de [Andujar] de [Pucyura]</settlement>
+                  <region type="corregimiento">Condesuyu</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Libitaca</placeName>
+                     <placeName type="verbatim">libitaca</placeName>
+                  </region>
+                  <settlement type="pueblo">Libitaca</settlement>
                </location>
-               <placeName type="municipality">Pucyura[?]</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Anta</region>
+                  <region type="province">Chumbivilcas</region>
                   <region type="department">Cusco</region>
-                  <settlement type="municipality">Pucyura</settlement>
+                  <settlement type="pueblo">Livitaca</settlement>
                </location>
-               <note>
-        San Salvador de [Andujar]
-        [Pucyura]
-        San Salvador de [Andujar] de [Pucyura]
-        
-        san saluador de anduxa
-        Levillier 1921-26 v9
-        168
-        Levillier 1921-26 v9
-        168
-        AGI-L
-        
-        Lima
-        Cuzco
-        Abancay
-        1
-        -1
-        Pucyura[?]
-        Puqueovra
-        
-        
-        
-        
-        
-        
-        
-        Pucyura
-        Peru
-        Cusco
-        Anta
-        
-        
-        
-        The patron saint of Pucyura is San Salvador, so it's probably the same place. 
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">168</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="gps">
+                  <geo>-14.31257393 -71.6893134</geo>
+               </location>
+               <location>
+                  <geo>-14 18 45.26640 -071 41 21.52680</geo>
+               </location>
+               <bibl xml:id="bib304-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">160</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib304-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">160</citedRange>
+               </bibl>
+               <bibl xml:id="bib304-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/304</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

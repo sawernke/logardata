@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Miguel de Pichigua</title>
+            <title level="a" xml:lang="es">Villa de Deleitosa del Valle de Andaguailas la Pequeña [Andahuaylillas?]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-241" type="town">
-               <placeName xml:id="name241-1" xml:lang="es" full="yes">San Miguel de Pichigua</placeName>
-               <placeName xml:id="name241-2" xml:lang="es">San Miguel de</placeName>
-               <placeName xml:id="name241-3" xml:lang="es">Pichigua</placeName>
-               <placeName xml:id="name241-4" xml:lang="es">san miguel de Pichigua</placeName>
+            <place xml:id="place-241" source="bib241-1">
+               <placeName xml:id="name241-1" full="yes" type="standardized">Villa de Deleitosa del Valle de Andaguailas la Pequeña [Andahuaylillas?]</placeName>
+               <placeName xml:id="name241-2" type="standardized-Spanish">Villa de</placeName>
+               <placeName xml:id="name241-3" type="standardized-Andean">Andaguailas la Pequeña [Andahuaylillas?]</placeName>
+               <placeName xml:id="name241-4" type="verbatim">pueblo y villa de deleytosa del valle de andaguailas la pequeña</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Aymaraes</region>
-                  <settlement type="municipality">San Miguel de Pichigua</settlement>
+                  <region type="corregimiento">Canches</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various</placeName>
+                     <placeName type="verbatim">de diferentes encomenderos</placeName>
+                  </region>
+                  <settlement type="pueblo">Villa de Deleitosa del Valle de Andaguailas la Pequeña [Andahuaylillas?]</settlement>
                </location>
-               <placeName type="municipality">Taype Ayllo</placeName>
-               <note>
-        San Miguel de
-        Pichigua
-        San Miguel de Pichigua
-        
-        san miguel de Pichigua
-        Levillier 1921-26 v9
-        163
-        Levillier 1921-26 v9
-        163
-        AGI-L
-        
-        Lima
-        Cuzco
-        Aymaraes
-        0
-        
-        Taype Ayllo
-        taypeayllo
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Alrady have pin for Pichigua
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">163</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Quispicanchi</region>
+                  <region type="department">Cusco</region>
+                  <settlement type="pueblo">Andahuaylillas</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-13.67373175 -71.67744152</geo>
+               </location>
+               <location>
+                  <geo>-13 40 25.43520 -071 40 38.79120</geo>
+               </location>
+               <note>Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-511880&amp;fid=4581&amp;c=peru</note>
+               <bibl xml:id="bib241-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">158</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib241-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">158</citedRange>
+               </bibl>
+               <bibl xml:id="bib241-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/241</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Need to check if "Andaguailas la Pequeña" corresponds to modern Andahuaylillas.</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">1/23/2016</note>
             </place>
          </listPlace>
       </body>

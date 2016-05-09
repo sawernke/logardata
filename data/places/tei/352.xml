@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Eladrada</title>
+            <title level="a" xml:lang="es">Calapuja</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-352" type="town">
-               <placeName xml:id="name352-1" xml:lang="es" full="yes">Eladrada</placeName>
-               <placeName xml:id="name352-2" xml:lang="es">Eladrada</placeName>
-               <placeName xml:id="name352-3" xml:lang="es"/>
-               <placeName xml:id="name352-4" xml:lang="es">eladrada</placeName>
+            <place xml:id="place-352" source="bib352-1">
+               <placeName xml:id="name352-1" full="yes" type="standardized">Calapuja</placeName>
+               <placeName xml:id="name352-3" type="standardized-Andean">Calapuja</placeName>
+               <placeName xml:id="name352-4" type="verbatim">calapuxa</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Condesuyu</region>
-                  <settlement type="municipality">Eladrada</settlement>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Urcosuyo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Lampa</placeName>
+                     <placeName type="verbatim">lampa</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Nicasio</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Calapuja</settlement>
+                  <note type="repartimiento">L153: "en el pueblo de calapuxa estan ansi mismo rreduzidos otros 292 yndios del repartimiento de nicasio del dicho gaspar xara."</note>
                </location>
-               <placeName type="municipality">Pampacolca [Pompacolca]</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Castilla</region>
-                  <region type="department">Arequipa</region>
-                  <settlement type="municipality">Pampacolca</settlement>
+                  <region type="province">Lampa</region>
+                  <region type="department">Puno</region>
+                  <settlement type="pueblo">Calapuja District</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.71305556 -72.57305556</geo>
+                  <geo>-15.31017434 -70.22174428</geo>
                </location>
-               <note>
-        Eladrada
-        
-        Eladrada
-        
-        eladrada
-        Levillier 1921-26 v9
-        173
-        Levillier 1921-26 v9
-        173
-        AGI-L
-        
-        Lima
-        Arequipa
-        Condesuyu
-        1
-        
-        Pampacolca [Pompacolca]
-        Pampacolca
-        
-        
-        
-        
-        
-        
-        
-        Pampacolca
-        Peru
-        Arequipa
-        Castilla
-        
-        -15.71305556
-        -72.57305556
-        no resutls in Google search for Eladrada
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">173</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-15 18 36.62640 -070 13 18.27840</geo>
+               </location>
+               <bibl xml:id="bib352-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">153</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib352-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">153</citedRange>
+               </bibl>
+               <bibl xml:id="bib352-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/352</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/24/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

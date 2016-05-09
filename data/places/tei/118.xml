@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Chucuyto</title>
+            <title level="a" xml:lang="es">Ninacaca</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-118" type="town">
-               <placeName xml:id="name118-1" xml:lang="es" full="yes">Chucuyto</placeName>
-               <placeName xml:id="name118-2" xml:lang="es"/>
-               <placeName xml:id="name118-3" xml:lang="es">Chucuyto</placeName>
-               <placeName xml:id="name118-4" xml:lang="es">La ciudad de chucuyto</placeName>
+            <place xml:id="place-118" source="bib118-1">
+               <placeName xml:id="name118-1" full="yes" type="standardized">Ninacaca</placeName>
+               <placeName xml:id="name118-3" type="standardized-Andean">Ninacaca</placeName>
+               <placeName xml:id="name118-4" type="verbatim">ninacaca</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Chucuito</region>
-                  <settlement type="municipality">Chucuyto</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Jarama y Chinchacocha</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Chinchacocha</placeName>
+                     <placeName type="verbatim">chinchacocha</placeName>
+                  </region>
+                  <settlement type="pueblo">Ninacaca</settlement>
                </location>
-               <placeName type="municipality">Chucuito</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">149</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Pasco</region>
+                  <region type="department">Pasco</region>
+                  <settlement type="pueblo">Ninacaca</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-10.85557513 -76.11278635</geo>
+               </location>
+               <location>
+                  <geo>-10 51 20.07000 -076 06 46.02960</geo>
+               </location>
+               <note>Chinchacocha is supposed to have 6 reducciones but only five are listed.</note>
+               <bibl xml:id="bib118-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">203</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib118-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">203</citedRange>
+               </bibl>
+               <bibl xml:id="bib118-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/118</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

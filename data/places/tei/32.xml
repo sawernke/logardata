@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Marcos de Miraflores de Yaure</title>
+            <title level="a" xml:lang="es">Yllimo</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-32" type="town">
-               <placeName xml:id="name32-1" xml:lang="es" full="yes">San Marcos de Miraflores de Yaure</placeName>
-               <placeName xml:id="name32-2" xml:lang="es">San Marcos de Miraflores de</placeName>
-               <placeName xml:id="name32-3" xml:lang="es">Yaure</placeName>
-               <placeName xml:id="name32-4" xml:lang="es">San Marcos de Miraflores</placeName>
+            <place xml:id="place-32" source="bib32-1">
+               <placeName xml:id="name32-1" full="yes" type="standardized">Yllimo</placeName>
+               <placeName xml:id="name32-3" type="standardized-Andean">Yllimo</placeName>
+               <placeName xml:id="name32-4" type="verbatim">vn pueblo del mesmo nombre</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Chayanta</region>
-                  <settlement type="municipality">San Marcos de Miraflores de Yaure</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">Villa de Zaña</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Yllimo</placeName>
+                     <placeName type="verbatim">yllimo</placeName>
+                  </region>
+                  <settlement type="pueblo">Yllimo</settlement>
                </location>
-               <placeName type="municipality">Macha</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Unknown</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Miraflores</settlement>
+                  <country>Peru</country>
+                  <region type="province">Lambayeque</region>
+                  <region type="department">Lambayeque</region>
+                  <settlement type="pueblo">Illimo</settlement>
                </location>
                <location type="gps">
-                  <geo>-19.46666667 -65.8</geo>
+                  <geo>-6.474054672 -79.85516098</geo>
                </location>
-               <note>
-        San Marcos de Miraflores de
-        Yaure
-        San Marcos de Miraflores de Yaure
-        
-        San Marcos de Miraflores
-        Levillier 1921-26 v9
-        139
-        Levillier 1921-26 v40
-        139
-        AGI-L
-        
-        La Plata
-        La Plata
-        Chayanta
-        1
-        
-        Macha
-        macha
-        
-        
-        
-        
-        
-        
-        
-        Miraflores
-        Bolivia
-        Potosí
-        Unknown
-        
-        -19.46666667
-        -65.8
-        There are two Miraflores's in Dept. Potosí; pinned the first one (because it's lower elevation than the other one). (http://www.indexmundi.com/zp/bl/6160.htm) [This may be canton of San Marcos in Dept. Potosí, Prov. Charcas, municipio San Pedro de Buenavista: http://en.wikipedia.org/wiki/Provinces_of_Bolivia]
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">139</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-06 28 26.59800 -079 51 18.57960</geo>
+               </location>
+               <bibl xml:id="bib32-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">209</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib32-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">209</citedRange>
+               </bibl>
+               <bibl xml:id="bib32-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/32</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

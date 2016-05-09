@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Martin de Lurucache</title>
+            <title level="a" xml:lang="es">San Lorenzo [de Quinti?]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-169" type="town">
-               <placeName xml:id="name169-1" xml:lang="es" full="yes">San Martin de Lurucache</placeName>
-               <placeName xml:id="name169-2" xml:lang="es">San Martin</placeName>
-               <placeName xml:id="name169-3" xml:lang="es">Lurucache</placeName>
-               <placeName xml:id="name169-4" xml:lang="es">san martin de lurucache</placeName>
+            <place xml:id="place-169" source="bib169-1">
+               <placeName xml:id="name169-1" full="yes" type="standardized">San Lorenzo [de Quinti?]</placeName>
+               <placeName xml:id="name169-2" type="standardized-Spanish">San Lorenzo [de</placeName>
+               <placeName xml:id="name169-3" type="standardized-Andean">[Quinti?]</placeName>
+               <placeName xml:id="name169-4" type="verbatim">san Lorenzo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canas</region>
-                  <settlement type="municipality">San Martin de Lurucache</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huarochirí</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Huarochirí</placeName>
+                     <placeName type="verbatim">Guarochiri</placeName>
+                  </region>
+                  <settlement type="pueblo">San Lorenzo [de Quinti?]</settlement>
                </location>
-               <placeName type="municipality">Ansaybayba y Lurucachi</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Canchis</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Marangani</settlement>
+                  <region type="province">Huarochirí</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">San Lorenzo de Quinti</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.01805556 -71.16944444</geo>
+                  <geo>-12.14513147 -76.21260874</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">156</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-12 08 42.47160 -076 12 45.39240</geo>
+               </location>
+               <note>Coordinates from: http://www.maplandia.com/peru/lima/huarochiri/san-lorenzo-de-quinti/</note>
+               <bibl xml:id="bib169-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib169-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">191</citedRange>
+               </bibl>
+               <bibl xml:id="bib169-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/169</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Name ambiguity</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

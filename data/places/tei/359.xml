@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Salamanca de Cuyomayo</title>
+            <title level="a" xml:lang="es">San Pedro de Mocomoco</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,61 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-359" type="town">
-               <placeName xml:id="name359-1" xml:lang="es" full="yes">Salamanca de Cuyomayo</placeName>
-               <placeName xml:id="name359-2" xml:lang="es">Salamanca</placeName>
-               <placeName xml:id="name359-3" xml:lang="es">Cuyomayo</placeName>
-               <placeName xml:id="name359-4" xml:lang="es">salamanca de cuyomayo</placeName>
+            <place xml:id="place-359" source="bib359-1">
+               <placeName xml:id="name359-1" full="yes" type="standardized">San Pedro de Mocomoco</placeName>
+               <placeName xml:id="name359-2" type="standardized-Spanish">San Pedro de</placeName>
+               <placeName xml:id="name359-3" type="standardized-Andean">Mocomoco</placeName>
+               <placeName xml:id="name359-4" type="verbatim">sant pedro de mocomoco</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Condesuyu</region>
-                  <settlement type="municipality">Salamanca de Cuyomayo</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Larecaja</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Charazane</placeName>
+                     <placeName type="verbatim">Charaçana</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">San Pedro de Mocomoco</settlement>
+                  <note type="repartimiento">Charazane, Mocomoco, Usadca, Carijana: "asimesmo estan rreducidos en estos pueblos otros 300 yndios tributarios de diuersos repartimientos."</note>
                </location>
-               <placeName type="municipality">Achanquillo y Ayanque</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Condesuyos</region>
-                  <region type="department">Arequipa</region>
-                  <settlement type="municipality">Salamanca</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Eliodoro Camacho</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Mocomoco Municipality</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.50527778 -72.82972222</geo>
+                  <geo>-15.45638901 -68.99877363</geo>
                </location>
-               <note>
-        Salamanca
-        Cuyomayo
-        Salamanca de Cuyomayo
-        
-        salamanca de cuyomayo
-        Levillier 1921-26 v9
-        174
-        Levillier 1921-26 v9
-        174
-        AGI-L
-        
-        Lima
-        Arequipa
-        Condesuyu
-        1
-        
-        Achanquillo y Ayanque
-        achanquillo y ayanque
-        Achamarca
-        achamarca
-        
-        
-        
-        
-        
-        Salamanca
-        Peru
-        Arequipa
-        Condesuyos
-        
-        -15.50527778
-        -72.82972222
-        Coordinates from: http://www.maplandia.com/peru/arequipa/condesuyos/salamanca-15-30-9-s-72-49-47-w/
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">174</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-15 27 23.00040 -068 59 55.58640</geo>
+               </location>
+               <bibl xml:id="bib359-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">145</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib359-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">145</citedRange>
+               </bibl>
+               <bibl xml:id="bib359-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/359</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

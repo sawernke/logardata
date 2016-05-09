@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santiago de Pucarey</title>
+            <title level="a" xml:lang="es">San Miguel de Tiquipaya</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,62 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-434" type="town">
-               <placeName xml:id="name434-1" xml:lang="es" full="yes">Santiago de Pucarey</placeName>
-               <placeName xml:id="name434-2" xml:lang="es">Santiago</placeName>
-               <placeName xml:id="name434-3" xml:lang="es">Pucarey</placeName>
-               <placeName xml:id="name434-4" xml:lang="es">santiago de Pucarey</placeName>
+            <place xml:id="place-434" source="bib434-1">
+               <placeName xml:id="name434-1" full="yes" type="standardized">San Miguel de Tiquipaya</placeName>
+               <placeName xml:id="name434-2" type="standardized-Spanish">San Miguel de</placeName>
+               <placeName xml:id="name434-3" type="standardized-Andean">Tiquipaya</placeName>
+               <placeName xml:id="name434-4" type="verbatim">san miguel</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">Santiago de Pucarey</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Cochabamba</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Tiquipaya</placeName>
+                     <placeName type="verbatim">san miguel de titipaya</placeName>
+                  </region>
+                  <settlement type="pueblo">San Miguel de Tiquipaya</settlement>
                </location>
-               <placeName type="municipality">Soras</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Sucre</region>
-                  <region type="department">Ayacucho</region>
-                  <settlement type="municipality">Santiago de Paucaray District</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Cercado</region>
+                  <region type="department">Cochabamba</region>
+                  <settlement type="pueblo">Tiquipaya</settlement>
                </location>
+               <population>
+                  <desc>2573</desc>
+               </population>
+               <population source="bib434-1" type="tributaries">
+                  <desc>505</desc>
+               </population>
                <location type="gps">
-                  <geo>-14.67333333 -73.59111111</geo>
+                  <geo>-17.3381584 -66.21881962</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-17 20 17.36880 -066 13 07.75200</geo>
+               </location>
+               <bibl xml:id="bib434-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">141</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib434-2">
+                  <title>Levillier 1921-26 v66</title>
+                  <citedRange unit="pp">141</citedRange>
+               </bibl>
+               <bibl xml:id="bib434-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/434</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google map</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

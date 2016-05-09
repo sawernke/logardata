@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santiago de Callauso</title>
+            <title level="a" xml:lang="es">Nuestra Señora de la Encarnacion de Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,62 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-230" type="town">
-               <placeName xml:id="name230-1" xml:lang="es" full="yes">Santiago de Callauso</placeName>
-               <placeName xml:id="name230-2" xml:lang="es">Santiago de</placeName>
-               <placeName xml:id="name230-3" xml:lang="es">Callauso</placeName>
-               <placeName xml:id="name230-4" xml:lang="es">santiago de callavso</placeName>
+            <place xml:id="place-230" source="bib230-1">
+               <placeName xml:id="name230-1" full="yes" type="standardized">Nuestra Señora de la Encarnacion de Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]</placeName>
+               <placeName xml:id="name230-2" type="standardized-Spanish">Nuestra Señora de</placeName>
+               <placeName xml:id="name230-3" type="standardized-Andean">Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]</placeName>
+               <placeName xml:id="name230-4" type="verbatim">nuestra señora de la encarnacion de chinchaypuquio</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Aymaraes</region>
-                  <settlement type="municipality">Santiago de Callauso</settlement>
+                  <region type="corregimiento">Abancay</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Pantipata</placeName>
+                     <placeName type="verbatim">pantipata</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Callaracay</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Nuestra Señora de la Encarnacion de Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]</settlement>
                </location>
-               <placeName type="municipality">Collana Aymara</placeName>
-               <note>
-        Santiago de
-        Callauso
-        Santiago de Callauso
-        
-        santiago de callavso
-        Levillier 1921-26 v9
-        163
-        Levillier 1921-26 v9
-        163
-        AGI-L
-        
-        Lima
-        Cuzco
-        Aymaraes
-        0
-        
-        Collana Aymara
-        collanaaymara
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Nothing for this spelling, y--&gt;ll, l--&gt;l, qu--&gt;c...
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">163</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Anta</region>
+                  <region type="department">Cusco</region>
+                  <settlement type="pueblo">Callaracay</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-13.55801998 -72.43562272</geo>
+               </location>
+               <location>
+                  <geo>-13 33 28.87200 -072 26 08.24280</geo>
+               </location>
+               <note>Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-514706&amp;fid=4546&amp;c=peru</note>
+               <bibl xml:id="bib230-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">168</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib230-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">168</citedRange>
+               </bibl>
+               <bibl xml:id="bib230-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/230</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">No towns visible in satellite imagery, so just used digital peru.</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/25/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

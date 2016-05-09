@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Guasa</title>
+            <title level="a" xml:lang="es">Capamarca</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-271" type="town">
-               <placeName xml:id="name271-1" xml:lang="es" full="yes">Guasa</placeName>
-               <placeName xml:id="name271-2" xml:lang="es"/>
-               <placeName xml:id="name271-3" xml:lang="es">Guasa</placeName>
-               <placeName xml:id="name271-4" xml:lang="es">guasa</placeName>
+            <place xml:id="place-271" source="bib271-1">
+               <placeName xml:id="name271-1" full="yes" type="standardized">Capamarca</placeName>
+               <placeName xml:id="name271-3" type="standardized-Andean">Capamarca</placeName>
+               <placeName xml:id="name271-4" type="verbatim">vn pueblo llamado del mesmo nombre</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Andes</region>
-                  <settlement type="municipality">Guasa</settlement>
+                  <region type="corregimiento">Condesuyu</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Capamarca</placeName>
+                     <placeName type="verbatim">capamarca</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Mapa</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">Capamarca</settlement>
                </location>
-               <placeName type="municipality">Caycay</placeName>
-               <note>
-        
-        Guasa
-        Guasa
-        
-        guasa
-        Levillier 1921-26 v9
-        165
-        Levillier 1921-26 v9
-        165
-        AGI-L
-        
-        Lima
-        Cuzco
-        Andes
-        0
-        
-        Caycay
-        Caycay
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find anything for this spelling, or hua/w--&gt;gua
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">165</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Chumbivilcas</region>
+                  <region type="department">Cusco</region>
+                  <settlement type="pueblo">Capacmarca</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-14.00738432 -72.00302474</geo>
+               </location>
+               <location>
+                  <geo>-14 00 26.58240 -072 00 10.89000</geo>
+               </location>
+               <bibl xml:id="bib271-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">159</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib271-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">159</citedRange>
+               </bibl>
+               <bibl xml:id="bib271-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/271</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">plaza not clearly identified</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/3/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Veracruz de Cavana</title>
+            <title level="a" xml:lang="es">Puerto de Quilca</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-423" type="town">
-               <placeName xml:id="name423-1" xml:lang="es" full="yes">Veracruz de Cavana</placeName>
-               <placeName xml:id="name423-2" xml:lang="es">Veracruz</placeName>
-               <placeName xml:id="name423-3" xml:lang="es">Cabana</placeName>
-               <placeName xml:id="name423-4" xml:lang="es">la veracruz de cauana</placeName>
+            <place xml:id="place-423" source="bib423-1">
+               <placeName xml:id="name423-1" full="yes" type="standardized">Puerto de Quilca</placeName>
+               <placeName xml:id="name423-2" type="standardized-Spanish">Puerto de</placeName>
+               <placeName xml:id="name423-3" type="standardized-Andean">Quilca</placeName>
+               <placeName xml:id="name423-4" type="verbatim">puerto de quilca en el qual esta vn pueblo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">Veracruz de Cavana</settlement>
+                  <region type="ciudad">Arequipa</region>
+                  <region type="corregimiento">Camana</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Encomienda de Luis Cornejo</placeName>
+                     <placeName type="verbatim">encomienda de luis cornejo</placeName>
+                  </region>
+                  <settlement type="pueblo">Puerto de Quilca</settlement>
                </location>
-               <placeName type="municipality">Lucanas Andamarcas</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Lucanas</region>
-                  <region type="department">Ayacucho</region>
-                  <settlement type="municipality">Cabana</settlement>
+                  <region type="province">Camana</region>
+                  <region type="department">Arequipa</region>
+                  <settlement type="pueblo">Quilca District</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.29083333 -73.96666667</geo>
+                  <geo>-16.71679046 -72.42548524</geo>
                </location>
-               <note>
-        Veracruz
-        Cabana
-        Veracruz de Cavana
-        
-        la veracruz de cauana
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        1
-        
-        Lucanas Andamarcas
-        Lucanas andamarcas
-        
-        
-        
-        
-        
-        
-        
-        Cabana
-        Peru
-        Ayacucho
-        Lucanas
-        
-        -14.29083333
-        -73.96666667
-        Coordinates from: http://www.gomapper.com/travel/where-is/cabana-ayacucho-peru-0-located.html
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-16 43 00.44400 -072 25 31.74600</geo>
+               </location>
+               <bibl xml:id="bib423-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">177</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib423-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">177</citedRange>
+               </bibl>
+               <bibl xml:id="bib423-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/423</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/23/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

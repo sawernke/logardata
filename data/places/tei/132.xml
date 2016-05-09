@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Cabana</title>
+            <title level="a" xml:lang="es">Santa Cruz de Tapo</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-132" type="town">
-               <placeName xml:id="name132-1" xml:lang="es" full="yes">Cabana</placeName>
-               <placeName xml:id="name132-2" xml:lang="es"/>
-               <placeName xml:id="name132-3" xml:lang="es">Cabana</placeName>
-               <placeName xml:id="name132-4" xml:lang="es">cauana</placeName>
+            <place xml:id="place-132" source="bib132-1">
+               <placeName xml:id="name132-1" full="yes" type="standardized">Santa Cruz de Tapo</placeName>
+               <placeName xml:id="name132-2" type="standardized-Spanish">Santa Cruz de</placeName>
+               <placeName xml:id="name132-3" type="standardized-Andean">Tapo</placeName>
+               <placeName xml:id="name132-4" type="verbatim">santa cruz de tapo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Urcosuyo</region>
-                  <settlement type="municipality">Cabana</settlement>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Jarama y Chinchacocha</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Tarama</placeName>
+                     <placeName type="verbatim">tarama</placeName>
+                  </region>
+                  <settlement type="pueblo">Santa Cruz de Tapo</settlement>
                </location>
-               <placeName type="municipality">Cabana</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">San Roman</region>
-                  <region type="department">Puno</region>
-                  <settlement type="municipality">Cabana</settlement>
+                  <region type="province">Tarma</region>
+                  <region type="department">Junín</region>
+                  <settlement type="pueblo">Tapo</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.15055556 -70.32194444</geo>
+                  <geo>-11.38998492 -75.56400385</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">153</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-11 23 23.94600 -075 33 50.41440</geo>
+               </location>
+               <bibl xml:id="bib132-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">204</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib132-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">204</citedRange>
+               </bibl>
+               <bibl xml:id="bib132-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/132</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

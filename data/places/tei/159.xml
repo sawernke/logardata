@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Lorenzo de Ituata</title>
+            <title level="a" xml:lang="es">San Francisco de Urcotrina [Orcotuna]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-159" type="town">
-               <placeName xml:id="name159-1" xml:lang="es" full="yes">San Lorenzo de Ituata</placeName>
-               <placeName xml:id="name159-2" xml:lang="es">San Lorenzo</placeName>
-               <placeName xml:id="name159-3" xml:lang="es">Ituata</placeName>
-               <placeName xml:id="name159-4" xml:lang="es">san Lorenzo de ytuata</placeName>
+            <place xml:id="place-159" source="bib159-1">
+               <placeName xml:id="name159-1" full="yes" type="standardized">San Francisco de Urcotrina [Orcotuna]</placeName>
+               <placeName xml:id="name159-2" type="standardized-Spanish">San Francisco de</placeName>
+               <placeName xml:id="name159-3" type="standardized-Andean">Urcotrina [Orcotuna]</placeName>
+               <placeName xml:id="name159-4" type="verbatim">san Francisco de Vrcotrina</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Caravaya</region>
-                  <settlement type="municipality">San Lorenzo de Ituata</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Jauja</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Huringuanca</placeName>
+                     <placeName type="verbatim">Huringuanca</placeName>
+                  </region>
+                  <settlement type="pueblo">San Francisco de Urcotrina [Orcotuna]</settlement>
                </location>
-               <placeName type="municipality">Various</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Carabaya</region>
-                  <region type="department">Puno</region>
-                  <settlement type="municipality">Ituata</settlement>
+                  <region type="province">Concepción</region>
+                  <region type="department">Junín</region>
+                  <settlement type="pueblo">Orcotuna</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.08555556 -70.24305556</geo>
+                  <geo>-11.968922 -75.30973745</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">156</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-11 58 08.11920 -075 18 35.05320</geo>
+               </location>
+               <bibl xml:id="bib159-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">190</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib159-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">190</citedRange>
+               </bibl>
+               <bibl xml:id="bib159-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/159</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Spelling</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

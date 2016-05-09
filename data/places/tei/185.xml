@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Conotambo</title>
+            <title level="a" xml:lang="es">Ocororo</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-185" type="town">
-               <placeName xml:id="name185-1" xml:lang="es" full="yes">Conotambo</placeName>
-               <placeName xml:id="name185-2" xml:lang="es"/>
-               <placeName xml:id="name185-3" xml:lang="es">Conotambo</placeName>
-               <placeName xml:id="name185-4" xml:lang="es">conotambo</placeName>
+            <place xml:id="place-185" source="bib185-1">
+               <placeName xml:id="name185-1" full="yes" type="standardized">Ocororo</placeName>
+               <placeName xml:id="name185-3" type="standardized-Andean">Ocororo</placeName>
+               <placeName xml:id="name185-4" type="verbatim">ocororo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Canches</region>
-                  <settlement type="municipality">Conotambo</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Asangaro</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Tayacaxa</placeName>
+                     <placeName type="verbatim">tayacaxa</placeName>
+                  </region>
+                  <settlement type="pueblo">Ocororo</settlement>
                </location>
-               <placeName type="municipality">Conotambo</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">158</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Conayca</region>
+                  <region type="department">Huancavelica</region>
+                  <settlement type="pueblo">Occoro</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-12.59482159 -75.01959532</geo>
+               </location>
+               <location>
+                  <geo>-12 35 41.35920 -075 01 10.54200</geo>
+               </location>
+               <note>This pin should be labeled Occoro and put in the same location as Conayca. Nuevo Occoro is a different location. -- "La comunidad madre de Occoro Viejo, era anexo del distrito de Conayca": http://es.wikipedia.org/wiki/Distrito_de_Nuevo_Occoro - Coordinat</note>
+               <bibl xml:id="bib185-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">182</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib185-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">182</citedRange>
+               </bibl>
+               <bibl xml:id="bib185-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/185</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

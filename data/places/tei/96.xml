@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Agustin de Viacha</title>
+            <title level="a" xml:lang="es">San Juan de Paradin [Pararín]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,51 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-96" type="town">
-               <placeName xml:id="name96-1" xml:lang="es" full="yes">San Agustin de Viacha</placeName>
-               <placeName xml:id="name96-2" xml:lang="es">San Agustin de</placeName>
-               <placeName xml:id="name96-3" xml:lang="es">Viacha</placeName>
-               <placeName xml:id="name96-4" xml:lang="es">sant agustin de viacha</placeName>
+            <place xml:id="place-96" source="bib96-1">
+               <placeName xml:id="name96-1" full="yes" type="standardized">San Juan de Paradin [Pararín]</placeName>
+               <placeName xml:id="name96-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name96-3" type="standardized-Andean">Paradin [Pararín]</placeName>
+               <placeName xml:id="name96-4" type="verbatim">sant joan de paradin</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Pacajes</region>
-                  <settlement type="municipality">San Agustin de Viacha</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Huaylas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Recuay</placeName>
+                     <placeName type="verbatim">recuay</placeName>
+                  </region>
+                  <settlement type="pueblo">San Juan de Paradin [Pararín]</settlement>
                </location>
-               <population source="">
-                  <desc>3574</desc>
-               </population>
-               <population source="" type="tributaries">
-                  <desc>855</desc>
-               </population>
-               <placeName type="municipality">Viacha</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Ingavi</region>
-                  <region type="department">La Paz</region>
-                  <settlement type="municipality">Viacha</settlement>
+                  <country>Peru</country>
+                  <region type="province">Recuay</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Pararin District</settlement>
                </location>
                <location type="gps">
-                  <geo>-16.65319444 -68.30166667</geo>
+                  <geo>-10.050417 -77.65462137</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">146</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-10 03 01.50120 -077 39 16.63560</geo>
+               </location>
+               <bibl xml:id="bib96-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib96-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">198</citedRange>
+               </bibl>
+               <bibl xml:id="bib96-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/96</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/10/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

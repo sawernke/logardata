@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Palco</title>
+            <title level="a" xml:lang="es">Santa Maria de Palca</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-418" type="town">
-               <placeName xml:id="name418-1" xml:lang="es" full="yes">San Juan de Palco</placeName>
-               <placeName xml:id="name418-2" xml:lang="es">San Juan</placeName>
-               <placeName xml:id="name418-3" xml:lang="es">Palco</placeName>
-               <placeName xml:id="name418-4" xml:lang="es">san joan de palco</placeName>
+            <place xml:id="place-418" source="bib418-1">
+               <placeName xml:id="name418-1" full="yes" type="standardized">Santa Maria de Palca</placeName>
+               <placeName xml:id="name418-2" type="standardized-Spanish">Santa Maria de</placeName>
+               <placeName xml:id="name418-3" type="standardized-Andean">Palca</placeName>
+               <placeName xml:id="name418-4" type="verbatim">santa maria de Palca</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">San Juan de Palco</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Sicasica / Caracollo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Quiruas de Oyune</placeName>
+                     <placeName type="verbatim">quiruas de oyune</placeName>
+                  </region>
+                  <settlement type="pueblo">Santa Maria de Palca</settlement>
                </location>
-               <placeName type="municipality">Hatunlucana y Laramati</placeName>
-               <note>
-        San Juan
-        Palco
-        San Juan de Palco
-        
-        san joan de palco
-        Levillier 1921-26 v9
-        178
-        Levillier 1921-26 v9
-        178
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        0
-        
-        Hatunlucana y Laramati
-        Hatunlucana y laramati
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Found a "Palco, Peru" near Lima, but nothing near Arequipa. I wonder what is relationship btn this and S Pedro de Paleo / Palco above? There is a San Juan de Palca, but it's in Jujuy, Argentina
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">178</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Murillo</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Palca</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-16.56111111 -67.95305556</geo>
+               </location>
+               <location>
+                  <geo>-16 33 39.99960 -067 57 11.00160</geo>
+               </location>
+               <note>Found no S Maria de Palca, but there are three Palca locations in Dept. La Paz (http://www.indexmundi.com/zp/bl/6860.htm)</note>
+               <bibl xml:id="bib418-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">143</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib418-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">143</citedRange>
+               </bibl>
+               <bibl xml:id="bib418-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/418</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

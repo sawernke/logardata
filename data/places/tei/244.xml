@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de la Concepcion de Soraya</title>
+            <title level="a" xml:lang="es">Guancaguanca</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,51 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-244" type="town">
-               <placeName xml:id="name244-1" xml:lang="es" full="yes">Nuestra Señora de la Concepcion de Soraya</placeName>
-               <placeName xml:id="name244-2" xml:lang="es">Nuestra Señora de la Concepcion de</placeName>
-               <placeName xml:id="name244-3" xml:lang="es">Soraya</placeName>
-               <placeName xml:id="name244-4" xml:lang="es">nuestra señora de de la concepcion de soraya</placeName>
+            <place xml:id="place-244" source="bib244-1">
+               <placeName xml:id="name244-1" full="yes" type="standardized">Guancaguanca</placeName>
+               <placeName xml:id="name244-3" type="standardized-Andean">Guancaguanca</placeName>
+               <placeName xml:id="name244-4" type="verbatim">Guan Guanca</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Aymaraes</region>
-                  <settlement type="municipality">Nuestra Señora de la Concepcion de Soraya</settlement>
-               </location>
-               <placeName type="municipality">Cayao Aymara</placeName>
-               <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Aymaraes</region>
-                  <region type="department">Apurímac</region>
-                  <settlement type="municipality">Soraya</settlement>
+                  <region type="corregimiento">Chilques</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Cororo,Guancaguanca,Guacachaca,Unchurco,Condorcalla,Arapito</placeName>
+                     <placeName type="verbatim">cororo y Guancaguanca y Guacachaca de la corona rreal y vn churco y condorealla y arapito</placeName>
+                  </region>
+                  <settlement type="pueblo">Guancaguanca</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.15194444 -73.31194444</geo>
+                  <geo>-13.74468529 -72.08960794</geo>
                </location>
-               <note>
-        Nuestra Señora de la Concepcion de
-        Soraya
-        Nuestra Señora de la Concepcion de Soraya
-        
-        nuestra señora de de la concepcion de soraya
-        Levillier 1921-26 v9
-        163
-        Levillier 1921-26 v9
-        163
-        AGI-L
-        
-        Lima
-        Cuzco
-        Aymaraes
-        1
-        
-        Cayao Aymara
-        cayaoaymara
-        
-        
-        
-        
-        
-        
-        
-        Soraya
-        Peru
-        Apurímac
-        Aymaraes
-        
-        -14.15194444
-        -73.31194444
-        Coordinates from: http://en.wikipedia.org/wiki/Soraya_District
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">163</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-13 44 40.86600 -072 05 22.58880</geo>
+               </location>
+               <note>Removed pin for "Huanca Huanca, Peru" in Cusco region - Coordinates from: http://www.geographic.org/geographic_names///name.php?uni=6591656&amp;fid=4567&amp;c=peru - this location isn't in Steve's list, IM, or GE, so I'm assuming it's probably questionable...</note>
+               <bibl xml:id="bib244-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">161</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib244-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">161</citedRange>
+               </bibl>
+               <bibl xml:id="bib244-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/244</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">And Digital Peru</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/2/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

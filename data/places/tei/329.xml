@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santiago de Mollebamba</title>
+            <title level="a" xml:lang="es">Asillo</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-329" type="town">
-               <placeName xml:id="name329-1" xml:lang="es" full="yes">Santiago de Mollebamba</placeName>
-               <placeName xml:id="name329-2" xml:lang="es">Santiago</placeName>
-               <placeName xml:id="name329-3" xml:lang="es">Mollebamba</placeName>
-               <placeName xml:id="name329-4" xml:lang="es">santiago de mollebamba</placeName>
+            <place xml:id="place-329" source="bib329-1">
+               <placeName xml:id="name329-1" full="yes" type="standardized">Asillo</placeName>
+               <placeName xml:id="name329-3" type="standardized-Andean">Asillo</placeName>
+               <placeName xml:id="name329-4" type="verbatim">asillo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Andaguaylas</region>
-                  <settlement type="municipality">Santiago de Mollebamba</settlement>
+                  <region type="corregimiento">Collasuyo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Asillo</placeName>
+                     <placeName type="verbatim">asillo</placeName>
+                  </region>
+                  <settlement type="pueblo">Asillo</settlement>
                </location>
-               <placeName type="municipality">Cayara</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Antabamba</region>
-                  <region type="department">Apurímac</region>
-                  <settlement type="municipality">Mollebamba</settlement>
+                  <region type="province">Azangaro</region>
+                  <region type="department">Puno</region>
+                  <settlement type="pueblo">Asillo District</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.08527778 -72.91194444</geo>
+                  <geo>-14.78661965 -70.3540624</geo>
                </location>
-               <note>
-        Santiago
-        Mollebamba
-        Santiago de Mollebamba
-        
-        santiago de mollebamba
-        Levillier 1921-26 v9
-        169
-        Levillier 1921-26 v9
-        169
-        AGI-L
-        
-        Lima
-        Cuzco
-        Andaguaylas
-        1
-        
-        Cayara
-        cayara
-        
-        
-        
-        
-        
-        
-        
-        Mollebamba
-        Peru
-        Apurímac
-        Antabamba
-        
-        -14.08527778
-        -72.91194444
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=6544845&amp;fid=4569&amp;c=peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">169</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-14 47 11.83200 -070 21 14.62320</geo>
+               </location>
+               <bibl xml:id="bib329-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">155</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib329-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">155</citedRange>
+               </bibl>
+               <bibl xml:id="bib329-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/329</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

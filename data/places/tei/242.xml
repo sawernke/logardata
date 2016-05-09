@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Geronimo el Real de Pampamarca</title>
+            <title level="a" xml:lang="es">La Magdalena [de Pisco?]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-242" type="town">
-               <placeName xml:id="name242-1" xml:lang="es" full="yes">San Geronimo el Real de Pampamarca</placeName>
-               <placeName xml:id="name242-2" xml:lang="es">San Geronimo el Real de</placeName>
-               <placeName xml:id="name242-3" xml:lang="es">Pampamarca</placeName>
-               <placeName xml:id="name242-4" xml:lang="es">san Geronimo el rreal de pampamarca</placeName>
+            <place xml:id="place-242" source="bib242-1">
+               <placeName xml:id="name242-1" full="yes" type="standardized">La Magdalena [de Pisco?]</placeName>
+               <placeName xml:id="name242-2" type="standardized-Spanish">La Magdalena</placeName>
+               <placeName xml:id="name242-3" type="standardized-Andean">[Pisco?]</placeName>
+               <placeName xml:id="name242-4" type="verbatim">la magdalena</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Aymaraes</region>
-                  <settlement type="municipality">San Geronimo el Real de Pampamarca</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Ica</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Pisco y Condor</placeName>
+                     <placeName type="verbatim">Pisco y Condor</placeName>
+                  </region>
+                  <settlement type="pueblo">La Magdalena [de Pisco?]</settlement>
                </location>
-               <placeName type="municipality">Cayao Aymara</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Aymaraes</region>
-                  <region type="department">Apurímac</region>
-                  <settlement type="municipality">Pampamarca</settlement>
+                  <region type="province">Pisco</region>
+                  <region type="department">Ica</region>
+                  <settlement type="pueblo">Pisco</settlement>
                </location>
                <location type="gps">
-                  <geo>-14.08583333 -73.20583333</geo>
+                  <geo>-13.70998872 -76.20311313</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">163</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-13 42 35.96040 -076 12 11.20680</geo>
+               </location>
+               <note>couldn't find a location for La Magdalena</note>
+               <bibl xml:id="bib242-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">194</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib242-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">194</citedRange>
+               </bibl>
+               <bibl xml:id="bib242-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/242</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/25/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

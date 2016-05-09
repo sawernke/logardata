@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">unnamed</title>
+            <title level="a" xml:lang="es">San Juan de Guayllapampa</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,79 +51,59 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-222" type="town">
-               <placeName xml:id="name222-1" xml:lang="es" full="yes">unnamed</placeName>
-               <placeName xml:id="name222-2" xml:lang="es"/>
-               <placeName xml:id="name222-3" xml:lang="es"/>
-               <placeName xml:id="name222-4" xml:lang="es">N/A</placeName>
+            <place xml:id="place-222" source="bib222-1">
+               <placeName xml:id="name222-1" full="yes" type="standardized">San Juan de Guayllapampa</placeName>
+               <placeName xml:id="name222-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name222-3" type="standardized-Andean">Guayllapampa</placeName>
+               <placeName xml:id="name222-4" type="verbatim">sant joan de guayllapampa</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Parinacocha</region>
-                  <settlement type="municipality">unnamed</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Lucanas/Andamarcas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Soras</placeName>
+                     <placeName type="verbatim">soras</placeName>
+                  </region>
+                  <settlement type="pueblo">San Juan de Guayllapampa</settlement>
                </location>
-               <placeName type="municipality">Pomatambo Guaxacondes</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Parinacochas</region>
+                  <region type="province">Cangallo</region>
                   <region type="department">Ayacucho</region>
-                  <settlement type="municipality">Pomatambo</settlement>
+                  <settlement type="pueblo">Huayllapampa</settlement>
+                  <note type="modern-location">Distrito Totos</note>
                </location>
-               <note>
-        
-        
-        unnamed
-        
-        N/A
-        Levillier 1921-26 v9
-        162
-        Levillier 1921-26 v9
-        162
-        AGI-L
-        
-        Lima
-        Cuzco
-        Parinacocha
-        1
-        
-        Pomatambo Guaxacondes
-        Pomatambo Guaxacondes
-        
-        
-        
-        
-        
-        
-        
-        Pomatambo
-        Peru
-        Ayacucho
-        Parinacochas
-        
-        
-        
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-538733&amp;fid=4553&amp;c=peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">162</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="gps">
+                  <geo>-13.07912773 -74.22315985</geo>
+               </location>
+               <location>
+                  <geo>-13 04 44.86080 -074 13 23.37600</geo>
+               </location>
+               <note>Coordinates from: http://www.postalcodedb.com/05830_Huayllapampa_Peru.html - But it does not appear as centro poblado or comunidad campesina in http://es.wikipedia.org/wiki/Distrito_de_Totos</note>
+               <bibl xml:id="bib222-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib222-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">179</citedRange>
+               </bibl>
+               <bibl xml:id="bib222-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/222</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">and google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/25/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Ciudad de Porto</title>
+            <title level="a" xml:lang="es">Taraco</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-351" type="town">
-               <placeName xml:id="name351-1" xml:lang="es" full="yes">Ciudad de Porto</placeName>
-               <placeName xml:id="name351-2" xml:lang="es">Ciudad de Porto</placeName>
-               <placeName xml:id="name351-3" xml:lang="es"/>
-               <placeName xml:id="name351-4" xml:lang="es">ciudad de porto</placeName>
+            <place xml:id="place-351" source="bib351-1">
+               <placeName xml:id="name351-1" full="yes" type="standardized">Taraco</placeName>
+               <placeName xml:id="name351-3" type="standardized-Andean">Taraco</placeName>
+               <placeName xml:id="name351-4" type="verbatim">taraco</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Condesuyu</region>
-                  <settlement type="municipality">Ciudad de Porto</settlement>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Collasuyo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Taraco</placeName>
+                     <placeName type="verbatim">taraco</placeName>
+                  </region>
+                  <settlement type="pueblo">Taraco</settlement>
                </location>
-               <placeName type="municipality">Arones</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">173</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Huancane</region>
+                  <region type="department">Puno</region>
+                  <settlement type="pueblo">Taraco</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-15.29779377 -69.97830299</geo>
+               </location>
+               <location>
+                  <geo>-15 17 52.05840 -069 58 41.89080</geo>
+               </location>
+               <bibl xml:id="bib351-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">154</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib351-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">154</citedRange>
+               </bibl>
+               <bibl xml:id="bib351-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/351</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">11/24/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Calapuja</title>
+            <title level="a" xml:lang="es">Santa Ana de Ribera</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-135" type="town">
-               <placeName xml:id="name135-1" xml:lang="es" full="yes">Calapuja</placeName>
-               <placeName xml:id="name135-2" xml:lang="es"/>
-               <placeName xml:id="name135-3" xml:lang="es">Calapuja</placeName>
-               <placeName xml:id="name135-4" xml:lang="es">calapuxa</placeName>
+            <place xml:id="place-135" source="bib135-1">
+               <placeName xml:id="name135-1" full="yes" type="standardized">Santa Ana de Ribera</placeName>
+               <placeName xml:id="name135-2" type="standardized-Spanish">Santa Ana de</placeName>
+               <placeName xml:id="name135-3" type="standardized-Andean">Ribera</placeName>
+               <placeName xml:id="name135-4" type="verbatim">santa ana de rribera</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Urcosuyo</region>
-                  <settlement type="municipality">Calapuja</settlement>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Jarama y Chinchacocha</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Tarama</placeName>
+                     <placeName type="verbatim">tarama</placeName>
+                  </region>
+                  <settlement type="pueblo">Santa Ana de Ribera</settlement>
                </location>
-               <placeName type="municipality">Lampa</placeName>
-               <note type="repartimiento">
-        
-        Calapuja
-        Calapuja
-        
-        calapuxa
-        Levillier 1921-26 v9
-        153
-        Levillier 1921-26 v9
-        153
-        AGI-L
-        
-        Lima
-        Cuzco
-        Urcosuyo
-        1
-        
-        Lampa
-        lampa
-        Nicasio
-        nicasio
-        
-        
-        
-        
-        L153: "en el pueblo de calapuxa estan ansi mismo rreduzidos otros 292 yndios del repartimiento de nicasio del dicho gaspar xara."
-        Calapuja District
-        Peru
-        Puno
-        Lampa
-        
-        -15.15138889
-        -70.22416667
-        
-        
-        
-    </note>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Lampa</region>
-                  <region type="department">Puno</region>
-                  <settlement type="municipality">Calapuja District</settlement>
+                  <region type="province">Tarma</region>
+                  <region type="department">Junín</region>
+                  <settlement type="pueblo">Tarma</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.15138889 -70.22416667</geo>
+                  <geo>-11.41997606 -75.68769867</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">153</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-11 25 11.91360 -075 41 15.71640</geo>
+               </location>
+               <note>(according to Wikipedia, this full name is Santa Ana de Ribera de Tarma)</note>
+               <bibl xml:id="bib135-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">204</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib135-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">204</citedRange>
+               </bibl>
+               <bibl xml:id="bib135-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/135</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Bing sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/2/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Cristobal Pambachiri</title>
+            <title level="a" xml:lang="es">unnamed</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,49 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-325" type="town">
-               <placeName xml:id="name325-1" xml:lang="es" full="yes">San Cristobal Pambachiri</placeName>
-               <placeName xml:id="name325-2" xml:lang="es">San Cristobal</placeName>
-               <placeName xml:id="name325-3" xml:lang="es">Pampachiri</placeName>
-               <placeName xml:id="name325-4" xml:lang="es">san cristoval pambachiri</placeName>
+            <place xml:id="place-325" source="bib325-1">
+               <placeName xml:id="name325-1" full="yes" type="standardized">unnamed</placeName>
+               <placeName xml:id="name325-4" type="verbatim">vn pueblo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Andaguaylas</region>
-                  <settlement type="municipality">San Cristobal Pambachiri</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Hananchilques</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Hananchilques</placeName>
+                     <placeName type="verbatim">Hananchilques</placeName>
+                  </region>
+                  <settlement type="pueblo">unnamed</settlement>
+                  <note type="repartimiento">ecepto alguna parte dellos que quedan con otros de otros repartimientos</note>
                </location>
-               <placeName type="municipality">Andaguaylas</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Andahuaylas</region>
-                  <region type="department">Apurímac</region>
-                  <settlement type="municipality">Pampachiri</settlement>
+                  <region type="province">Unknown</region>
+                  <region type="department">Ayacucho</region>
+                  <settlement type="pueblo">Chilques</settlement>
                </location>
-               <location type="gps">
-                  <geo>-14.01805556 -73.55694444</geo>
-               </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">169</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <note>MAYBE. Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-518264&amp;fid=4503&amp;c=peru</note>
+               <bibl xml:id="bib325-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">181</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib325-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">181</citedRange>
+               </bibl>
+               <bibl xml:id="bib325-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/325</idno>
+               <note type="administrative" subtype="Moved">0</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">1/14/2016</note>
+               <note type="administrative" subtype="Delete_notes">This is an unnamed pueblo, so no way to place it.</note>
             </place>
          </listPlace>
       </body>

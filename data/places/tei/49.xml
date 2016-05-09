@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Colquemarca</title>
+            <title level="a" xml:lang="es">El Nombre de Jesus</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-49" type="town">
-               <placeName xml:id="name49-1" xml:lang="es" full="yes">Colquemarca</placeName>
-               <placeName xml:id="name49-2" xml:lang="es"/>
-               <placeName xml:id="name49-3" xml:lang="es">Colquemarca</placeName>
-               <placeName xml:id="name49-4" xml:lang="es">Colquemarca</placeName>
+            <place xml:id="place-49" source="bib49-1">
+               <placeName xml:id="name49-1" full="yes" type="standardized">El Nombre de Jesus</placeName>
+               <placeName xml:id="name49-2" type="standardized-Spanish">El Nombre de</placeName>
+               <placeName xml:id="name49-4" type="verbatim">el nombre de Jesus</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Carangas</region>
-                  <settlement type="municipality">Colquemarca</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">Cajamarca</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various mitimaes</placeName>
+                     <placeName type="verbatim">caxamarca</placeName>
+                  </region>
+                  <settlement type="pueblo">El Nombre de Jesus</settlement>
                </location>
-               <placeName type="municipality">Colquemarca y Andamarca</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Unknown</region>
-                  <region type="department">Oruro</region>
-                  <settlement type="municipality">Colquemarca</settlement>
+                  <country>Peru</country>
+                  <region type="province">Cajamarca</region>
+                  <region type="department">Cajamarca</region>
+                  <settlement type="pueblo">Jesús</settlement>
                </location>
                <location type="gps">
-                  <geo>-18.28388889 -67.61416667</geo>
+                  <geo>-7.248994174 -78.37950317</geo>
                </location>
-               <note>
-        
-        Colquemarca
-        Colquemarca
-        
-        Colquemarca
-        Levillier 1921-26 v9
-        140
-        Levillier 1921-26 v57
-        140
-        AGI-L
-        
-        La Plata
-        La Plata
-        Carangas
-        1
-        
-        Colquemarca y Andamarca
-        Colquemarca y Andamarca
-        
-        
-        
-        
-        
-        
-        
-        Colquemarca
-        Bolivia
-        Oruro
-        Unknown
-        
-        -18.28388889
-        -67.61416667
-        Look at map on page 38 of Mangan, Trading Places (http://books.google.com/books?id=hTKR3WY7dXoC&amp;pg=PA38&amp;lpg=PA38&amp;dq=colquemarca+carangas&amp;source=bl&amp;ots=_iMLJ3Onjr&amp;sig=9khBK6KDNzgITleJinosu38xoZk&amp;hl=en&amp;sa=X&amp;ei=xCueUazuOenk4AOPm4DwAw&amp;ved=0CFAQ6AEwBA#v=onepage&amp;q=colquemarca%20carangas&amp;f=false), and pin location as close as possible to where it is on that map.  [Note to self, 5/2013: there are plenty of references to the colonial reduccion of Colquemarca in Carangas, but I can't find it  on any index of Bolivian places today.]
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">140</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-07 14 56.37840 -078 22 46.21080</geo>
+               </location>
+               <bibl xml:id="bib49-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">210</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib49-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">210</citedRange>
+               </bibl>
+               <bibl xml:id="bib49-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/49</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

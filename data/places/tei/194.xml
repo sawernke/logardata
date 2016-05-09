@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Capamarca</title>
+            <title level="a" xml:lang="es">Coayllo</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-194" type="town">
-               <placeName xml:id="name194-1" xml:lang="es" full="yes">Capamarca</placeName>
-               <placeName xml:id="name194-2" xml:lang="es"/>
-               <placeName xml:id="name194-3" xml:lang="es">Capamarca</placeName>
-               <placeName xml:id="name194-4" xml:lang="es">vn pueblo llamado del mesmo nombre</placeName>
+            <place xml:id="place-194" source="bib194-1">
+               <placeName xml:id="name194-1" full="yes" type="standardized">Coayllo</placeName>
+               <placeName xml:id="name194-3" type="standardized-Andean">Coayllo</placeName>
+               <placeName xml:id="name194-4" type="verbatim">coayllo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Condesuyu</region>
-                  <settlement type="municipality">Capamarca</settlement>
+                  <region type="ciudad">Lima</region>
+                  <region type="corregimiento">Cañete</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Coayllo y Calango</placeName>
+                     <placeName type="verbatim">coayllo y Calango</placeName>
+                  </region>
+                  <settlement type="pueblo">Coayllo</settlement>
                </location>
-               <placeName type="municipality">Capamarca</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Chumbivilcas</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Capacmarca</settlement>
+                  <region type="province">Cañete</region>
+                  <region type="department">Lima</region>
+                  <settlement type="pueblo">Coayllo</settlement>
+                  <note type="modern-location">Town is capital of Coayllo District</note>
                </location>
                <location type="gps">
-                  <geo>-14.00083333 -72.00611111</geo>
+                  <geo>-12.72745089 -76.45989537</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">159</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-12 43 38.82360 -076 27 35.62200</geo>
+               </location>
+               <note>Coordinates from: http://www.maplandia.com/peru/lima/canete/coayllo/ - GE only recognizes a "Coailla" that it lists as being in the Asia district. Very close to these Coordinates for Coayllo... Odd</note>
+               <bibl xml:id="bib194-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">195</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib194-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">195</citedRange>
+               </bibl>
+               <bibl xml:id="bib194-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/194</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

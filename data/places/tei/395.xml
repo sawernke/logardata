@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Villareal</title>
+            <title level="a" xml:lang="es">San Martin de Uchabamba</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,76 +51,44 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-395" type="town">
-               <placeName xml:id="name395-1" xml:lang="es" full="yes">Villareal</placeName>
-               <placeName xml:id="name395-2" xml:lang="es">Villareal</placeName>
-               <placeName xml:id="name395-3" xml:lang="es"/>
-               <placeName xml:id="name395-4" xml:lang="es">Villarreal</placeName>
+            <place xml:id="place-395" source="bib395-1">
+               <placeName xml:id="name395-1" full="yes" type="standardized">San Martin de Uchabamba</placeName>
+               <placeName xml:id="name395-2" type="standardized-Spanish">San Martin de</placeName>
+               <placeName xml:id="name395-3" type="standardized-Andean">Uchubamba</placeName>
+               <placeName xml:id="name395-4" type="verbatim">san martin de Vchabamba</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Camana</region>
-                  <settlement type="municipality">Villareal</settlement>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Andaguaylas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Cayara</placeName>
+                     <placeName type="verbatim">cayara</placeName>
+                  </region>
+                  <settlement type="pueblo">San Martin de Uchabamba</settlement>
                </location>
-               <placeName type="municipality">Ocoña (Corona)</placeName>
-               <location type="gps">
-                  <geo>-16.43055556 -73.1075</geo>
-               </location>
-               <note>
-        Villareal
-        
-        Villareal
-        
-        Villarreal
-        Levillier 1921-26 v9
-        176
-        Levillier 1921-26 v9
-        176
-        AGI-L
-        
-        Lima
-        Arequipa
-        Camana
-        0
-        
-        Ocoña (Corona)
-        ocoña de la rreal corona
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        -16.43055556
-        -73.1075
-        Only "Villareal" I can find is in Apurímac region - Google suggested that I was looking for "Villarreal," but none of those results were in Arequipa either...
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">176</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <note>this is weird, I can't find anything for this location outside of GE, and when I zoom in on where GE claims Uchubamba is there's no sign of a town/populated location...</note>
+               <bibl xml:id="bib395-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">169</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib395-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">169</citedRange>
+               </bibl>
+               <bibl xml:id="bib395-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/395</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Other</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">1/14/2016</note>
             </place>
          </listPlace>
       </body>

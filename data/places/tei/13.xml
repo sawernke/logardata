@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Jarandilla de Chaqui</title>
+            <title level="a" xml:lang="es">San Antonio</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-13" type="town">
-               <placeName xml:id="name13-1" xml:lang="es" full="yes">Jarandilla de Chaqui</placeName>
-               <placeName xml:id="name13-2" xml:lang="es">Jarandilla de</placeName>
-               <placeName xml:id="name13-3" xml:lang="es">Chaqui</placeName>
-               <placeName xml:id="name13-4" xml:lang="es">Xarandilla</placeName>
+            <place xml:id="place-13" source="bib13-1">
+               <placeName xml:id="name13-1" full="yes" type="standardized">San Antonio</placeName>
+               <placeName xml:id="name13-2" type="standardized-Spanish">San Antonio</placeName>
+               <placeName xml:id="name13-4" type="verbatim">san antonio</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Porco</region>
-                  <settlement type="municipality">Jarandilla de Chaqui</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Luya y Chillao</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Luyaconilap</placeName>
+                     <placeName type="verbatim">Luyaconilap</placeName>
+                  </region>
+                  <settlement type="pueblo">San Antonio</settlement>
                </location>
-               <placeName type="municipality">Chaqui</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Cornelio Saavedra</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Chaqui</settlement>
+                  <country>Peru</country>
+                  <region type="province">Utcubamba</region>
+                  <region type="department">Amazonas</region>
+                  <settlement type="pueblo">San Antonio</settlement>
                </location>
                <location type="gps">
-                  <geo>-19.58666667 -65.56</geo>
+                  <geo>-5.776615222 -78.39244683</geo>
                </location>
-               <note>
-        Jarandilla de
-        Chaqui
-        Jarandilla de Chaqui
-        
-        Xarandilla
-        Levillier 1921-26 v9
-        137
-        Levillier 1921-26 v21
-        137
-        AGI-L
-        
-        La Plata
-        La Plata
-        Porco
-        1
-        
-        Chaqui
-        Chaqui
-        
-        
-        
-        
-        
-        
-        
-        Chaqui
-        Bolivia
-        Potosí
-        Cornelio Saavedra
-        
-        -19.58666667
-        -65.56
-        Coordinates from: http://www.indexmundi.com/zp/bl/1900.htm Pablo Cruz, "Huacas olvidadas y cerros santos. Apuntes metodológicos sobre la cartografía sagrada en los Andes del sur de Bolivia," Estudios atacameños (2009): "...el actual pueblo de Santiago de Chaquí, antes la reducción de Xarandilla, haya sido creado al pie del cerro San Gerónimo. El nombre dado a la cabecera no es inocente, Jarandilla (Xarandilla) es el pueblo de Extremadura en donde se encuentra la Casa de los Marqueses de Oropeza, el hogar de quien creó la reducción de Chaquí, el mismo virrey Francisco de Toledo."]
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">137</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-05 46 35.81400 -078 23 32.80920</geo>
+               </location>
+               <note>MAYBE - not sure if this is correct, but it's the only location for San Antonio in Amazonas on IM - Coordinates from: http://www.indexmundi.com/zp/pe/15700.htm</note>
+               <bibl xml:id="bib13-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">218</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib13-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">218</citedRange>
+               </bibl>
+               <bibl xml:id="bib13-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/13</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">No modern town in this location.</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/28/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

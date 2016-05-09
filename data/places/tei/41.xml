@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Villareal de Aullaga</title>
+            <title level="a" xml:lang="es">San Cristoval</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-41" type="town">
-               <placeName xml:id="name41-1" xml:lang="es" full="yes">Villareal de Aullaga</placeName>
-               <placeName xml:id="name41-2" xml:lang="es">Villareal de</placeName>
-               <placeName xml:id="name41-3" xml:lang="es">Aullaga</placeName>
-               <placeName xml:id="name41-4" xml:lang="es">villareal de aullaga</placeName>
+            <place xml:id="place-41" source="bib41-1">
+               <placeName xml:id="name41-1" full="yes" type="standardized">San Cristoval</placeName>
+               <placeName xml:id="name41-2" type="standardized-Spanish">San Cristoval</placeName>
+               <placeName xml:id="name41-4" type="verbatim">san crisoual</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Paria</region>
-                  <settlement type="municipality">Villareal de Aullaga</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Luya y Chillao</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Laxala</placeName>
+                     <placeName type="verbatim">laxala</placeName>
+                  </region>
+                  <settlement type="pueblo">San Cristoval</settlement>
                </location>
-               <placeName type="municipality">Aullagas y Uruquillas</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Chayanta</region>
-                  <region type="department">Potosí</region>
-                  <settlement type="municipality">Aullagas</settlement>
+                  <country>Peru</country>
+                  <region type="province">Luya</region>
+                  <region type="department">Amazonas</region>
+                  <settlement type="pueblo">San Cristobal</settlement>
                </location>
                <location type="gps">
-                  <geo>-18.68402778 -66.02819444</geo>
+                  <geo>-6.101989569 -77.95999984</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">139</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-06 06 07.16400 -077 57 36.00000</geo>
+               </location>
+               <note>MAYBE - - Coordinates from: http://www.indexmundi.com/zp/pe/15820.htm - not a capital</note>
+               <bibl xml:id="bib41-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">217</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib41-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">217</citedRange>
+               </bibl>
+               <bibl xml:id="bib41-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/41</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">and digital peru. Placed in Olto. Online sources indicate it as the Capital of the District of San Cristobal.</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/17/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

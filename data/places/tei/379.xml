@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Las Brozas</title>
+            <title level="a" xml:lang="es">Tembleque</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-379" type="town">
-               <placeName xml:id="name379-1" xml:lang="es" full="yes">Las Brozas</placeName>
-               <placeName xml:id="name379-2" xml:lang="es">Las Brozas</placeName>
-               <placeName xml:id="name379-3" xml:lang="es"/>
-               <placeName xml:id="name379-4" xml:lang="es">las broças</placeName>
+            <place xml:id="place-379" source="bib379-1">
+               <placeName xml:id="name379-1" full="yes" type="standardized">Tembleque</placeName>
+               <placeName xml:id="name379-4" type="verbatim">tembleque</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Collaguas</region>
-                  <settlement type="municipality">Las Brozas</settlement>
+                  <region type="corregimiento">Condesuyu</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Machaguay</placeName>
+                     <placeName type="verbatim">machaguai</placeName>
+                  </region>
+                  <settlement type="pueblo">Tembleque</settlement>
                </location>
-               <placeName type="municipality">[Cabana]</placeName>
-               <note>
-        Las Brozas
-        
-        Las Brozas
-        
-        las broças
-        Levillier 1921-26 v9
-        174
-        Levillier 1921-26 v9
-        174
-        AGI-L
-        
-        Lima
-        Arequipa
-        Collaguas
-        0
-        
-        [Cabana]
-        camana
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Is this the same as the Las Brozas three lines above?
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">174</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Castilla</region>
+                  <region type="department">Arequipa</region>
+                  <settlement type="pueblo">Machaguay</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-15.65057498 -72.50564672</geo>
+               </location>
+               <location>
+                  <geo>-15 39 02.07000 -072 30 20.32920</geo>
+               </location>
+               <note>no resutls in Peru for "Tembleque"</note>
+               <bibl xml:id="bib379-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">173</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib379-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">173</citedRange>
+               </bibl>
+               <bibl xml:id="bib379-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/379</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Corresponds to Machaguay. Was Machaguay originally called "Tembleque"?</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/2/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Lucas de Pabacollo</title>
+            <title level="a" xml:lang="es">San Antonio de Mancha</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,36 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-47" type="town">
-               <placeName xml:id="name47-1" xml:lang="es" full="yes">San Lucas de Pabacollo</placeName>
-               <placeName xml:id="name47-2" xml:lang="es">San Lucas de</placeName>
-               <placeName xml:id="name47-3" xml:lang="es">Pabacollo</placeName>
-               <placeName xml:id="name47-4" xml:lang="es">san lucas de pauacollo</placeName>
+            <place xml:id="place-47" source="bib47-1">
+               <placeName xml:id="name47-1" full="yes" type="standardized">San Antonio de Mancha</placeName>
+               <placeName xml:id="name47-2" type="standardized-Spanish">San Antonio de</placeName>
+               <placeName xml:id="name47-3" type="standardized-Andean">Mancha</placeName>
+               <placeName xml:id="name47-4" type="verbatim">san antonio de mancha</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Paria</region>
-                  <settlement type="municipality">San Lucas de Pabacollo</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">Cajamarca</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various mitimaes</placeName>
+                     <placeName type="verbatim">caxamarca</placeName>
+                  </region>
+                  <settlement type="pueblo">San Antonio de Mancha</settlement>
                </location>
-               <placeName type="municipality">Quillacas y Asanaques</placeName>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">139</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Cajamarca</region>
+                  <region type="department">Cajamarca</region>
+                  <settlement type="pueblo">San Antonio</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-7.15697805 -78.51746767</geo>
+               </location>
+               <location>
+                  <geo>-07 09 25.12080 -078 31 02.88480</geo>
+               </location>
+               <note>MAYBE. This is a barrio in Cajamarca city. There is also a hacienda: http://www.fundosanantonio.com/: "La Hacienda San Antonio está ubicada a 7 kilómetros de la ciudad de Cajamarca en pleno corazón de su campiña. Antigua hacienda productora de leche…"</note>
+               <bibl xml:id="bib47-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">210</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib47-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">210</citedRange>
+               </bibl>
+               <bibl xml:id="bib47-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/47</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">Iglesia de San Francisco on the plaza is also known as Iglesia San Antonio.</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/29/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

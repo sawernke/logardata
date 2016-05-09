@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">El Esponar de Tute</title>
+            <title level="a" xml:lang="es">Escalona de Veuchachas [Uchuchachas]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,45 +51,52 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-366" type="town">
-               <placeName xml:id="name366-1" xml:lang="es" full="yes">El Esponar de Tute</placeName>
-               <placeName xml:id="name366-2" xml:lang="es">El Esponar</placeName>
-               <placeName xml:id="name366-3" xml:lang="es">Tute</placeName>
-               <placeName xml:id="name366-4" xml:lang="es">el esponardetute</placeName>
+            <place xml:id="place-366" source="bib366-1">
+               <placeName xml:id="name366-1" full="yes" type="standardized">Escalona de Veuchachas [Uchuchachas]</placeName>
+               <placeName xml:id="name366-2" type="standardized-Spanish">Escalona de</placeName>
+               <placeName xml:id="name366-3" type="standardized-Andean">Veuchachas [Uchuchachas]</placeName>
+               <placeName xml:id="name366-4" type="verbatim">escalona de veuchachas</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Arequipa</region>
-                  <region type="corregimiento">Collaguas</region>
-                  <settlement type="municipality">El Esponar de Tute</settlement>
-               </location>
-               <placeName type="municipality">Yanquecollagua</placeName>
-               <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Caylloma</region>
-                  <region type="department">Arequipa</region>
-                  <settlement type="municipality">Tuti</settlement>
+                  <region type="corregimiento">Condesuyu</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Chachas y Veuchachas [Uchuchachas?]</placeName>
+                     <placeName type="verbatim">chachas y veuchachas</placeName>
+                  </region>
+                  <settlement type="pueblo">Escalona de Veuchachas [Uchuchachas]</settlement>
                </location>
                <location type="gps">
-                  <geo>-15.54527778 -71.56833333</geo>
+                  <geo>-15.53817944 -72.08794176</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
+               <location>
+                  <geo>-15 32 17.44440 -072 05 16.59120</geo>
+               </location>
+               <note>Uchuchachas appears as a zona near Yanque and Tuti: http://www.seal.com.pe/clientes/Lists/Cortes%20Programados/DispForm.aspx?ID=450 - but can't find any information about where the zona from the link actually is... There are zero search results for "Uch</note>
+               <bibl xml:id="bib366-1">
+                  <title>Levillier 1921-26 v9</title>
                   <citedRange unit="pp">174</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib366-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">174</citedRange>
+               </bibl>
+               <bibl xml:id="bib366-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/366</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">dig_peru_cprurine as reference (name=Ucuchachas), but Google satellite used for precise placement.</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

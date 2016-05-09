@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Juan de Payco</title>
+            <title level="a" xml:lang="es">San Pedro y San Pablo [de Sicasica]</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,62 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-435" type="town">
-               <placeName xml:id="name435-1" xml:lang="es" full="yes">San Juan de Payco</placeName>
-               <placeName xml:id="name435-2" xml:lang="es">San Juan</placeName>
-               <placeName xml:id="name435-3" xml:lang="es">Payco</placeName>
-               <placeName xml:id="name435-4" xml:lang="es">san Joan de payco</placeName>
+            <place xml:id="place-435" source="bib435-1">
+               <placeName xml:id="name435-1" full="yes" type="standardized">San Pedro y San Pablo [de Sicasica]</placeName>
+               <placeName xml:id="name435-2" type="standardized-Spanish">San Pedro y San Pablo</placeName>
+               <placeName xml:id="name435-3" type="standardized-Andean">[de Sicasica]</placeName>
+               <placeName xml:id="name435-4" type="verbatim">San Pedro y San Pablo</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">San Juan de Payco</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Sicasica / Caracollo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Sicasica</placeName>
+                     <placeName type="verbatim">sicasica</placeName>
+                  </region>
+                  <settlement type="pueblo">San Pedro y San Pablo [de Sicasica]</settlement>
                </location>
-               <placeName type="municipality">Soras</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Sucre</region>
-                  <region type="department">Ayacucho</region>
-                  <settlement type="municipality">Paico District</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Aroma</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Sica Sica</settlement>
                </location>
+               <population>
+                  <desc>2779</desc>
+               </population>
+               <population source="bib435-1" type="tributaries">
+                  <desc>572</desc>
+               </population>
                <location type="gps">
-                  <geo>-14.03777778 -73.64361111</geo>
+                  <geo>-17.3329523 -67.73919424</geo>
                </location>
-               <note>
-        San Juan
-        Payco
-        San Juan de Payco
-        
-        san Joan de payco
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        1
-        
-        Soras
-        soras
-        
-        
-        
-        
-        
-        
-        
-        Paico District
-        Peru
-        Ayacucho
-        Sucre
-        
-        -14.03777778
-        -73.64361111
-        Same location as?: http://es.wikipedia.org/wiki/Distrito_de_Paico - Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-537566&amp;fid=4509&amp;c=peru  - not the same location according to the Coordinates given on the Wikipedia page in your note, because those are the Coordinates Wikipedia gave for a bunch of other reducciones that I haven't been using...
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-17 19 58.62720 -067 44 21.09840</geo>
+               </location>
+               <bibl xml:id="bib435-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">143</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib435-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">143</citedRange>
+               </bibl>
+               <bibl xml:id="bib435-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/435</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

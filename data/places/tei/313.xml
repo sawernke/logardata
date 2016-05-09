@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Anton de Chinchaypuquio</title>
+            <title level="a" xml:lang="es">Santiago de Mollebamba</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-313" type="town">
-               <placeName xml:id="name313-1" xml:lang="es" full="yes">San Anton de Chinchaypuquio</placeName>
-               <placeName xml:id="name313-2" xml:lang="es">San Anton</placeName>
-               <placeName xml:id="name313-3" xml:lang="es">Chinchaypuquio</placeName>
-               <placeName xml:id="name313-4" xml:lang="es">san anton de chinchaypuquio</placeName>
+            <place xml:id="place-313" source="bib313-1">
+               <placeName xml:id="name313-1" full="yes" type="standardized">Santiago de Mollebamba</placeName>
+               <placeName xml:id="name313-2" type="standardized-Spanish">Santiago de</placeName>
+               <placeName xml:id="name313-3" type="standardized-Andean">Mollebamba</placeName>
+               <placeName xml:id="name313-4" type="verbatim">santiago de mollebamba</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Abancay</region>
-                  <settlement type="municipality">San Anton de Chinchaypuquio</settlement>
+                  <region type="corregimiento">Andaguaylas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Cayara</placeName>
+                     <placeName type="verbatim">cayara</placeName>
+                  </region>
+                  <settlement type="pueblo">Santiago de Mollebamba</settlement>
                </location>
-               <placeName type="municipality">Chinchaypuquio</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Anta</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Chinchaypuquio</settlement>
+                  <region type="province">Antabamba</region>
+                  <region type="department">Apurímac</region>
+                  <settlement type="pueblo">Mollebamba</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.11888889 -72.23333333</geo>
+                  <geo>-14.42861275 -72.91467765</geo>
                </location>
-               <note>
-        San Anton
-        Chinchaypuquio
-        San Anton de Chinchaypuquio
-        
-        san anton de chinchaypuquio
-        Levillier 1921-26 v9
-        168
-        Levillier 1921-26 v9
-        168
-        AGI-L
-        
-        Lima
-        Cuzco
-        Abancay
-        1
-        
-        Chinchaypuquio
-        chinchaypuquio
-        
-        
-        
-        
-        
-        
-        
-        Chinchaypuquio
-        Peru
-        Cusco
-        Anta
-        
-        -13.11888889
-        -72.23333333
-        Coordinates from: http://geographic.org/geographic_names/name.php?uni=-518348&amp;fid=4529&amp;c=peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">168</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-14 25 43.00680 -072 54 52.84080</geo>
+               </location>
+               <note>Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=6544845&amp;fid=4569&amp;c=peru</note>
+               <bibl xml:id="bib313-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">169</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib313-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">169</citedRange>
+               </bibl>
+               <bibl xml:id="bib313-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/313</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

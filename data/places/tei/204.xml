@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Vilque</title>
+            <title level="a" xml:lang="es">San Juan de Lircay</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,60 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-204" type="town">
-               <placeName xml:id="name204-1" xml:lang="es" full="yes">Vilque</placeName>
-               <placeName xml:id="name204-2" xml:lang="es"/>
-               <placeName xml:id="name204-3" xml:lang="es">Vilque</placeName>
-               <placeName xml:id="name204-4" xml:lang="es">Vilque</placeName>
+            <place xml:id="place-204" source="bib204-1">
+               <placeName xml:id="name204-1" full="yes" type="standardized">San Juan de Lircay</placeName>
+               <placeName xml:id="name204-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name204-3" type="standardized-Andean">Lircay</placeName>
+               <placeName xml:id="name204-4" type="verbatim">san joan de Liricay</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Chilques</region>
-                  <settlement type="municipality">Vilque</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Angaraes</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Calamarca</placeName>
+                     <placeName type="verbatim">calamarca</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Guayllay</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">San Juan de Lircay</settlement>
                </location>
-               <placeName type="municipality">Omacha</placeName>
-               <note>
-        
-        Vilque
-        Vilque
-        
-        Vilque
-        Levillier 1921-26 v9
-        160
-        Levillier 1921-26 v9
-        160
-        AGI-L
-        
-        Lima
-        Cuzco
-        Chilques
-        0
-        
-        Omacha
-        omacha
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find a Vilque near Omacha or even in Cusco region in GE, IM, or Steve's lists
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">160</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Angaraes</region>
+                  <region type="department">Huancavelica</region>
+                  <settlement type="pueblo">Lircay</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-12.98311126 -74.71849219</geo>
+               </location>
+               <location>
+                  <geo>-12 58 59.19960 -074 43 06.57120</geo>
+               </location>
+               <bibl xml:id="bib204-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">180</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib204-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">180</citedRange>
+               </bibl>
+               <bibl xml:id="bib204-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/204</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

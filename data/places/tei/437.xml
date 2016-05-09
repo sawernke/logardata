@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santa Maria de Piscayo</title>
+            <title level="a" xml:lang="es">Los Apostoles de Hilavaya</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-437" type="town">
-               <placeName xml:id="name437-1" xml:lang="es" full="yes">Santa Maria de Piscayo</placeName>
-               <placeName xml:id="name437-2" xml:lang="es">Santa Maria</placeName>
-               <placeName xml:id="name437-3" xml:lang="es">Piscayo</placeName>
-               <placeName xml:id="name437-4" xml:lang="es">santa maria de Piscayo</placeName>
+            <place xml:id="place-437" source="bib437-1">
+               <placeName xml:id="name437-1" full="yes" type="standardized">Los Apostoles de Hilavaya</placeName>
+               <placeName xml:id="name437-2" type="standardized-Spanish">Los Apostoles de</placeName>
+               <placeName xml:id="name437-3" type="standardized-Andean">Hilavaya</placeName>
+               <placeName xml:id="name437-4" type="verbatim">los apostoles de Hilauaya</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">Santa Maria de Piscayo</settlement>
+                  <region type="ciudad">Arequipa</region>
+                  <region type="corregimiento">Arica</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Hilavaya</placeName>
+                     <placeName type="verbatim">hilauaya</placeName>
+                  </region>
+                  <settlement type="pueblo">Los Apostoles de Hilavaya</settlement>
                </location>
-               <placeName type="municipality">Soras</placeName>
-               <note>
-        Santa Maria
-        Piscayo
-        Santa Maria de Piscayo
-        
-        santa maria de Piscayo
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        0
-        
-        Soras
-        soras
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find a location for "Piscayo" - when I search the whole name I get S Maria de "Pescado" ..
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Peru</country>
+                  <region type="province">Jorge Basadre</region>
+                  <region type="department">Tacna</region>
+                  <settlement type="pueblo">Ilabaya</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-17.42074418 -70.51272486</geo>
+               </location>
+               <location>
+                  <geo>-17 25 14.67840 -070 30 45.81000</geo>
+               </location>
+               <bibl xml:id="bib437-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">173</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib437-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">173</citedRange>
+               </bibl>
+               <bibl xml:id="bib437-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/437</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/2/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

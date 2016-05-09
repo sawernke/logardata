@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Pedro y San Pablo [de Sicasica]</title>
+            <title level="a" xml:lang="es">Santo Domingo de Tauca</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,51 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-61" type="town">
-               <placeName xml:id="name61-1" xml:lang="es" full="yes">San Pedro y San Pablo [de Sicasica]</placeName>
-               <placeName xml:id="name61-2" xml:lang="es">San Pedro y San Pablo</placeName>
-               <placeName xml:id="name61-3" xml:lang="es">[de Sicasica]</placeName>
-               <placeName xml:id="name61-4" xml:lang="es">San Pedro y San Pablo</placeName>
+            <place xml:id="place-61" source="bib61-1">
+               <placeName xml:id="name61-1" full="yes" type="standardized">Santo Domingo de Tauca</placeName>
+               <placeName xml:id="name61-2" type="standardized-Spanish">Santo Domingo de</placeName>
+               <placeName xml:id="name61-3" type="standardized-Andean">Tauca</placeName>
+               <placeName xml:id="name61-4" type="verbatim">sancto domingo de tauca</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Paz</region>
-                  <region type="corregimiento">Sicasica / Caracollo</region>
-                  <settlement type="municipality">San Pedro y San Pablo [de Sicasica]</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Huanuco</region>
+                  <region type="corregimiento">Conchucos</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Conchucos (catalina de mori)</placeName>
+                     <placeName type="verbatim">conchucos encomendado en doña catalina de mori</placeName>
+                  </region>
+                  <settlement type="pueblo">Santo Domingo de Tauca</settlement>
                </location>
-               <population source="">
-                  <desc>2779</desc>
-               </population>
-               <population source="" type="tributaries">
-                  <desc>572</desc>
-               </population>
-               <placeName type="municipality">Sicasica</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Aroma</region>
-                  <region type="department">La Paz</region>
-                  <settlement type="municipality">Sica Sica</settlement>
+                  <country>Peru</country>
+                  <region type="province">Pallasca</region>
+                  <region type="department">Ancash</region>
+                  <settlement type="pueblo">Tauca</settlement>
                </location>
                <location type="gps">
-                  <geo>-17.33763889 -67.74472222</geo>
+                  <geo>-8.469994382 -78.03775191</geo>
                </location>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">143</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-08 28 11.97840 -078 02 15.90720</geo>
+               </location>
+               <bibl xml:id="bib61-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">200</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib61-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">200</citedRange>
+               </bibl>
+               <bibl xml:id="bib61-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/61</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

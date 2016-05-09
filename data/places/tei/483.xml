@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Salvador de Sulcamarca [Julcamarca?]</title>
+            <title level="a" xml:lang="es">Nuestra Señora de Belén de Tiquipaya</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,79 +51,54 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-483" type="town">
-               <placeName xml:id="name483-1" xml:lang="es" full="yes">San Salvador de Sulcamarca [Julcamarca?]</placeName>
-               <placeName xml:id="name483-2" xml:lang="es">San Salvador</placeName>
-               <placeName xml:id="name483-3" xml:lang="es">Sulcamarca [Julcamarca?]</placeName>
-               <placeName xml:id="name483-4" xml:lang="es">san saluador de sulcamarca</placeName>
+            <place xml:id="place-483" source="bib483-1">
+               <placeName xml:id="name483-1" full="yes" type="standardized">Nuestra Señora de Belén de Tiquipaya</placeName>
+               <placeName xml:id="name483-2" type="standardized-Spanish">Nuestra Señora de</placeName>
+               <placeName xml:id="name483-3" type="standardized-Andean">Tiquipaya</placeName>
+               <placeName xml:id="name483-4" type="verbatim">nuestra señora de beplem de tuquipaya</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Hananchilques</region>
-                  <settlement type="municipality">San Salvador de Sulcamarca [Julcamarca?]</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Porco</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Colo,Caquina,Pilachuri</placeName>
+                     <placeName type="verbatim">Colo y caquina y pilachuri</placeName>
+                  </region>
+                  <settlement type="pueblo">Nuestra Señora de Belén de Tiquipaya</settlement>
                </location>
-               <placeName type="municipality">Quichuas Aymaraes</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Angaraes</region>
-                  <region type="department">Huancavelica</region>
-                  <settlement type="municipality">Julcamarca</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">José María Linares</region>
+                  <region type="department">Potosí</region>
+                  <settlement type="pueblo">Belén</settlement>
                </location>
-               <note>
-        San Salvador
-        Sulcamarca [Julcamarca?]
-        San Salvador de Sulcamarca [Julcamarca?]
-        
-        san saluador de sulcamarca
-        Levillier 1921-26 v9
-        181
-        Levillier 1921-26 v9
-        181
-        AGI-L
-        
-        Lima
-        Guamanga
-        Hananchilques
-        1
-        
-        Quichuas Aymaraes
-        quichuas aymaraes
-        
-        
-        
-        
-        
-        
-        
-        Julcamarca
-        Peru
-        Huancavelica
-        Angaraes
-        
-        
-        
-        http://en.wikipedia.org/wiki/Julcamarca_District
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">181</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <population source="bib483-1" type="tributaries">
+                  <desc>340</desc>
+               </population>
+               <note>[Where did the other 108 families go?]</note>
+               <bibl xml:id="bib483-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">137</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib483-2">
+                  <title>Levillier 1921-26 v24</title>
+                  <citedRange unit="pp">137</citedRange>
+               </bibl>
+               <bibl xml:id="bib483-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/483</idno>
+               <note type="administrative" subtype="Moved">0</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/12/2015</note>
+               <note type="administrative" subtype="Delete_2">1</note>
+               <note type="administrative" subtype="Delete_notes">I don't know why I thought that this Belén was the one in the tasa - there doesn't seem to be any reason to think so.</note>
             </place>
          </listPlace>
       </body>

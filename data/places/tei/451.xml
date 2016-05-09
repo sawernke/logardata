@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de La Concepcion de Guaraco</title>
+            <title level="a" xml:lang="es">San Pedro de Challacollo</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-451" type="town">
-               <placeName xml:id="name451-1" xml:lang="es" full="yes">Nuestra Señora de La Concepcion de Guaraco</placeName>
-               <placeName xml:id="name451-2" xml:lang="es">Nuestra Señora de La Concepcion</placeName>
-               <placeName xml:id="name451-3" xml:lang="es">Guaraco</placeName>
-               <placeName xml:id="name451-4" xml:lang="es">nuestra señora de la concepcion de guaraco</placeName>
+            <place xml:id="place-451" source="bib451-1">
+               <placeName xml:id="name451-1" full="yes" type="standardized">San Pedro de Challacollo</placeName>
+               <placeName xml:id="name451-2" type="standardized-Spanish">San Pedro de</placeName>
+               <placeName xml:id="name451-3" type="standardized-Andean">Challacollo</placeName>
+               <placeName xml:id="name451-4" type="verbatim">San Pedro de Challacollo</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Angaraes</region>
-                  <settlement type="municipality">Nuestra Señora de La Concepcion de Guaraco</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Paria</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Paria</placeName>
+                     <placeName type="verbatim">Paria</placeName>
+                  </region>
+                  <settlement type="pueblo">San Pedro de Challacollo</settlement>
                </location>
-               <placeName type="municipality">Angaraes (Ines de Villalobos)</placeName>
-               <note>
-        Nuestra Señora de La Concepcion
-        Guaraco
-        Nuestra Señora de La Concepcion de Guaraco
-        
-        nuestra señora de la concepcion de guaraco
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Angaraes
-        0
-        
-        Angaraes (Ines de Villalobos)
-        angaraes encomendado de doña Ynes de Villalobos
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find a location for full name anywhere - can't find a location for just "Huaraco" near Ayacucho/Huancavelica
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Cercado</region>
+                  <region type="department">Oruro</region>
+                  <settlement type="pueblo">Challacollo</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-18.07837482 -67.23983924</geo>
+               </location>
+               <location>
+                  <geo>-18 04 42.15000 -067 14 23.42040</geo>
+               </location>
+               <note>Coordinates from: http://www.indexmundi.com/zp/bl/1800.htm - there are 2 locations for Challacollo in Oruro on IM, I chose this one based on the fact that the Coordinates listed for Cercado on Wikipedia didn't match with the other one quite as well, but</note>
+               <bibl xml:id="bib451-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">139</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib451-2">
+                  <title>Levillier 1921-26 v44</title>
+                  <citedRange unit="pp">139</citedRange>
+               </bibl>
+               <bibl xml:id="bib451-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/451</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

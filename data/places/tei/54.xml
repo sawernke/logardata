@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Urinoca</title>
+            <title level="a" xml:lang="es">no names listed</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,85 +51,43 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-54" type="town">
-               <placeName xml:id="name54-1" xml:lang="es" full="yes">Urinoca</placeName>
-               <placeName xml:id="name54-2" xml:lang="es"/>
-               <placeName xml:id="name54-3" xml:lang="es">Urinoca</placeName>
-               <placeName xml:id="name54-4" xml:lang="es">Vritoca</placeName>
+            <place xml:id="place-54" source="bib54-1">
+               <placeName xml:id="name54-1" full="yes" type="standardized">no names listed</placeName>
+               <placeName xml:id="name54-4" type="verbatim">no names listed</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Carangas</region>
-                  <settlement type="municipality">Urinoca</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Trujillo</region>
+                  <region type="corregimiento">Cajamarca</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Guamachuco</placeName>
+                     <placeName type="verbatim">Guamachuco</placeName>
+                  </region>
+                  <settlement type="pueblo">no names listed</settlement>
                </location>
-               <population source="" type="tributaries">
-                  <desc>264</desc>
-               </population>
-               <placeName type="municipality">Urinoca</placeName>
-               <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Sud Carangas</region>
-                  <region type="department">Oruro</region>
-                  <settlement type="municipality">Orinoca</settlement>
-               </location>
-               <location type="gps">
-                  <geo>-18.97792222 -67.26086389</geo>
-               </location>
-               <note>
-        
-        Urinoca
-        Urinoca
-        
-        Vritoca
-        Levillier 1921-26 v9
-        140
-        Levillier 1921-26 v62
-        140
-        AGI-L
-        
-        La Plata
-        La Plata
-        Carangas
-        1
-        
-        Urinoca
-        Vritioca
-        
-        
-        
-        
-        
-        
-        
-        Orinoca
-        Bolivia
-        Oruro
-        Sud Carangas
-        
-        -18.97792222
-        -67.26086389
-        Birthplace of Evo Morales (Wikipedia).
-        
-        264
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">140</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <note>Huamachuco, Dept. La Libertad, Prov. Sanchez Carrion - PIN THIS as one of the 6?</note>
+               <bibl xml:id="bib54-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">210</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib54-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">210</citedRange>
+               </bibl>
+               <bibl xml:id="bib54-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/54</idno>
+               <note type="administrative" subtype="Moved">0</note>
+               <note type="administrative" subtype="MR_other_notes">no names listed; cannot place</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/28/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

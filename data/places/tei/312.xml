@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Nuestra Señora de la Encarnacion de Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]</title>
+            <title level="a" xml:lang="es">San Pedro de Palco</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,57 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-312" type="town">
-               <placeName xml:id="name312-1" xml:lang="es" full="yes">Nuestra Señora de la Encarnacion de Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]</placeName>
-               <placeName xml:id="name312-2" xml:lang="es">Nuestra Señora de la Encarnacion</placeName>
-               <placeName xml:id="name312-3" xml:lang="es">Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]</placeName>
-               <placeName xml:id="name312-4" xml:lang="es">nuestra señora de la encarnacion de chinchaypuquio</placeName>
+            <place xml:id="place-312" source="bib312-1">
+               <placeName xml:id="name312-1" full="yes" type="standardized">San Pedro de Palco</placeName>
+               <placeName xml:id="name312-2" type="standardized-Spanish">San Pedro de</placeName>
+               <placeName xml:id="name312-3" type="standardized-Andean">Palco</placeName>
+               <placeName xml:id="name312-4" type="verbatim">san Pedro de paleo</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Abancay</region>
-                  <settlement type="municipality">Nuestra Señora de la Encarnacion de Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]</settlement>
+                  <region type="ciudad">Guamanga</region>
+                  <region type="corregimiento">Lucanas/Andamarcas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Hatunlucana y Laramati</placeName>
+                     <placeName type="verbatim">Hatunlucana y laramati</placeName>
+                  </region>
+                  <settlement type="pueblo">San Pedro de Palco</settlement>
                </location>
-               <placeName type="municipality">Pantipata</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Anta</region>
-                  <region type="department">Cusco</region>
-                  <settlement type="municipality">Callaracay</settlement>
+                  <region type="province">Lucanas</region>
+                  <region type="department">Ayacucho</region>
+                  <settlement type="pueblo">San Pedro de Palco District</settlement>
                </location>
                <location type="gps">
-                  <geo>-13.05 -72.45</geo>
+                  <geo>-14.41194652 -74.6510133</geo>
                </location>
-               <note>
-        Nuestra Señora de la Encarnacion
-        Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]
-        Nuestra Señora de la Encarnacion de Chinchaypuquio [Probably a mistake for Callaracay - Chinchaypuqio is below]
-        
-        nuestra señora de la encarnacion de chinchaypuquio
-        Levillier 1921-26 v9
-        168
-        Levillier 1921-26 v9
-        168
-        AGI-L
-        
-        Lima
-        Cuzco
-        Abancay
-        1
-        
-        Pantipata
-        pantipata
-        Callaracay
-        callaracay
-        
-        
-        
-        
-        
-        Callaracay
-        Peru
-        Cusco
-        Anta
-        
-        -13.05
-        -72.45
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-514706&amp;fid=4546&amp;c=peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">168</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-14 24 43.00920 -074 39 03.64680</geo>
+               </location>
+               <note>Coordinates from: http://www.gomapper.com/travel/where-is/san-pedro-de-palco-located.html</note>
+               <bibl xml:id="bib312-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">178</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib312-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">178</citedRange>
+               </bibl>
+               <bibl xml:id="bib312-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/312</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/3/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

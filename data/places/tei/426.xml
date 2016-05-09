@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Santa Ana de Guaycaguacho</title>
+            <title level="a" xml:lang="es">Collana y Cocone</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,52 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-426" type="town">
-               <placeName xml:id="name426-1" xml:lang="es" full="yes">Santa Ana de Guaycaguacho</placeName>
-               <placeName xml:id="name426-2" xml:lang="es">Santan Ana</placeName>
-               <placeName xml:id="name426-3" xml:lang="es">Guaycaguacho</placeName>
-               <placeName xml:id="name426-4" xml:lang="es">santa ana de Guaycaguacho</placeName>
+            <place xml:id="place-426" source="bib426-1">
+               <placeName xml:id="name426-1" full="yes" type="standardized">Collana y Cocone</placeName>
+               <placeName xml:id="name426-3" type="standardized-Andean">Collana y Cocone</placeName>
+               <placeName xml:id="name426-4" type="verbatim">collana y cocone</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">Santa Ana de Guaycaguacho</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Paz</region>
+                  <region type="corregimiento">Sicasica / Caracollo</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Various mitimaes</placeName>
+                     <placeName type="verbatim">yndios mitimaes de diuersos repartimientos</placeName>
+                  </region>
+                  <settlement type="pueblo">Collana y Cocone</settlement>
+                  <note type="repartimiento">"Tiene asimismo el pueblo de san joan de cauari de otros yndios mitimaes y el pueblo de capinata y el pueblo de ynquisiue y el pueblo de collana y cocone todos los yndios mitimaes de diuersos repartimientos e todos son poblezuelos pequeños."</note>
                </location>
-               <placeName type="municipality">Lucanas Andamarcas</placeName>
                <location type="modern">
-                  <country>Peru</country>
-                  <region type="province">Lucanas</region>
-                  <region type="department">Ayacucho</region>
-                  <settlement type="municipality">Santa Ana de Huaycahuacho</settlement>
+                  <country>Bolivia</country>
+                  <region type="province">Murillo</region>
+                  <region type="department">La Paz</region>
+                  <settlement type="pueblo">Collana Municipality</settlement>
+                  <note type="modern-location">Province designation tentative</note>
                </location>
-               <location type="gps">
-                  <geo>-14.95 -73.21666667</geo>
-               </location>
-               <note>
-        Santan Ana
-        Guaycaguacho
-        Santa Ana de Guaycaguacho
-        
-        santa ana de Guaycaguacho
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        1
-        
-        Lucanas Andamarcas
-        Lucanas andamarcas
-        
-        
-        
-        
-        
-        
-        
-        Santa Ana de Huaycahuacho
-        Peru
-        Ayacucho
-        Lucanas
-        
-        -14.95
-        -73.21666667
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-543503&amp;fid=4584&amp;c=peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <note>Coordinates from: http://en.wikipedia.org/wiki/Collana_Municipality - it's pretty close to Inquisivi but I don't know where the line is between close enough and too far away, so it's hard to say...</note>
+               <bibl xml:id="bib426-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib426-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">144</citedRange>
+               </bibl>
+               <bibl xml:id="bib426-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/426</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/11/2015</note>
+               <note type="administrative" subtype="Delete_2">1</note>
+               <note type="administrative" subtype="Delete_notes">Tasa names "pueblo de collana y cocone" as sharing same mixed pop as Cavari and Inquisivi, but this Collana is not very close to those reducciones, and I think a number of places are named Collana.</note>
             </place>
          </listPlace>
       </body>

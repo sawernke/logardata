@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">Quillaquilla</title>
+            <title level="a" xml:lang="es">Santa Maria de Sonche</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,58 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-23" type="town">
-               <placeName xml:id="name23-1" xml:lang="es" full="yes">Quillaquilla</placeName>
-               <placeName xml:id="name23-2" xml:lang="es"/>
-               <placeName xml:id="name23-3" xml:lang="es">Quillaquilla</placeName>
-               <placeName xml:id="name23-4" xml:lang="es">quilaquila</placeName>
+            <place xml:id="place-23" source="bib23-1">
+               <placeName xml:id="name23-1" full="yes" type="standardized">Santa Maria de Sonche</placeName>
+               <placeName xml:id="name23-2" type="standardized-Spanish">Santa Maria de</placeName>
+               <placeName xml:id="name23-3" type="standardized-Andean">Sonche</placeName>
+               <placeName xml:id="name23-4" type="verbatim">santa maria de sonche</placeName>
                <location type="ancient">
-                  <region type="audiencia">La Plata</region>
-                  <region type="ciudad">La Plata</region>
-                  <region type="corregimiento">Amparaes</region>
-                  <settlement type="municipality">Quillaquilla</settlement>
+                  <region type="audiencia">Lima</region>
+                  <region type="ciudad">Chachapoyas</region>
+                  <region type="corregimiento">Paellas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Sonche</placeName>
+                     <placeName type="verbatim">sonche</placeName>
+                  </region>
+                  <settlement type="pueblo">Santa Maria de Sonche</settlement>
                </location>
-               <placeName type="municipality">Yamparaes</placeName>
                <location type="modern">
-                  <country>Bolivia</country>
-                  <region type="province">Oropeza</region>
-                  <region type="department">Chuquisaca</region>
-                  <settlement type="municipality">Quilla Quilla</settlement>
+                  <country>Peru</country>
+                  <region type="province">Chachapoyas</region>
+                  <region type="department">Amazonas</region>
+                  <settlement type="pueblo">San Juan de Sonche</settlement>
                </location>
                <location type="gps">
-                  <geo>-19.10777778 -65.35722222</geo>
+                  <geo>-6.217711893 -77.77746433</geo>
                </location>
-               <note>
-        
-        Quillaquilla
-        Quillaquilla
-        
-        quilaquila
-        Levillier 1921-26 v9
-        138
-        Levillier 1921-26 v31
-        138
-        AGI-L
-        
-        La Plata
-        La Plata
-        Amparaes
-        1
-        
-        Yamparaes
-        amparaes
-        
-        
-        
-        
-        
-        
-        
-        Quilla Quilla
-        Bolivia
-        Chuquisaca
-        Oropeza
-        
-        -19.10777778
-        -65.35722222
-        I'm confused. IndexMundi has two Quillaquilla's, one of them in Dept. Chuquisaca, which is probably the right one. But the location you pinned doesn't show up in IndexMundi.
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">138</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location>
+                  <geo>-06 13 03.76320 -077 46 38.87040</geo>
+               </location>
+               <note>N.B. saint changes</note>
+               <bibl xml:id="bib23-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">215</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib23-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">215</citedRange>
+               </bibl>
+               <bibl xml:id="bib23-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/23</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Digital Peru</note>
+               <note type="administrative" subtype="MR_other_notes">Poor sat res</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">12/8/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

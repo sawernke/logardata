@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Pedro y San Pablo de Caroanga</title>
+            <title level="a" xml:lang="es">Valverde de Tapacarí</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,73 +51,56 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-440" type="town">
-               <placeName xml:id="name440-1" xml:lang="es" full="yes">San Pedro y San Pablo de Caroanga</placeName>
-               <placeName xml:id="name440-2" xml:lang="es">San Pedro y San Pablo</placeName>
-               <placeName xml:id="name440-3" xml:lang="es">Caroanga</placeName>
-               <placeName xml:id="name440-4" xml:lang="es">san pedro y san pablo de caroanga</placeName>
+            <place xml:id="place-440" source="bib440-1">
+               <placeName xml:id="name440-1" full="yes" type="standardized">Valverde de Tapacarí</placeName>
+               <placeName xml:id="name440-2" type="standardized-Spanish">Valverde</placeName>
+               <placeName xml:id="name440-3" type="standardized-Andean">Tapacarí</placeName>
+               <placeName xml:id="name440-4" type="verbatim">Valuerde de tapacarí</placeName>
                <location type="ancient">
-                  <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Lucanas/Andamarcas</region>
-                  <settlement type="municipality">San Pedro y San Pablo de Caroanga</settlement>
+                  <region type="audiencia">La Plata</region>
+                  <region type="ciudad">La Plata</region>
+                  <region type="corregimiento">Cochabamba</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Tapacarí</placeName>
+                     <placeName type="verbatim">Tapacarí</placeName>
+                  </region>
+                  <settlement type="pueblo">Valverde de Tapacarí</settlement>
                </location>
-               <placeName type="municipality">Soras</placeName>
-               <note>
-        San Pedro y San Pablo
-        Caroanga
-        San Pedro y San Pablo de Caroanga
-        
-        san pedro y san pablo de caroanga
-        Levillier 1921-26 v9
-        179
-        Levillier 1921-26 v9
-        179
-        AGI-L
-        
-        Lima
-        Guamanga
-        Lucanas/Andamarcas
-        0
-        
-        Soras
-        soras
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Can't find a location for this name, as shown or just "Caroanga"
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">179</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <location type="modern">
+                  <country>Bolivia</country>
+                  <region type="province">Tapacarí</region>
+                  <region type="department">Cochabamba</region>
+                  <settlement type="pueblo">Tapacarí</settlement>
+               </location>
+               <location type="gps">
+                  <geo>-17.51639309 -66.62025231</geo>
+               </location>
+               <location>
+                  <geo>-17 30 59.01480 -066 37 12.90720</geo>
+               </location>
+               <bibl xml:id="bib440-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">141</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib440-2">
+                  <title>Levillier 1921-26 v64</title>
+                  <citedRange unit="pp">141</citedRange>
+               </bibl>
+               <bibl xml:id="bib440-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/440</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="Moved_by">Mumford</note>
+               <note type="administrative" subtype="Move_date">12/1/2015</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>

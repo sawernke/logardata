@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:syriaca="http://syriaca.org"
-     xmlns:saxon="http://saxon.sf.net/"
      xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xmlns:functx="http://www.functx.com"
      xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="en">San Nicolas de Sorite</title>
+            <title level="a" xml:lang="es">San Martin de Lurucache</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
             <principal>Jeremy Mumford</principal>
-            <editor role="general">Jeremy Mumford</editor>
-            <editor role="general">Steven A. Wernke</editor>
+            <editor role="creator">Steven A. Wernke</editor>
+            <editor role="creator">Jeremy Mumford</editor>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+            </respStmt>
+            <respStmt>
+               <resp>Editing, proofreading, data entry and revision by</resp>
+               <name type="person"
+                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+            </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -29,7 +36,7 @@
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                </licence>
             </availability>
-            <date>2015-10-09-04:00</date>
+            <date>2016-05-09-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -44,82 +51,55 @@
       <revisionDesc>
          <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
                  n="1.0"
-                 when="2015-10-09-04:00">CREATED: place record</change>
+                 when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-307" type="town">
-               <placeName xml:id="name307-1" xml:lang="es" full="yes">San Nicolas de Sorite</placeName>
-               <placeName xml:id="name307-2" xml:lang="es">San Nicolas</placeName>
-               <placeName xml:id="name307-3" xml:lang="es">Sorite</placeName>
-               <placeName xml:id="name307-4" xml:lang="es">san nicolas de sorite</placeName>
+            <place xml:id="place-307" source="bib307-1">
+               <placeName xml:id="name307-1" full="yes" type="standardized">San Martin de Lurucache</placeName>
+               <placeName xml:id="name307-2" type="standardized-Spanish">San Martin de</placeName>
+               <placeName xml:id="name307-3" type="standardized-Andean">Lurucache</placeName>
+               <placeName xml:id="name307-4" type="verbatim">san martin de lurucache</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
-                  <region type="corregimiento">Abancay</region>
-                  <settlement type="municipality">San Nicolas de Sorite</settlement>
+                  <region type="corregimiento">Canas</region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Ansaybayba y Lurucachi</placeName>
+                     <placeName type="verbatim">Ansaybayba y Lurucache</placeName>
+                  </region>
+                  <region type="repartimiento">
+                     <placeName type="standardized" full="yes">Marangani</placeName>
+                     <placeName type="verbatim"/>
+                  </region>
+                  <settlement type="pueblo">San Martin de Lurucache</settlement>
                </location>
-               <placeName type="municipality">Canzo</placeName>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Anta</region>
+                  <region type="province">Canchis</region>
                   <region type="department">Cusco</region>
-                  <settlement type="municipality">Zurite</settlement>
+                  <settlement type="pueblo">Marangani</settlement>
                </location>
-               <location type="gps">
-                  <geo>-13.11861111 -72.25555556</geo>
-               </location>
-               <note>
-        San Nicolas
-        Sorite
-        San Nicolas de Sorite
-        
-        san nicolas de sorite
-        Levillier 1921-26 v9
-        168
-        Levillier 1921-26 v9
-        168
-        AGI-L
-        
-        Lima
-        Cuzco
-        Abancay
-        1
-        
-        Canzo
-        canço
-        
-        
-        
-        
-        
-        
-        
-        Zurite
-        Peru
-        Cusco
-        Anta
-        
-        -13.11861111
-        -72.25555556
-        Coordinates from: http://www.geographic.org/geographic_names/name.php?uni=-550368&amp;fid=4508&amp;c=peru
-        
-        
-    </note>
-               <bibl>
-                  <title>Gobernantes del Perú, Volume IX</title>
-                  <author>Levilier 1925</author>
-                  <citedRange unit="pp">168</citedRange>
-                  <publisher>Imprenta de Juan Pueyo</publisher>
-                  <pubPlace>Madrid</pubPlace>
+               <bibl xml:id="bib307-1">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">156</citedRange>
                </bibl>
-               <msDesc>
-                  <msIdentifier>AGI-L</msIdentifier>
-                  <msPart/>
-               </msDesc>
+               <bibl xml:id="bib307-2">
+                  <title>Levillier 1921-26 v9</title>
+                  <citedRange unit="pp">156</citedRange>
+               </bibl>
+               <bibl xml:id="bib307-3">
+                  <title>AGI-L</title>
+               </bibl>
                <idno type="URI">http://logarandes.org/place/307</idno>
+               <note type="administrative" subtype="Moved">1</note>
+               <note type="administrative" subtype="Move_ref">Google sat</note>
+               <note type="administrative" subtype="MR_other_notes">The church is called "San Martin de Tours" http://goo.gl/7tLk9H. And the district has a rural population center called "Loracachi" that was not identifiable on the map http://goo.gl/oyfZgA</note>
+               <note type="administrative" subtype="Moved_by">Kohut</note>
+               <note type="administrative" subtype="Move_date">3/2/2016</note>
+               <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>
       </body>
