@@ -7,7 +7,8 @@
     xmlns:syriaca="http://syriaca.org"
     xmlns:saxon="http://saxon.sf.net/" 
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" 
-    xmlns:functx="http://www.functx.com">
+    xmlns:functx="http://www.functx.com"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace">
         
     <xsl:output encoding="UTF-8" indent="yes" method="xml" name="xml" />
    
@@ -71,22 +72,24 @@
                         <body>
                             <listPlace>
                                 <!-- NOTE: question place-type? controlled vocabulary   source=""  type="town"-->
-                                <place xml:id="place-{$record-id}" source="bib{$record-id}-1">
+                                <place>
+                                    <xsl:attribute name="xml:id" select="concat('place-', $record-id)"/>
+                                    <xsl:attribute name="source" select="concat('bib', $record-id, '-1')"/>
                                     <xsl:for-each select="Name_reduccion_standardized_both_parts[. != '']">
                                         <!-- NOTE blank placeName nodes in original run, see Andamarca for an example  -->    
-                                        <placeName xml:id="name{$record-id}-1" full="yes" type="standardized"><xsl:value-of select="."/></placeName>    
+                                        <placeName full="yes" type="standardized"><xsl:attribute name="xml:id" select="concat('name', $record-id, '-1')"/><xsl:value-of select="."/></placeName>    
                                     </xsl:for-each>
                                     <!-- Spanish name -->
                                     <xsl:for-each select="Name_reduccion_standardized_S_part[. != '']">
-                                        <placeName xml:id="name{$record-id}-2" type="standardized-Spanish"><xsl:value-of select="."/></placeName>
+                                        <placeName type="standardized-Spanish"><xsl:attribute name="xml:id" select="concat('name', $record-id, '-2')"/><xsl:value-of select="."/></placeName>
                                     </xsl:for-each>
                                     <!-- Andean name -->
                                     <xsl:for-each select="Name_reduccion_standardized_A_part[. != '']">
-                                        <placeName xml:id="name{$record-id}-3" type="standardized-Andean"><xsl:value-of select="."/></placeName>
+                                        <placeName type="standardized-Andean"><xsl:attribute name="xml:id" select="concat('name', $record-id, '-3')"/><xsl:value-of select="."/></placeName>
                                     </xsl:for-each>
                                     <!-- NOTE: name as given in source -->
                                     <xsl:for-each select="Name_reduccion_as_given[. != '']">
-                                        <placeName xml:id="name{$record-id}-4" type="verbatim"><xsl:value-of select="."/></placeName>
+                                        <placeName type="verbatim"><xsl:attribute name="xml:id" select="concat('name', $record-id, '-4')"/><xsl:value-of select="."/></placeName>
                                     </xsl:for-each>
 
                                     <!-- Nested/hierarchical place name -->
@@ -185,7 +188,8 @@
                                     </xsl:if>
                                     
                                     <xsl:if test="Info_source[. != '']">
-                                        <bibl xml:id="bib{$record-id}-1">
+                                        <bibl>
+                                            <xsl:attribute name="xml:id" select="concat('bib', $record-id, '-1')"/>
                                             <title><xsl:value-of select="Info_source[. != '']"/></title>
                                             <xsl:if test="Info_source_page_number[. != '']">
                                                 <citedRange unit="pp"><xsl:value-of select="Info_source_page_number"/></citedRange>
@@ -194,7 +198,8 @@
                                        <!--
                                         <xsl:choose>
                                             <xsl:when test="contains(Info_source,'Levillier 1921-26 v9')">
-                                                <bibl xml:id="bib{$record-id}-1">
+                                                <bibl>
+                                                    <xsl:attribute name="xml:id" select="concat('bib', $record-id, '-1')"/>
                                                     <title>Gobernantes del Perú, Volume IX</title>
                                                     <author>Levilier 1925</author>
                                                     <xsl:if test="Info_source_page_number[. != '']">
@@ -204,7 +209,8 @@
                                                 </bibl>
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <bibl xml:id="bib{$record-id}-1">
+                                                <bibl>
+                                                    <xsl:attribute name="xml:id" select="concat('bib', $record-id, '-1')"/>
                                                     <title><xsl:value-of select="Info_source[. != '']"/></title>
                                                     <xsl:if test="Info_source_page_number[. != '']">
                                                         <citedRange unit="pp"><xsl:value-of select="Info_source_page_number"/></citedRange>
@@ -215,7 +221,8 @@
                                         -->
                                     </xsl:if>
                                     <xsl:if test="Secondary_source[. != '']">
-                                        <bibl xml:id="bib{$record-id}-2">
+                                        <bibl>
+                                            <xsl:attribute name="xml:id" select="concat('bib', $record-id, '-2')"/>
                                             <title><xsl:value-of select="Secondary_source"/></title>
                                             <xsl:if test="Secondary_source_page_number[. != '']">
                                                 <citedRange unit="pp"><xsl:value-of select="Info_source_page_number"/></citedRange>
@@ -223,7 +230,8 @@
                                         </bibl>
                                     </xsl:if>
                                     <xsl:if test="Primary_source[. != ''][not(contains(.,'Levillier 1921-26 v9'))]">
-                                            <bibl xml:id="bib{$record-id}-3">
+                                            <bibl>
+                                                <xsl:attribute name="xml:id" select="concat('bib', $record-id, '-3')"/>
                                                 <title><xsl:value-of select="Primary_source"/></title>
                                                 <xsl:if test="Primary_source_folio[. != '']">
                                                     <citedRange unit="folio"><xsl:value-of select="Primary_source_folio"/></citedRange>
