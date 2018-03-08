@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:tei="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -14,16 +10,19 @@
             <principal>Jeremy Mumford</principal>
             <editor role="creator">Steven A. Wernke</editor>
             <editor role="creator">Jeremy Mumford</editor>
+                <editor role="contributor">sd</editor>
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
             </respStmt>
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
             </respStmt>
+                <respStmt>
+                    <resp>Editing for locational accuracy by </resp>
+                    <name type="person">sd</name>
+                </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -49,9 +48,8 @@
          </editorialDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
-                 n="1.0"
-                 when="2016-05-09-04:00">CREATED: place record</change>
+         <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2016-05-09-04:00">Location corrections provided by Akira Saito of the National Museum of Ethnology, Japan and his team. </change>
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,9 +76,9 @@
                   <region type="department">Arequipa</region>
                   <settlement type="pueblo">Toro</settlement>
                </location>
-               <location type="gps">
-                  <geo>-15.26442351 -72.92863801</geo>
-               </location>
+               <location type="gps" source="#bib349-3">
+                        <geo>sd sd</geo>
+                    </location>
                <location>
                   <geo>-15 15 51.92640 -072 55 43.09680</geo>
                </location>
@@ -95,7 +93,8 @@
                </bibl>
                <bibl xml:id="bib349-3">
                   <title>AGI-L</title>
-               </bibl>
+               <citedRange unit="part">24v</citedRange>
+                    </bibl>
                <idno type="URI">http://logarandes.org/place/349</idno>
                <note type="administrative" subtype="Moved">1</note>
                <note type="administrative" subtype="Move_ref">Google sat</note>

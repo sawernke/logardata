@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:tei="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="es">Santiago Cuchiraypampa</title>
+                <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+                <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>Steven A. Wernke</principal>
+                <principal>Akira Saito </principal>
+                <editor role="creator">Steven A. Wernke</editor>
+                <editor role="creator">Akira Saito </editor>
+                <editor role="contributor">Akira Saito</editor>
+                <respStmt>
+                    <resp>Editing, proofreading, data entry and revision by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editing, proofreading, data entry and revision by</resp>
+                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#asaito">Akira Saito </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Editing for locational accuracy by </resp>
+                    <name type="person">Akira Saito</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+                <idno type="URI">http://logarandes.org/place/536/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date>2018-03-08-05:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2018-03-08-05:00">CREATED: place record</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-1" source="bib1-1">
+                    <placeName xml:id="name536-1" full="yes" type="standardized" source="#bib1-1">Santiago Cuchiraypampa</placeName>
+                    <placeName xml:id="name536-2" full="yes" type="standardized-Andean" source="#bib1-1">Santiago Cuchiraypampa</placeName>
+                    <location type="gps">
+                        <geo>-13.90930 -71.84697</geo>
+                    </location>
+                    <bibl xml:id="bib1-1">
+                        <title>AGI-L</title>
+                        <citedRange unit="part">20v</citedRange>
+                    </bibl>
+                    <idno type="URI">http://logarandes.org/place/536</idno>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>
