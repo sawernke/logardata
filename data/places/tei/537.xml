@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:tei="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -35,7 +35,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date>2018-03-08-05:00</date>
+                <date>2018-03-15-04:00</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -48,7 +48,7 @@
             </editorialDecl>
         </encodingDesc>
         <revisionDesc>
-            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2018-03-08-05:00">CREATED: place record</change>
+            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2018-03-15-04:00">CREATED: place record</change>
         </revisionDesc>
     </teiHeader>
     <text>
@@ -56,7 +56,6 @@
             <listPlace>
                 <place xml:id="place-1" source="bib1-1">
                     <placeName xml:id="name537-1" full="yes" type="standardized" source="#bib1-1">El Nombre de Jesus de Accha</placeName>
-                    <placeName xml:id="name537-2" full="yes" type="standardized-Andean" source="#bib1-1">El Nombre de Jesus de Accha</placeName>
                     <location type="gps">
                         <geo>-13.97122 -71.83150</geo>
                     </location>
