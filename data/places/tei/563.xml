@@ -35,7 +35,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date>2018-03-15-04:00</date>
+                <date>2018-03-19-04:00</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -48,7 +48,7 @@
             </editorialDecl>
         </encodingDesc>
         <revisionDesc>
-            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2018-03-15-04:00">CREATED: place record</change>
+            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2018-03-19-04:00">CREATED: place record</change>
         </revisionDesc>
     </teiHeader>
     <text>

@@ -2,7 +2,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title level="a" xml:lang="es">San Pedro de Paucarbamba</title>
+            <title level="a" xml:lang="es">San Juan de Toro</title>
             <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
@@ -29,7 +29,7 @@
          </editionStmt>
          <publicationStmt>
             <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
-            <idno type="URI">http://logarandes.org/place/189/tei</idno>
+            <idno type="URI">http://logarandes.org/place/349/tei</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                   <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
@@ -47,7 +47,8 @@
                         Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
          </editorialDecl>
       </encodingDesc>
-      <revisionDesc>
+       <revisionDesc status="deprecated">
+           <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2016-05-09-04:00">Merged into [http://logarandes.org/place/531] and deprecated.</change>
          <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2016-05-09-04:00">Location corrections provided by Akira Saito of the National Museum of Ethnology, Japan and his team. </change>
             <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
@@ -55,52 +56,51 @@
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-189" source="bib189-1">
-               <placeName xml:id="name189-1" full="yes" type="standardized">San Pedro de Paucarbamba</placeName>
-               <placeName xml:id="name189-2" type="standardized-Spanish">San Pedro de</placeName>
-               <placeName xml:id="name189-3" type="standardized-Andean">Paucarbamba</placeName>
-               <placeName xml:id="name189-4" type="verbatim">san pedro de paucarbamba</placeName>
+            <place xml:id="place-349" source="bib349-1">
+               <placeName xml:id="name349-1" full="yes" type="standardized">San Juan de Toro</placeName>
+               <placeName xml:id="name349-2" type="standardized-Spanish">San Juan de</placeName>
+               <placeName xml:id="name349-3" type="standardized-Andean">Toro</placeName>
+               <placeName xml:id="name349-4" type="verbatim">sant Pedro de toro</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
-                  <region type="ciudad">Guamanga</region>
-                  <region type="corregimiento">Hananchilques</region>
+                  <region type="ciudad">Cuzco</region>
+                  <region type="corregimiento">Andaguaylas</region>
                   <region type="repartimiento">
-                     <placeName type="standardized" full="yes">Papris</placeName>
-                     <placeName type="verbatim">papris</placeName>
+                     <placeName type="standardized" full="yes">Oripa</placeName>
+                     <placeName type="verbatim">oripa</placeName>
                   </region>
-                  <settlement type="pueblo">San Pedro de Paucarbamba</settlement>
-                  <note type="repartimiento">alguna parte dellos en otros dos pueblos diferentes encomenderos</note>
+                  <settlement type="pueblo">San Juan de Toro</settlement>
                </location>
                <location type="modern">
                   <country>Peru</country>
-                  <region type="province">Churcampa</region>
-                  <region type="department">Huancavelica</region>
-                  <settlement type="pueblo">Paucarbamba</settlement>
-                  <note type="modern-location">Capital of province</note>
+                  <region type="province">La Unión</region>
+                  <region type="department">Arequipa</region>
+                  <settlement type="pueblo">Toro</settlement>
                </location>
-               <location type="gps" source="#bib189-3">
-                        <geo>sd sd</geo>
-                    </location>
+               <location type="gps">
+                  <geo>-15.26442351 -72.92863801</geo>
+               </location>
                <location>
-                  <geo>-12 33 14.74200 -074 31 55.42320</geo>
+                  <geo>-15 15 51.92640 -072 55 43.09680</geo>
                </location>
-               <bibl xml:id="bib189-1">
+               <note>Maybe. Try Oripa?</note>
+               <bibl xml:id="bib349-1">
                   <title>Levillier 1921-26 v9</title>
-                  <citedRange unit="pp">181</citedRange>
+                  <citedRange unit="pp">169</citedRange>
                </bibl>
-               <bibl xml:id="bib189-2">
+               <bibl xml:id="bib349-2">
                   <title>Levillier 1921-26 v9</title>
-                  <citedRange unit="pp">181</citedRange>
+                  <citedRange unit="pp">169</citedRange>
                </bibl>
-               <bibl xml:id="bib189-3">
+               <bibl xml:id="bib349-3">
                   <title>AGI-L</title>
-               <citedRange unit="part">30v</citedRange>
+               <citedRange unit="part">24v</citedRange>
                     </bibl>
-               <idno type="URI">http://logarandes.org/place/189</idno>
+               <idno type="URI">http://logarandes.org/place/349</idno>
                <note type="administrative" subtype="Moved">1</note>
                <note type="administrative" subtype="Move_ref">Google sat</note>
-               <note type="administrative" subtype="Moved_by">Kohut</note>
-               <note type="administrative" subtype="Move_date">12/7/2015</note>
+               <note type="administrative" subtype="Moved_by">Wernke</note>
+               <note type="administrative" subtype="Move_date">12/3/2015</note>
                <note type="administrative" subtype="Delete_2">0</note>
             </place>
          </listPlace>

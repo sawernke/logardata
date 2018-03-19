@@ -47,8 +47,9 @@
                         Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
          </editorialDecl>
       </encodingDesc>
-      <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2016-05-09-04:00">Location corrections provided by Akira Saito of the National Museum of Ethnology, Japan and his team. </change>
+       <revisionDesc status="deprecated">
+            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2016-05-09-04:00">Merged into [http://logarandes.org/place/560] and deprecated.</change>
+            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2016-05-09-04:00">Location corrections provided by Akira Saito of the National Museum of Ethnology, Japan and his team. </change>
             <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
@@ -70,9 +71,9 @@
                   </region>
                   <settlement type="pueblo">San Pedro de Matara</settlement>
                </location>
-               <location type="gps" source="#bib284-3">
-                        <geo>sd sd</geo>
-                    </location>
+               <location type="gps">
+                  <geo>-14.08141659 -73.63363929</geo>
+               </location>
                <location>
                   <geo>-14 04 53.10120 -073 38 01.10040</geo>
                </location>
