@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <meta xmlns="http://exist-db.org/xquery/repo">
-    <description>TEI data used by logar-eXist-app</description>
+    <description>Data repository for Logar: Linked Open Gazetteer of the Andean Region</description>
     <author>logar.org</author>
     <website>http://syriaca.org/</website>
     <status>alpha</status>

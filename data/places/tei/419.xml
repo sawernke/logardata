@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -11,19 +7,22 @@
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
-            <principal>Jeremy Mumford</principal>
+            <principal>Akira Saito</principal>
             <editor role="creator">Steven A. Wernke</editor>
             <editor role="creator">Jeremy Mumford</editor>
+                <editor role="creator">Tomoko Koyama</editor>
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
             </respStmt>
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
             </respStmt>
+                <respStmt>
+                    <resp>Editing for locational accuracy by </resp>
+                    <name type="person">Tomoko Koyama</name>
+                </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -49,9 +48,8 @@
          </editorialDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
-                 n="1.0"
-                 when="2016-05-09-04:00">CREATED: place record</change>
+         <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2016-05-09-04:00">Location corrections provided by Akira Saito of the National Museum of Ethnology, Japan and his team. </change>
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,9 +69,9 @@
                   </region>
                   <settlement type="pueblo">San Bernardo</settlement>
                </location>
-               <location type="gps">
-                  <geo>-16.60919617 -71.21514551</geo>
-               </location>
+               <location type="gps" source="#bib419-3">
+                        <geo>-16.67399 -70.97010</geo>
+                    </location>
                <location>
                   <geo>-16 36 33.10560 -071 12 54.52560</geo>
                </location>
@@ -86,8 +84,9 @@
                   <citedRange unit="pp">175</citedRange>
                </bibl>
                <bibl xml:id="bib419-3">
-                  <title>AGI-L</title>
-               </bibl>
+                  <title>AGI Lima 464</title>
+               <citedRange unit="part">28r</citedRange>
+                    </bibl>
                <idno type="URI">http://logarandes.org/place/419</idno>
                <note type="administrative" subtype="Moved">1</note>
                <note type="administrative" subtype="Move_ref">Google sat</note>

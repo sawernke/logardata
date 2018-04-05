@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -11,18 +7,16 @@
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
-            <principal>Jeremy Mumford</principal>
+            <principal>Akira Saito</principal>
             <editor role="creator">Steven A. Wernke</editor>
             <editor role="creator">Jeremy Mumford</editor>
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
             </respStmt>
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
             </respStmt>
          </titleStmt>
          <editionStmt>
@@ -49,9 +43,7 @@
          </editorialDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
-                 n="1.0"
-                 when="2016-05-09-04:00">CREATED: place record</change>
+         <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -87,7 +79,7 @@
                   <citedRange unit="pp">139</citedRange>
                </bibl>
                <bibl xml:id="bib442-3">
-                  <title>AGI-L</title>
+                  <title>AGI Lima 464</title>
                </bibl>
                <idno type="URI">http://logarandes.org/place/442</idno>
                <note type="administrative" subtype="Moved">1</note>

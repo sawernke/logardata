@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-     xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -11,19 +7,22 @@
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
-            <principal>Jeremy Mumford</principal>
+            <principal>Akira Saito</principal>
             <editor role="creator">Steven A. Wernke</editor>
             <editor role="creator">Jeremy Mumford</editor>
+                <editor role="creator">Nozomi Mizota</editor>
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
             </respStmt>
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
-               <name type="person"
-                     ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
+               <name type="person" ref="http://syriaca.org/documentation/editors.xml#jmumford">Jeremy Mumford</name>
             </respStmt>
+                <respStmt>
+                    <resp>Editing for locational accuracy by </resp>
+                    <name type="person">Nozomi Mizota</name>
+                </respStmt>
          </titleStmt>
          <editionStmt>
             <edition n="1.0"/>
@@ -49,9 +48,8 @@
          </editorialDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#wsalesky"
-                 n="1.0"
-                 when="2016-05-09-04:00">CREATED: place record</change>
+         <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2016-05-09-04:00">Location corrections provided by Akira Saito of the National Museum of Ethnology, Japan and his team. </change>
+            <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,9 +75,9 @@
                   <region type="department">Amazonas</region>
                   <settlement type="pueblo">Luya</settlement>
                </location>
-               <location type="gps">
-                  <geo>-6.126964836 -78.08216081</geo>
-               </location>
+               <location type="gps" source="#bib21-3">
+                        <geo>-6.14283 -78.02830</geo>
+                    </location>
                <location>
                   <geo>-06 07 37.07400 -078 04 55.77960</geo>
                </location>
@@ -92,8 +90,9 @@
                   <citedRange unit="pp">218</citedRange>
                </bibl>
                <bibl xml:id="bib21-3">
-                  <title>AGI-L</title>
-               </bibl>
+                  <title>AGI Lima 464</title>
+               <citedRange unit="part">48v</citedRange>
+                    </bibl>
                <idno type="URI">http://logarandes.org/place/21</idno>
                <note type="administrative" subtype="Moved">1</note>
                <note type="administrative" subtype="Move_ref">Digital Peru</note>

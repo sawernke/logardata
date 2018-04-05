@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" xml:lang="es">Paucarbamba</title>
+                <title level="m">LOGAR Linked Open Gazetteer of the Andean Region</title>
+                <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <principal>Steven A. Wernke</principal>
+                <principal>Akira Saito</principal>
+                <editor role="creator">Nozomi Mizota</editor>
+                <respStmt>
+                    <resp>Editing for locational accuracy by </resp>
+                    <name type="person">Nozomi Mizota</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>LOGAR Linked Open Gazetteer of the Andean Region</authority>
+                <idno type="URI">http://logarandes.org/place/561/tei</idno>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
+                    </licence>
+                </availability>
+                <date>2018-04-05-04:00</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>This record created following the LOGAR guidelines. 
+                        Documentation available at: <ref target="http://logarandes.org/documentation">http://logarandes.org/documentation</ref>.</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2018-04-05-04:00">CREATED: place record</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-1" source="bib1-1">
+                    <placeName xml:id="name561-1" full="yes" type="standardized" source="#bib1-1">Paucarbamba</placeName>
+                    <location type="gps">
+                        <geo>-12.55417 -74.53209</geo>
+                    </location>
+                    <note>Probablemente LOGAR confunde Paucarbamba del corregimiento de Xauxa (R530) con San Pedro de Paucarbamba del de los Hananchilques (R479), ya que localiza este pueblo dentro del corregimiento de Xauxa. Sin embargo, no hemos localizado este San Pedro de Paucarbamba hasta el momento.</note>
+                    <bibl xml:id="bib1-1">
+                        <title>AGI Lima 464</title>
+                        <citedRange unit="part">35r</citedRange>
+                    </bibl>
+                    <idno type="URI">http://logarandes.org/place/561</idno>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>
