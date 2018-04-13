@@ -7,7 +7,7 @@
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
-            <principal>Jeremy Mumford</principal>
+            <principal>Akira Saito</principal>
             <editor role="creator">Steven A. Wernke</editor>
             <editor role="creator">Jeremy Mumford</editor>
             <respStmt>
@@ -91,7 +91,7 @@
                   <citedRange unit="pp">141</citedRange>
                </bibl>
                <bibl xml:id="bib438-3">
-                  <title>AGI-L</title>
+                  <title>AGI Lima 464</title>
                </bibl>
                <idno type="URI">http://logarandes.org/place/438</idno>
                <note type="administrative" subtype="Moved">1</note>

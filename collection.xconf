@@ -41,10 +41,4 @@
         <create qname="tei:relation" type="xs:string"/>
         <create qname="tei:idno" type="xs:string"/>
     </index>
-    <triggers>
-        <!-- Trigger dates and name additions --> 
-        <trigger class="org.exist.collections.triggers.XQueryTrigger">
-            <parameter name="url" value="xmldb:exist:///db/apps/srophe-data/modules/trigger.xql"/>
-        </trigger>
-    </triggers>
 </collection>

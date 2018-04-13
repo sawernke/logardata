@@ -7,18 +7,8 @@
                 <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
                 <principal>Steven A. Wernke</principal>
-                <principal>Akira Saito </principal>
-                <editor role="creator">Steven A. Wernke</editor>
-                <editor role="creator">Akira Saito </editor>
-                <editor role="contributor">Akira Saito</editor>
-                <respStmt>
-                    <resp>Editing, proofreading, data entry and revision by</resp>
-                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
-                </respStmt>
-                <respStmt>
-                    <resp>Editing, proofreading, data entry and revision by</resp>
-                    <name type="person" ref="http://syriaca.org/documentation/editors.xml#asaito">Akira Saito </name>
-                </respStmt>
+                <principal>Akira Saito</principal>
+                <editor role="creator">Akira Saito</editor>
                 <respStmt>
                     <resp>Editing for locational accuracy by </resp>
                     <name type="person">Akira Saito</name>
@@ -35,7 +25,7 @@
                         <p>Distributed under a Creative Commons Attribution 3.0 Unported License.</p>
                     </licence>
                 </availability>
-                <date>2018-03-19-04:00</date>
+                <date>2018-04-05-04:00</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -48,7 +38,7 @@
             </editorialDecl>
         </encodingDesc>
         <revisionDesc>
-            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2018-03-19-04:00">CREATED: place record</change>
+            <change who="http://syriaca.org/documentation/editors.xml#admin" n="1.0" when="2018-04-05-04:00">CREATED: place record</change>
         </revisionDesc>
     </teiHeader>
     <text>
@@ -60,7 +50,7 @@
                         <geo>-17.24614 -68.49465</geo>
                     </location>
                     <bibl xml:id="bib1-1">
-                        <title>AGI-L</title>
+                        <title>AGI Lima 464</title>
                         <citedRange unit="part">13r</citedRange>
                     </bibl>
                     <idno type="URI">http://logarandes.org/place/516</idno>

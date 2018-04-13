@@ -7,10 +7,10 @@
             <sponsor>LOGAR Linked Open Gazetteer of the Andean Region</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <principal>Steven A. Wernke</principal>
-            <principal>Jeremy Mumford</principal>
+            <principal>Akira Saito</principal>
             <editor role="creator">Steven A. Wernke</editor>
             <editor role="creator">Jeremy Mumford</editor>
-                <editor role="contributor">Tomoko Koyama</editor>
+                <editor role="creator">Tomoko Koyama</editor>
             <respStmt>
                <resp>Editing, proofreading, data entry and revision by</resp>
                <name type="person" ref="http://syriaca.org/documentation/editors.xml#swernke">Steven A. Wernke</name>
@@ -92,7 +92,7 @@
                   <citedRange unit="pp">179</citedRange>
                </bibl>
                <bibl xml:id="bib323-3">
-                  <title>AGI-L</title>
+                  <title>AGI Lima 464</title>
                <citedRange unit="part">29v</citedRange>
                     </bibl>
                <idno type="URI">http://logarandes.org/place/323</idno>
