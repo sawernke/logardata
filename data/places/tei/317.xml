@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -43,17 +43,17 @@
          </editorialDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
+         <change who="http://syriaca.org/documentation/editors.xml#onlineForms" when="2018-10-31-04:00">, , </change><change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-317" source="bib317-1">
-               <placeName xml:id="name317-1" full="yes" type="standardized">San Andres de Checa</placeName>
-               <placeName xml:id="name317-2" type="standardized-Spanish">San Andres de</placeName>
-               <placeName xml:id="name317-3" type="standardized-Andean">Checa</placeName>
-               <placeName xml:id="name317-4" type="verbatim">san andres de checha</placeName>
+               <placeName full="yes" type="standardized" xml:id="name317-1">San Andres de Checa</placeName>
+               <placeName type="standardized-Spanish" xml:id="name317-2">San Andres de</placeName>
+               <placeName type="standardized-Andean" xml:id="name317-3">Checa</placeName>
+               <placeName type="verbatim" xml:id="name317-4">san andres de checha</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
