@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -43,17 +43,17 @@
          </editorialDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
+         <change who="http://syriaca.org/documentation/editors.xml#onlineForms" when="2018-10-31-04:00">, , </change><change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-315" source="bib315-1">
-               <placeName xml:id="name315-1" full="yes" type="standardized">Nuestra Señora de Languisupa</placeName>
-               <placeName xml:id="name315-2" type="standardized-Spanish">Nuestra Señora de</placeName>
-               <placeName xml:id="name315-3" type="standardized-Andean">Languisupa</placeName>
-               <placeName xml:id="name315-4" type="verbatim">villa de nuestra señora de languisupa</placeName>
+               <placeName full="yes" type="standardized" xml:id="name315-1">Nuestra Señora de Languisupa</placeName>
+               <placeName type="standardized-Spanish" xml:id="name315-2">Nuestra Señora de</placeName>
+               <placeName type="standardized-Andean" xml:id="name315-3">Languisupa</placeName>
+               <placeName type="verbatim" xml:id="name315-4">villa de nuestra señora de languisupa</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Cuzco</region>
