@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -43,16 +43,16 @@
          </editorialDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
+         <change who="http://syriaca.org/documentation/editors.xml#onlineForms" when="2018-11-26-06:00">Winona Saleksy, wsalesky@gmail.com, Testing contribution from LOGAR production website. </change><change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-3" source="bib3-1">
-               <placeName xml:id="name3-1" full="yes" type="standardized">Nuestra Señora del Pilar</placeName>
-               <placeName xml:id="name3-2" type="standardized-Spanish">Nuestra Señora de</placeName>
-               <placeName xml:id="name3-4" type="verbatim">nuestra señora del pilar</placeName>
+               <placeName full="yes" type="standardized" xml:id="name3-1">Nuestra Señora del Pilar</placeName>
+               <placeName type="standardized-Spanish" xml:id="name3-2">Nuestra Señora de</placeName>
+               <placeName type="verbatim" xml:id="name3-3">nuestra señora del pilar</placeName><placeName source="bib3-4" xml:id="name3-4">New name</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Piura</region>
@@ -93,7 +93,7 @@
                <note type="administrative" subtype="MR_other_notes">Full name of original reducción Nuestra Señora del Pilar de Ayavaca/Ayabaca. Unclear if present Ayabaca is in the same location or if the reducción was relocated at some point.</note>
                <note type="administrative" subtype="Moved_by">Wernke</note>
                <note type="administrative" subtype="Move_date">12/14/2015</note>
-               <note type="administrative" subtype="Delete_2">0</note>
+               <note type="administrative" subtype="Delete_2">0</note><bibl xml:id="bib3-4">New source - WS</bibl>
             </place>
          </listPlace>
       </body>
