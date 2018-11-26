@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -43,16 +43,16 @@
          </editorialDecl>
       </encodingDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
+         <change who="http://syriaca.org/documentation/editors.xml#onlineForms" when="2018-11-26-06:00">, , </change><change who="http://syriaca.org/documentation/editors.xml#wsalesky" n="1.0" when="2016-05-09-04:00">CREATED: place record</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-2" source="bib2-1">
-               <placeName xml:id="name2-1" full="yes" type="standardized">Santa Maria de Nieva</placeName>
-               <placeName xml:id="name2-2" type="standardized-Spanish">Santa Maria de</placeName>
-               <placeName xml:id="name2-4" type="verbatim">santa maria de nieua</placeName>
+               <placeName full="yes" type="standardized" xml:id="name2-1">Santa Maria de Nieva</placeName>
+               <placeName type="standardized-Spanish" xml:id="name2-2">Santa Maria de</placeName>
+               <placeName type="verbatim" xml:id="name2-3">santa maria de nieua</placeName>
                <location type="ancient">
                   <region type="audiencia">Lima</region>
                   <region type="ciudad">Chachapoyas</region>
